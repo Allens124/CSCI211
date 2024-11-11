@@ -2,14 +2,14 @@
 using namespace std;
 int main()
 {
-    string s = "Hello";
+    string s = "Hello World!";
     for (int i = 0; i < s.length(); i++)
     {
-        for (int j = 0; j < 10000; j++)
+        for (int j = 0; j < 20000; j++)
         {
-            for (char c = 33; c < 127; c++)
+            for (char k = '!'; k < '~'; k++)
             {
-                cout << c << char(8);
+                cout << k << char(8);
             }
         }
         cout << s[i];
