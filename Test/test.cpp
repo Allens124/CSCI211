@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+string colors[] = 
+{
+    
+}
+
 void printMessage(string str)
 {
     for (int i = 0; i < str.length(); i++)
