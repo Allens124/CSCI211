@@ -1,5 +1,11 @@
 #include <iostream>
 using namespace std;
+
+void printMessage(string str)
+{
+    
+}
+
 int main()
 {
     string s = "Hello World!";
