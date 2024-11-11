@@ -4,15 +4,15 @@ using namespace std;
 int main()
 {
     vector <int> t[3];
-    int n, to, from;
+    int ring, to, from;
     cout << "Enter the number of rings: ";
-    cin >> n;
-    while (n < 1)
+    cin >> ring;
+    while (ring < 1)
     {
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
-    for (int i = n+1; i > 0; i--)
+    for (int i = ring+1; i > 0; i--)
     {
         t[0].push_back(i);
     }
