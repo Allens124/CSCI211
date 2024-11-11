@@ -31,7 +31,8 @@ int main()
         {
             from = (to+2)%3;
         }
-        if (candidate > tower[(from+1)%3].back())
+        candidate = tower[from].back();
+        if (candidate < tower[(from+1)%3].back())
         {
             to = (from+1)%3;
         }
@@ -39,7 +40,6 @@ int main()
         {
             to = (from+2)%3;
         }
-        candidate = tower[from].back();
     }
     return 0;
 }
