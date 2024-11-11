@@ -18,24 +18,28 @@ int main()
     }
     tower[1].push_back(ring+1);
     tower[2].push_back(ring+1);
-    tower[to].push_back(candidate);
-    tower[from].pop_back();
-    if (tower[(to+1)%3].back() < tower[(to+2)%3].back())
+    
+    while(tower[1].size() < n+1)
     {
-        from = (to+1)%3;
-    }
-    else
-    {
-        from = (to+2)%3;
-    }
-    candidate = tower[from].back();
-    if (candidate > tower[(from+1)%3].back())
-    {
-        to = (from+1)%3;
-    }
-    else
-    {
-        to = (from+2)%3;
+        tower[to].push_back(candidate);
+        tower[from].pop_back();
+        if (tower[(to+1)%3].back() < tower[(to+2)%3].back())
+        {
+            from = (to+1)%3;
+        }
+        else
+        {
+            from = (to+2)%3;
+        }
+        candidate = tower[from].back();
+        if (candidate > tower[(from+1)%3].back())
+        {
+            to = (from+1)%3;
+        }
+        else
+        {
+            to = (from+2)%3;
+        }
     }
     return 0;
 }
