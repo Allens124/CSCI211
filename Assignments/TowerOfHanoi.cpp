@@ -16,5 +16,7 @@ int main()
     {
         t[0].push_back(i);
     }
+    t[1].push_back(4);
+    t[2].push_back(4);
     return 0;
 }
