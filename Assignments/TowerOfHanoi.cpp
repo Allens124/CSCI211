@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     vector <int> tower[3];
-    int ring, to, from;
+    int from = 0, to = 1, candidate = 1, ring;
     cout << "Enter the number of rings: ";
     cin >> ring;
     while (ring < 1)
