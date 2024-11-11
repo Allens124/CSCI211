@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <string>
 using namespace std;
 
 string colors[8] = 
@@ -19,13 +20,13 @@ void printMessage(string str)
 {
     srand(time(0));
     int r = rand()%8;
-    for (int i = 0; i < str.length(); i++)
+    for (int i = 0; i < str.size(); i++)
     {
         for (int j = 0; j < 10000; j++)
         {
-            for (char k = '!'; k < '~'; k++)
+            for (char c = '!'; c < '~'; c++)
             {
-                cout << k << char(8);
+                cout << c << char(8);
             }
         }
         cout << colors[(r+i)%8] << str[i];
@@ -37,7 +38,7 @@ int main()
 {
     string message;
     cout << "Enter a message: ";
-    cin >> message;
+    getline(cin, message);
     printMessage(message);
     return 0;
 }
