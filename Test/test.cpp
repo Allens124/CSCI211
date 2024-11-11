@@ -5,18 +5,20 @@ using namespace std;
 
 string colors[8] = 
 {
-    "\033[30m" // black,
-    "\033[31m" // red,
-    "\033[32m" // green,
-    "\033[33m" // yellow,
-    "\033[34m" // blue,
-    "\033[35m" // purple,
-    "\033[36m" // cyan,
+    "\033[30m", // black
+    "\033[31m", // red
+    "\033[32m", // green
+    "\033[33m", // yellow
+    "\033[34m", // blue
+    "\033[35m", // purple
+    "\033[36m", // cyan
     "\033[37m" // white
 };
 
 void printMessage(string str)
 {
+    srand(time(0));
+    int r = rand()%7;
     for (int i = 0; i < str.length(); i++)
     {
         for (int j = 0; j < 10000; j++)
@@ -26,7 +28,7 @@ void printMessage(string str)
                 cout << k << char(8);
             }
         }
-        cout << "\033[31m" << str[i];
+        cout << colors[1] << str[i];
     }
     cout << endl;
 }
