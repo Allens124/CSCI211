@@ -2,13 +2,18 @@
 using namespace std;
 int main()
 {
-    while (true)
+    string s = "Hello";
+    for (int i = 0; i < s.length(); i++)
     {
-        for (char i = 33; i < 127; i++)
+        for (int j = 0; j < 10000; j++)
         {
-            cout << i << char(8);
+            for (char c = 33; c < 127; c++)
+            {
+                cout << c << char(8);
+            }
         }
-        break;
+        cout << s[i];
     }
+    cout << endl;
     return 0;
 }
