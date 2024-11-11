@@ -3,8 +3,15 @@ using namespace std;
 
 string colors[] = 
 {
-    
-}
+    "\033[30m" //black,
+    "\033[31m" //red,
+    "\033[32m" //green,
+    "\033[33m" //yellow,
+    "\033[34m" //blue,
+    "\033[35m" //purple,
+    "\033[36m" //cyan,
+    "\033[37m" //white
+};
 
 void printMessage(string str)
 {
