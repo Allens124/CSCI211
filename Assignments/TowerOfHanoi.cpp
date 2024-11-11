@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    vector <int> t[3];
+    vector <int> tower[3];
     int ring, to, from;
     cout << "Enter the number of rings: ";
     cin >> ring;
@@ -14,9 +14,9 @@ int main()
     }
     for (int i = ring+1; i > 0; i--)
     {
-        t[0].push_back(i);
+        tower[0].push_back(i);
     }
-    t[1].push_back(4);
-    t[2].push_back(4);
+    tower[1].push_back(4);
+    tower[2].push_back(4);
     return 0;
 }
