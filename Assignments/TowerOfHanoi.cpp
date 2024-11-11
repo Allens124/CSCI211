@@ -29,5 +29,13 @@ int main()
         from = (to+2)%3;
     }
     candidate = tower[from].back();
+    if (candidate > tower[(from+1)%3].back())
+    {
+        to = (from+1)%3;
+    }
+    else
+    {
+        to = (from+2)%3;
+    }
     return 0;
 }
