@@ -20,9 +20,14 @@ int main()
     tower[2].push_back(ring+1);
     tower[to].push_back(candidate);
     tower[from].pop_back();
-    if(tower[(to+1)%3].back() < tower[(to+2)%3].back())
+    if (tower[(to+1)%3].back() < tower[(to+2)%3].back())
     {
-        
+        from = (to+1)%3;
     }
+    else
+    {
+        from = (to+2)%3;
+    }
+    candidate = tower[from].back();
     return 0;
 }
