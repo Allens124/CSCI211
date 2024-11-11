@@ -12,5 +12,6 @@ int main()
         cin >> n;
     }
     vector <int> t[3];
+    
     return 0;
 }
