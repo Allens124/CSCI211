@@ -16,7 +16,9 @@ int main()
     {
         tower[0].push_back(i);
     }
-    tower[1].push_back(4);
-    tower[2].push_back(4);
+    tower[1].push_back(ring+1);
+    tower[2].push_back(ring+1);
+    tower[to].push_back(candidate);
+    tower[from].pop_back();
     return 0;
 }
