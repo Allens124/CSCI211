@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     vector <int> tower[3];
-    int from = 0, to = 1, candidate = 1, ring;
+    int from = 0, to = 1, candidate = 1, move = 0, ring;
     cout << "Enter the number of rings: ";
     cin >> ring;
     while (ring < 1)
@@ -18,9 +18,9 @@ int main()
     }
     tower[1].push_back(ring+1);
     tower[2].push_back(ring+1);
-    
     while(tower[1].size() < n+1)
     {
+        cout << "Move number: " << ++move << ": Transfer ring " << candidate << " from tower " << char(from+'A') << " to tower " << char(to+'A') << endl;
         tower[to].push_back(candidate);
         tower[from].pop_back();
         if (tower[(to+1)%3].back() < tower[(to+2)%3].back())
