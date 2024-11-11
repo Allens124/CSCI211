@@ -20,5 +20,9 @@ int main()
     tower[2].push_back(ring+1);
     tower[to].push_back(candidate);
     tower[from].pop_back();
+    if(tower[(to+1)%3].back() < tower[(to+2)%3].back())
+    {
+        
+    }
     return 0;
 }
