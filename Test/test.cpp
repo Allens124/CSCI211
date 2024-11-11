@@ -3,13 +3,7 @@ using namespace std;
 
 void printMessage(string str)
 {
-    
-}
-
-int main()
-{
-    string s = "Hello World!";
-    for (int i = 0; i < s.length(); i++)
+    for (int i = 0; i < str.length(); i++)
     {
         for (int j = 0; j < 10000; j++)
         {
@@ -18,8 +12,16 @@ int main()
                 cout << k << char(8);
             }
         }
-        cout << "\033[31m" << s[i];
+        cout << "\033[31m" << str[i];
     }
     cout << endl;
+}
+
+int main()
+{
+    string message;
+    cout << "Enter a message: ";
+    cin >> message;
+    printMessage(message);
     return 0;
 }
