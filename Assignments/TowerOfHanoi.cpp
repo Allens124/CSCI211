@@ -18,7 +18,7 @@ int main()
     }
     tower[1].push_back(ring+1);
     tower[2].push_back(ring+1);
-    while(tower[1].size() < ring+1)
+    while (tower[1].size() < ring+1)
     {
         cout << "Move number " << ++move << ": Transfer ring " << candidate << " from tower " << char(from+'A') << " to tower " << char(to+'A') << endl;
         tower[to].push_back(candidate);
