@@ -49,6 +49,7 @@ int main()
         // Change the value of the to tower, based on whether the candidate can move to it
         if (candidate < tower[(from+1)%3].back())
         {
+            // If the current candidate is smaller than the ring on top of the next tower to the right, make that tower the new to tower
             to = (from+1)%3;
         }
         else
