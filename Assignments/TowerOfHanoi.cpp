@@ -10,6 +10,7 @@ int main()
     // Prompt the user for a number of rings
     cout << "Enter an odd number of rings: ";
     cin >> ring;
+    // Using a while loop, ensure that the input is neither even nor negative
     while (ring%2 == 0 || ring < 0)
     {
         cout << "Invalid input! Try again: ";
