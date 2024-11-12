@@ -27,6 +27,7 @@ int main()
     // Using a while loop, ensure that the process continues until all rings from Tower A are placed onto Tower B
     while (tower[1].size() < ring+1)
     {
+        // Output the current number of moves as well as the current position of the last ring that was moved
         cout << "Move " << ++move << ": Transfer ring " << candidate << " from Tower " << char(from+'A') << " to Tower " << char(to+'A') << endl;
         tower[to].push_back(candidate);
         tower[from].pop_back();
