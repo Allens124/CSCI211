@@ -29,6 +29,7 @@ int main()
     {
         // Output the current number of moves as well as the current position of the last ring that was moved
         cout << "Move " << ++move << ": Transfer ring " << candidate << " from Tower " << char(from+'A') << " to Tower " << char(to+'A') << endl;
+        // Move the current candidate to the next available tower on the right
         tower[to].push_back(candidate);
         tower[from].pop_back();
         if (tower[(to+1)%3].back() < tower[(to+2)%3].back())
