@@ -3,6 +3,7 @@
 using namespace std;
 int main()
 {
+    // Declare a vector of arrays that represent each tower
     vector <int> tower[3];
     int from = 0, to = 1, candidate = 1, move = 0, ring;
     cout << "Enter an odd number of rings: ";
