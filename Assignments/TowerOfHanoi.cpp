@@ -24,6 +24,7 @@ int main()
     // Set a placeholder value of ring+1 on the bottom of Tower B and Tower C
     tower[1].push_back(ring+1);
     tower[2].push_back(ring+1);
+    // Using a while loop, ensure that the process continues until all rings from Tower A are placed onto Tower B
     while (tower[1].size() < ring+1)
     {
         cout << "Move " << ++move << ": Transfer ring " << candidate << " from Tower " << char(from+'A') << " to Tower " << char(to+'A') << endl;
