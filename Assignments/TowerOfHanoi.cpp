@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    // Declare a vector of arrays that represent each tower
+    // Declare an array of three vectors that represent each tower
     vector <int> tower[3];
     // Declare variables that represent the rings and their destinations
     int from = 0, to = 1, candidate = 1, move = 0, ring;
@@ -16,6 +16,7 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> ring;
     }
+    // Fill Tower A with rings
     for (int i = ring+1; i > 0; i--)
     {
         tower[0].push_back(i);
