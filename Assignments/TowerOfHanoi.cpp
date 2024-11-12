@@ -46,6 +46,7 @@ int main()
         }
         // Set the candidate equal to the ring on top of the new from tower
         candidate = tower[from].back();
+        // Change the value of the to tower, based on whether the candidate can move to it
         if (candidate < tower[(from+1)%3].back())
         {
             to = (from+1)%3;
