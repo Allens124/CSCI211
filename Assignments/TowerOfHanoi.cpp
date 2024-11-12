@@ -33,6 +33,7 @@ int main()
         tower[to].push_back(candidate);
         // Remove the current candidate from its previous tower
         tower[from].pop_back();
+        // Change the value of the from tower, based on which tower has the smallest ring on top
         if (tower[(to+1)%3].back() < tower[(to+2)%3].back())
         {
             from = (to+1)%3;
