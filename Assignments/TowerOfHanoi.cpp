@@ -21,6 +21,7 @@ int main()
     {
         tower[0].push_back(i);
     }
+    // Set a placeholder value of ring+1 on the bottom of Tower B and Tower C
     tower[1].push_back(ring+1);
     tower[2].push_back(ring+1);
     while (tower[1].size() < ring+1)
