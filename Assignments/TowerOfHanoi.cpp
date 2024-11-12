@@ -54,6 +54,7 @@ int main()
         }
         else
         {
+            // If the current candidate is larger than the ring on top of the next tower to the right, make the tower after the next one the new to tower
             to = (from+2)%3;
         }
     }
