@@ -44,6 +44,7 @@ int main()
             // If the tower after the next one has a smaller ring on top, make it the new from tower
             from = (to+2)%3;
         }
+        // Set the candidate equal to the ring on top of the new from tower
         candidate = tower[from].back();
         if (candidate < tower[(from+1)%3].back())
         {
