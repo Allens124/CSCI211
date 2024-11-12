@@ -28,7 +28,7 @@ int main()
     while (tower[1].size() < ring+1)
     {
         // Output the current number of moves as well as the current position of the last ring that was moved
-        cout << "Move " << ++move << ": Transfer ring " << candidate << " from Tower " << char(from+'A') << " to Tower " << char(to+'A') << endl;
+        cout << "Move " << ++move << ": Transfer Ring " << candidate << " from Tower " << char(from+'A') << " to Tower " << char(to+'A') << endl;
         // Move the current candidate to the next available tower on the right
         tower[to].push_back(candidate);
         // Remove the current candidate from its previous tower
