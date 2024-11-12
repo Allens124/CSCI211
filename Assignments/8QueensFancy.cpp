@@ -4,9 +4,12 @@ using namespace std;
 
 // Create a global variable that counts the total number of solutions
 int solCount = 0;
+
+// Create global variables for each of the boards
 typedef char box[5][7];
 box bb, wb, bq, wq, *board[8][8];
 
+// Create a function that fills each board appropriately
 void fillBoards()
 {
     for (int i = 0; i < 5; i++)
@@ -67,23 +70,29 @@ void print(int b[])
     {
         for (int c = 0; c < 8; c++)
         {
+            // If the row added to the column is even, then the position is a white box
             if ((r+c)%2 == 0)
             {
+                // If there is a solution, place a black queen
                 if (b[c] == r)
                 {
                     board[r][c] = &bq;
                 }
+                // If there is not a solution, place a white box
                 else
                 {
                     board[r][c] = &wb;
                 }
             }
+            // If the row added to the column is odd, then the position is a black box
             else
             {
+                // If there is a solution, place a white queen
                 if (b[c] == r)
                 {
                     board[r][c] = &wq;
                 }
+                // If there is not a solution, place a black box
                 else
                 {
                     board[r][c] = &bb;
@@ -103,15 +112,18 @@ void print(int b[])
     {
         for (int j = 0; j < 5; j++)
         {
-            cout << "|";
+            // Print the left border of the board
+            cout << char(179);
             for (int k = 0; k < 8; k++)
             {
+                // Print either a black box, a white box, a black queen, or a white queen
                 for (int l = 0; l < 7; l++)
                 {
                     cout << (*board[i][k])[j][l];
                 }
             }
-            cout << "|\n";
+            // Print out the right border of the board
+            cout << char(179) << "\n";
         }
     }
 }
