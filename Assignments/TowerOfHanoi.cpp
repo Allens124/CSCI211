@@ -16,7 +16,7 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> ring;
     }
-    // Fill Tower A with rings
+    // Fill Tower A with rings, with the smallest on top and the largest on the bottom
     for (int i = ring+1; i > 0; i--)
     {
         tower[0].push_back(i);
