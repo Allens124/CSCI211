@@ -13,17 +13,17 @@ double integrate(func f, double a, double b)
     return area;
 }
 
-double line(double x)
+double linear(double x)
 {
     return x;
 }
 
-double square(double x)
+double quadratic(double x)
 {
     return x*x;
 }
 
-double cube(double x)
+double cubic(double x)
 {
     return x*x*x;
 }
