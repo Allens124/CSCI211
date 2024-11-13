@@ -6,7 +6,7 @@ int main()
     // Declare an array of three vectors that represent each tower
     vector <int> tower[3];
     // Declare variables that represent the rings and their destinations
-    int from = 0, to = 1, candidate = 1, move = 0, ring;
+    int from = 0, to = 1, candidate = 1, moves = 0, ring;
     // Prompt the user for a number of rings
     cout << "Enter an odd number of rings: ";
     cin >> ring;
@@ -28,7 +28,7 @@ int main()
     while (tower[1].size() < ring+1)
     {
         // Output the current number of moves as well as the current position of the last ring that was moved
-        cout << "Move " << ++move << ": Transfer Ring " << candidate << " from Tower " << char(from+'A') << " to Tower " << char(to+'A') << endl;
+        cout << "Move " << ++moves << ": Transfer Ring " << candidate << " from Tower " << char(from+'A') << " to Tower " << char(to+'A') << endl;
         // Move the current candidate to the next available tower on the right
         tower[to].push_back(candidate);
         // Remove the current candidate from its previous tower
