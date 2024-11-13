@@ -5,7 +5,11 @@ typedef double (*func)(double);
 
 double integrate(func f, double a, double b)
 {
+    double area;
     for double (i = a; i < b; i += 0.01)
+    {
+
+    }
 }
 
 double line(double x)
