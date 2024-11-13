@@ -8,6 +8,11 @@ double line(double x)
     return x;
 }
 
+double square(double x)
+{
+    return x*x;
+}
+
 int main()
 {
     //code;
