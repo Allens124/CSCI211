@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 typedef double (*func)(double);
@@ -6,7 +7,7 @@ typedef double (*func)(double);
 double integrate(func f, double a, double b)
 {
     double area = 0;
-    for (double i = a; i <= b; i += 0.001)
+    for (double i = a; i < b; i += 0.001)
     {
         area += 0.001*f(i);
     }
