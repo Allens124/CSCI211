@@ -8,7 +8,7 @@ double integrate(func f, double a, double b)
     double area = 0;
     for (double i = a; i < b; i += 0.01)
     {
-        area += i*f(i);
+        area += 0.01*f(i);
     }
     return area;
 }
