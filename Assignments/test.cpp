@@ -17,7 +17,17 @@ void fillTowers(vector <int> tower[], int ring)
 
 void towerOfHanoi(int from, int to, int candidate, int ring)
 {
-    
+    cout << "Move " << ++moves << ": Transfer Ring " << candidate << " from Tower " << char(from+'A') << " to Tower " << char(to+'A') << endl;
+    tower[to].push_back(candidate);
+    tower[from].pop_back();
+    if (tower[1].size() == ring+1)
+    {
+        return;
+    }
+    from = tower[(to+1)%3].back() < tower[(to+2)%3].back() ? (to+1)%3 : (to+2)%3;
+    candidate = tower[from].back();
+    to = candidate < tower[(from+1)%3].back() ? (from+1)%3 : (from+2)%3;
+    towerOfHanoi(from, to, candidate, ring);
 }
 
 int main()
