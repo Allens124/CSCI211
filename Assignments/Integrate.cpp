@@ -3,6 +3,11 @@ using namespace std;
 
 typedef double (*func)(double);
 
+double integrate(func f, double a, double b)
+{
+    
+}
+
 double line(double x)
 {
     return x;
