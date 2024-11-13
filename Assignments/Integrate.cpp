@@ -32,6 +32,6 @@ int main()
 {
     cout << "The integral of f(x) = x between 1 and 5 is: " << integrate(linear, 1, 5) << endl;
     cout << "The integral of f(x) = x^2 between 1 and 5 is: " << integrate(quadratic, 1, 5) << endl;
-    cout << "The integral of f(x) = x between 1 and 5 is: " << integrate(cubic, 1, 5) << endl;
+    cout << "The integral of f(x) = x^3 between 1 and 5 is: " << integrate(cubic, 1, 5) << endl;
     return 0;
 }
