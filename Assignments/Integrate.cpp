@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
+typedef double (*func)(int, int)
 
 int main()
 {
