@@ -30,6 +30,6 @@ double cubic(double x)
 
 int main()
 {
-    cout << "The integral of f(x) = x between 1 and 5 is: " << integrate(line, 1, 5) << endl;
+    cout << "The integral of f(x) = x between 1 and 5 is: " << integrate(linear, 1, 5) << endl;
     return 0;
 }
