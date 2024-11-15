@@ -62,7 +62,7 @@ int main()
         else
         {
             // Change the value of the from tower, based on which tower has the smallest ring on top
-            if (tower[(to+1)%3].back() < tower[(to+2)%3].back())
+            if (tower[(to+2)%3].back() < tower[(to+1)%3].back())
             {
                 // If the tower to the immediate left has a smaller ring on top, make it the new from tower
                 from = (to+2)%3;
@@ -94,7 +94,7 @@ int main()
         else
         {
             // Change the value of the to tower, based on whether the candidate can move to it
-            if (candidate < tower[(from+1)%3].back())
+            if (candidate < tower[(from+2)%3].back())
             {
                 // If the current candidate is smaller than the ring on top of the next tower to the left, make that tower the new to tower
                 to = (from+2)%3;
