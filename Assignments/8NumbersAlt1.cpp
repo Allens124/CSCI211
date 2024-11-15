@@ -41,22 +41,9 @@ bool ok(int arr[])
 void print(int arr[])
 {
     cout << "Solution " << ++solCount << ":" << endl;
-    for (int i = 0; i < 8; i++)
-    {
-        if (i == 0 || i == 6)
-        {
-            cout << " " << arr[i];
-        }
-        else if (i == 1 || i == 5)
-        {
-            cout << arr[i] << "\n";
-        }
-        else
-        {
-            cout << arr[i];
-        }
-    }
-    cout << "\n";
+    cout << " " << cross[0] << cross[1] << endl;
+    cout << cross[2] << cross[3] << cross[4] << cross[5] << endl;
+    cout << " " << cross[6] << cross[7] << endl;
 }
 
 int main()
