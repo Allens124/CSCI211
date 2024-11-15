@@ -24,6 +24,11 @@ void print(int cross[])
     cout << " " << cross[6] << cross[7] << cross[8] << endl;
 }
 
+bool ok(int cross[], int cap)
+{
+    
+}
+
 int main()
 {
     //code;
