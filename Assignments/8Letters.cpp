@@ -47,7 +47,7 @@ void eightLetters(char cross[], int cap)
 {
     if (cap == 8)
     {
-        print(cross, cap);
+        print(cross);
         return;
     }
     for (int i = 0; i < 8; i++)
