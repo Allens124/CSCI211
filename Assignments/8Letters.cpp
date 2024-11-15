@@ -61,6 +61,8 @@ void eightLetters(char b[], int c)
 
 int main()
 {
-    //code;
+    char b[8];
+    int c = 0;
+    eightLetters(b, c);
     return 0;
 }
