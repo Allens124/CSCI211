@@ -48,6 +48,7 @@ int main()
                 from = (to+2)%3;
             }
         }
+        // Determine whether the total number of rings is even
         else
         {
             // Change the value of the from tower, based on which tower has the smallest ring on top
