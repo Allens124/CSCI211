@@ -15,6 +15,11 @@ char adj[8][5] =
     {'d', 'e', 'f', 'g', 'z'}
 };
 
+void print(int b[])
+{
+    
+}
+
 int main()
 {
     //code;
