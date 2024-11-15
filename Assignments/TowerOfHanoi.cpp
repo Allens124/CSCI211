@@ -11,7 +11,7 @@ int main()
     cout << "Enter an odd number of rings: ";
     cin >> ring;
     // Using a while loop, ensure that the input is neither even nor negative
-    while (ring%2 == 0 || ring < 0)
+    while (ring < 1)
     {
         cout << "Invalid input! Try again: ";
         cin >> ring;
@@ -91,7 +91,7 @@ int main()
             }
             else
             {
-                // If the current candidate is larger than the ring on top of the next tower to the left, make the tower after the next one the new to tower
+                // If the current candidate is larger than the ring on top of the next tower to the left, make the tower before the next one the new to tower
                 to = (from-2)%3;
             }
         }
