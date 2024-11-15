@@ -42,6 +42,16 @@ bool ok(char b[], int c)
     return true;
 }
 
+void eightLetters(char b[], int c)
+{
+    if (c == 8)
+    {
+        print(b, c);
+        return;
+    }
+    
+}
+
 int main()
 {
     //code;
