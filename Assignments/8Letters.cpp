@@ -35,7 +35,11 @@ bool ok(char b[], int c)
     for (int i = 0; adj[c][i] != '!'; i++)
     {
         if (abs(adj[c][i]-b[c]) == 1)
+        {
+            return false;
+        }
     }
+    return true;
 }
 
 int main()
