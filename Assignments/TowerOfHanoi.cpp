@@ -6,7 +6,7 @@ int main()
     // Declare an array of three vectors that represent each tower
     vector <int> tower[3];
     // Declare variables that represent the rings and their destinations
-    int from = 0, moves = 0, ring;
+    int to, from = 0, moves = 0, candidate = 1, ring;
     // Prompt the user for a number of rings
     cout << "Enter an odd number of rings: ";
     cin >> ring;
