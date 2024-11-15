@@ -41,9 +41,9 @@ bool ok(int arr[])
 void print(int arr[])
 {
     cout << "Solution " << ++solCount << ":" << endl;
-    cout << " " << cross[0] << cross[1] << endl;
-    cout << cross[2] << cross[3] << cross[4] << cross[5] << endl;
-    cout << " " << cross[6] << cross[7] << endl;
+    cout << " " << arr[0] << arr[1] << endl;
+    cout << arr[2] << arr[3] << arr[4] << arr[5] << endl;
+    cout << " " << arr[6] << arr[7] << endl;
 }
 
 int main()

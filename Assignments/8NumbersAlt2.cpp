@@ -57,10 +57,9 @@ void nextNum(int s[], int & b)
 void print(int s[], int & b)
 {
     cout << "Solution " << ++solCount << ":" << endl;
-    cout << " " << cross[0] << cross[1] << endl;
-    cout << cross[2] << cross[3] << cross[4] << cross[5] << endl;
-    cout << " " << cross[6] << cross[7] << endl;
-    cout << "\n";
+    cout << " " << s[0] << s[1] << endl;
+    cout << s[2] << s[3] << s[4] << s[5] << endl;
+    cout << " " << s[6] << s[7] << endl;
     b--;
     if (b < 0)
     {
