@@ -22,6 +22,11 @@ void print(char b[])
     cout << " " << b[6] << b[7] << endl;
 }
 
+bool ok(char b[], int c)
+{
+    
+}
+
 int main()
 {
     //code;
