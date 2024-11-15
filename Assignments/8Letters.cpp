@@ -15,9 +15,11 @@ char adj[8][5] =
     {'d', 'e', 'f', 'g', 'z'}
 };
 
-void print(int b[])
+void print(char b[])
 {
-    
+    cout << " " << b[0] << b[1] << endl;
+    cout << b[2] << b[3] << b[4] << b[5] << endl;
+    cout << " " << b[6] << b[7] << endl;
 }
 
 int main()
