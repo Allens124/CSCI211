@@ -65,6 +65,7 @@ int main()
         }
         // Set the candidate equal to the ring on top of the new from tower
         candidate = tower[from].back();
+        // Determine whether the total number of rings is odd
         if (ring%2 == 1)
         {
             // Change the value of the to tower, based on whether the candidate can move to it
