@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+int solCount = 0;
+
 char adj[8][5] =
 {
     {'z'},
