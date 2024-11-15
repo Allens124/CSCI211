@@ -26,7 +26,21 @@ void print(int cross[])
 
 bool ok(int cross[], int cap)
 {
-    
+    for (int i = 0; i < cap; i++)
+    {
+        if (cross[i] == cross[cap])
+        {
+            return false;
+        }
+    }
+    for (int i = 0; adj[cap][i] != -1; i++)
+    {
+        if (abs(cross[cap]-cross[adj[cap][i]] == 1))
+        {
+            return false;
+        }
+    }
+    return true;
 }
 
 int main()
