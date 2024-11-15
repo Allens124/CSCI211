@@ -57,6 +57,19 @@ int main()
                 // If the tower after the next one has a smaller ring on top, make it the new from tower
                 from = (to+2)%3;
             }
+            // Set the candidate equal to the ring on top of the new from tower
+            candidate = tower[from].back();
+            // Change the value of the to tower, based on whether the candidate can move to it
+            if (candidate < tower[(from+1)%3].back())
+            {
+                // If the current candidate is smaller than the ring on top of the next tower to the right, make that tower the new to tower
+                to = (from+1)%3;
+            }
+            else
+            {
+                // If the current candidate is larger than the ring on top of the next tower to the right, make the tower after the next one the new to tower
+                to = (from+2)%3;
+            }
         }
         // Determine whether the number of rings is even
         else
@@ -72,27 +85,8 @@ int main()
                 // If the tower before the next one has a smaller ring on top, make it the new from tower
                 from = (to+1)%3;
             }
-        }
-        // Set the candidate equal to the ring on top of the new from tower
-        candidate = tower[from].back();
-        // Determine whether the total number of rings is odd
-        if (ring%2 == 1)
-        {
-            // Change the value of the to tower, based on whether the candidate can move to it
-            if (candidate < tower[(from+1)%3].back())
-            {
-                // If the current candidate is smaller than the ring on top of the next tower to the right, make that tower the new to tower
-                to = (from+1)%3;
-            }
-            else
-            {
-                // If the current candidate is larger than the ring on top of the next tower to the right, make the tower after the next one the new to tower
-                to = (from+2)%3;
-            }
-        }
-        // Determine whether the total number of rings is even
-        else
-        {
+            // Set the candidate equal to the ring on top of the new from tower
+            candidate = tower[from].back();
             // Change the value of the to tower, based on whether the candidate can move to it
             if (candidate < tower[(from+2)%3].back())
             {
