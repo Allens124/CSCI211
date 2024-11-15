@@ -63,6 +63,8 @@ void numbers(int cross[], int cap)
 
 int main()
 {
-    //code;
+    int sol[9];
+    int c = 0;
+    numbers(sol, c);
     return 0;
 }
