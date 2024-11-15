@@ -18,6 +18,7 @@ char adj[8][5] =
 
 void print(char cross[])
 {
+    cout << "Solution " << ++solCount << ":" << endl;
     cout << " " << cross[0] << cross[1] << endl;
     cout << cross[2] << cross[3] << cross[4] << cross[5] << endl;
     cout << " " << cross[6] << cross[7] << endl;
