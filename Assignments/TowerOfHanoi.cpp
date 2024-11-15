@@ -16,10 +16,12 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> ring;
     }
+    // If the number of rings is odd, the to tower is the first tower to the right
     if (ring%2 == 1)
     {
         to = 1;
     }
+    // If the number of rings is even, the to tower is the first tower to the left
     else
     {
         to = 2;
