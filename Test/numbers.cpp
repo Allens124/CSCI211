@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+int solCount = 0;
+
 int adj[9][3] =
 {
     {-1},
