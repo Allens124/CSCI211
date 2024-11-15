@@ -49,7 +49,14 @@ void eightLetters(char b[], int c)
         print(b, c);
         return;
     }
-    
+    for (int i = 0; i < 8; i++)
+    {
+        b[c] = 'a'+i;
+        if (ok(b, c))
+        {
+            eightLetters(b, c+1);
+        }
+    }
 }
 
 int main()
