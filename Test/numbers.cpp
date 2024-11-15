@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int adj[][] =
+int adj[9][3] =
 {
     {-1},
     {0, -1},
