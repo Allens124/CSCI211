@@ -19,7 +19,7 @@ int adj[9][3] =
 
 void print(int cross[])
 {
-    cout << "Solution " << ++solCount << endl;                                                                                                                                                                                                                                                                                                              
+    cout << "Solution " << ++solCount << ":" << endl;                                                                                                                                                                                                                                                                                                              
     cout << cross[0] << cross[1] << cross[2] << endl;
     cout << cross[3] << " " << cross[4] << endl;
     cout << "  " << cross[5] << endl;
@@ -47,7 +47,7 @@ bool ok(int cross[], int cap)
 
 void numbers(int cross[], int cap)
 {
-    if (cap == 8)
+    if (cap == 9)
     {
         print(cross);
         return;
