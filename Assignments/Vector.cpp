@@ -14,7 +14,7 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> cNum;
     }
-    vector< vector<int> > v(cNum);
+    vector< vector <int> > v(cNum);
     for (int i = 0; i < cNum; i++)
     {
         cout << "Enter the number of students in class " << i+1 << ": ";
