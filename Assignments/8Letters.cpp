@@ -1,7 +1,10 @@
 #include <iostream>
 using namespace std;
 
-
+char adj =
+{
+    
+}
 
 int main()
 {
