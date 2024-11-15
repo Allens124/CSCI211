@@ -8,10 +8,10 @@ int main()
     // Declare variables that represent the rings and their destinations
     int from = 0, to = 1, candidate = 1, moves = 0, ring;
     // Prompt the user for a number of rings
-    cout << "Enter an odd number of rings: ";
+    cout << "Enter any number of rings: ";
     cin >> ring;
     // Using a while loop, ensure that the input is neither even nor negative
-    while (ring%2 == 0 || ring < 0)
+    while (ring < 1)
     {
         cout << "Invalid input! Try again: ";
         cin >> ring;
