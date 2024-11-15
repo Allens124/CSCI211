@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int solCount = 0;
@@ -31,9 +32,9 @@ bool ok(char b[], int c)
             return false;
         }
     }
-    for (int i = 0; adj[c][i] != 'z'; i++)
+    for (int i = 0; adj[c][i] != '!'; i++)
     {
-
+        if (abs(adj[c][i]-b[c]) == 1)
     }
 }
 
