@@ -80,6 +80,7 @@ int main()
                 to = (from+2)%3;
             }
         }
+        // Determine whether the total number of rings is even
         else
         {
             // Change the value of the to tower, based on whether the candidate can move to it
