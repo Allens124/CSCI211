@@ -39,28 +39,14 @@ bool ok(int cross[], int cap)
     return true;
 }
 
-void print(int cross[], int cap)
+void print(int cross[])
 {
     // Output the current number of solutions using a pre-increment
     cout << "Solution " << ++solCount << ":" << endl;
-    // Using a for loop, print the current solution
-    for (int i = 0; i < 8; i++)
-    {
-        if (i == 0 || i == 6)
-        {
-            cout << " " << cross[i];
-        }
-        else if (i == 1 || i == 5)
-        {
-            cout << cross[i] << "\n";
-        }
-        else
-        {
-            cout << cross[i];
-        }
-    }
-    cout << "\n";
-    return;
+    // Print the current solution
+    cout << " " << cross[0] << cross[1] << endl;
+    cout << cross[2] << cross[3] << cross[4] << cross[5] << endl;
+    cout << " " << cross[6] << cross[7] << endl;
 }
 
 void eightNumbers(int cross[], int cap)
@@ -68,7 +54,7 @@ void eightNumbers(int cross[], int cap)
     if (cap == 8)
     {
         // If every box has been filled, call the print() function
-        print(cross, cap);
+        print(cross);
         return;
     }
     // Using a for loop, fill in each box with a number between 1 and 8
