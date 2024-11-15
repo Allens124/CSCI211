@@ -6,7 +6,7 @@ int main()
     // Declare an array of three vectors that represent each tower
     vector <int> tower[3];
     // Declare variables that represent the rings and their destinations
-    int from = 0, to = 1, candidate = 1, moves = 0, ring;
+    int from = 0, candidate = 1, moves = 0, ring;
     // Prompt the user for a number of rings
     cout << "Enter any number of rings: ";
     cin >> ring;
@@ -16,6 +16,7 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> ring;
     }
+    to = ring%2 == 1 ? 1 : 2;
     // Fill Tower A with rings, with the smallest on top and the largest on the bottom
     for (int i = ring+1; i > 0; i--)
     {
