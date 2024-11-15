@@ -35,7 +35,7 @@ bool ok(char cross[], int cap)
     }
     for (int i = 0; adj[cap][i] != '!'; i++)
     {
-        if (abs(cross[cap]-cross[adj[cap][i]]) == 1)
+        if (abs(cross[cap]-cross[adj[cap][i]-'a']) == 1)
         {
             return false;
         }
