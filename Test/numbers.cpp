@@ -44,6 +44,23 @@ bool ok(int cross[], int cap)
     return true;
 }
 
+void numbers(int cross[], int cap)
+{
+    if (cap == 8)
+    {
+        print(cross);
+        return;
+    }
+    for (int i = 0; i < 9; i++)
+    {
+        cross[cap] = i;
+        if (ok(cross, cap))
+        {
+            numbers(cross, cap+1);
+        }
+    }
+}
+
 int main()
 {
     //code;
