@@ -24,7 +24,13 @@ void print(char b[])
 
 bool ok(char b[], int c)
 {
-    
+    for (int i = 0; i < c; i++)
+    {
+        if (b[i] == b[c])
+        {
+            return false;
+        }
+    }
 }
 
 int main()
