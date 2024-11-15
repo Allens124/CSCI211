@@ -16,25 +16,25 @@ char adj[8][5] =
     {'d', 'e', 'f', 'g', '!'}
 };
 
-void print(char b[])
+void print(char cross[])
 {
-    cout << " " << b[0] << b[1] << endl;
-    cout << b[2] << b[3] << b[4] << b[5] << endl;
-    cout << " " << b[6] << b[7] << endl;
+    cout << " " << cross[0] << cross[1] << endl;
+    cout << cross[2] << cross[3] << cross[4] << cross[5] << endl;
+    cout << " " << cross[6] << cross[7] << endl;
 }
 
-bool ok(char b[], int c)
+bool ok(char cross[], int cap)
 {
-    for (int i = 0; i < c; i++)
+    for (int i = 0; i < cap; i++)
     {
-        if (b[i] == b[c])
+        if (cross[i] == cross[cap])
         {
             return false;
         }
     }
-    for (int i = 0; adj[c][i] != '!'; i++)
+    for (int i = 0; adj[cap][i] != '!'; i++)
     {
-        if (abs(adj[c][i]-b[c]) == 1)
+        if (abs(cross[cap]-cross[adj[cap][i]]) == 1)
         {
             return false;
         }
@@ -42,27 +42,27 @@ bool ok(char b[], int c)
     return true;
 }
 
-void eightLetters(char b[], int c)
+void eightLetters(char cross[], int cap)
 {
-    if (c == 8)
+    if (cap == 8)
     {
-        print(b, c);
+        print(cross, cap);
         return;
     }
     for (int i = 0; i < 8; i++)
     {
-        b[c] = 'a'+i;
-        if (ok(b, c))
+        cross[cap] = 'a'+i;
+        if (ok(cross, cap))
         {
-            eightLetters(b, c+1);
+            eightLetters(cross, cap+1);
         }
     }
 }
 
 int main()
 {
-    char b[8];
+    char sol[8];
     int c = 0;
-    eightLetters(b, c);
+    eightLetters(sol, c);
     return 0;
 }
