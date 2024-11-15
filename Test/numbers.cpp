@@ -16,6 +16,14 @@ int adj[9][3] =
     {5, 7, -1}
 };
 
+void print(int cross[])
+{
+    cout << cross[0] << cross[1] << cross[2] << endl;
+    cout << cross[3] << " " << cross[4] << endl;
+    cout << "  " << cross[5] << endl;
+    cout << " " << cross[6] << cross[7] << cross[8] << endl;
+}
+
 int main()
 {
     //code;
