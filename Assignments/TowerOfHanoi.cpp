@@ -33,9 +33,10 @@ int main()
         tower[to].push_back(candidate);
         // Remove the current candidate from its previous tower
         tower[from].pop_back();
-        // Change the value of the from tower, based on which tower has the smallest ring on top
+        // Determine whether the total number of rings is odd
         if (ring%2 == 1)
         {
+            // Change the value of the from tower, based on which tower has the smallest ring on top
             if (tower[(to+1)%3].back() < tower[(to+2)%3].back())
             {
                 // If the tower to the immediate right has a smaller ring on top, make it the new from tower
@@ -49,6 +50,7 @@ int main()
         }
         else
         {
+            // Change the value of the from tower, based on which tower has the smallest ring on top
             if (tower[(to-1)%3].back() < tower[(to-2)%3].back())
             {
                 // If the tower to the immediate left has a smaller ring on top, make it the new from tower
