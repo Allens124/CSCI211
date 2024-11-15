@@ -111,7 +111,7 @@ void print(int b[])
                     cout << (*board[i][k])[j][l];
                 }
             }
-            cout << "\u258F" << "\n";
+            cout << "\u2595" << "\n";
         }
     }
 }
