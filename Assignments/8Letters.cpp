@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-char adj =
+char adj[8][5] =
 {
     {'z'},
     {'a', 'z'},
