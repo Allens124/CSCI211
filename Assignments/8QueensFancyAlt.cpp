@@ -13,35 +13,35 @@ void fillBoards()
     {
         for (int j = 0; j < 7; j++)
         {
-            bb[i][j] = "\u25A0";
-            wb[i][j] = "\u25A1";
+            bb[i][j] = "\u2588";
+            wb[i][j] = " ";
             if (j == 0 || j == 6)
             {
-                bq[i][j] = "\u25A1";
-                wq[i][j] = "\u25A0";
+                bq[i][j] = " ";
+                wq[i][j] = "\u2588";
             }
             else if (i == 0 || i == 4)
             {
-                bq[i][j] = "\u25A1";
-                wq[i][j] = "\u25A0";
+                bq[i][j] = " ";
+                wq[i][j] = "\u2588";
             }
             else if (i == 1)
             {
                 if (j%2 == 0)
                 {
-                    bq[i][j] = "\u25A1";
-                    wq[i][j] = "\u25A0";
+                    bq[i][j] = " ";
+                    wq[i][j] = "\u2588";
                 }
                 else
                 {
-                    bq[i][j] = "\u25A0";
-                    wq[i][j] = "\u25A1";
+                    bq[i][j] = "\u2588";
+                    wq[i][j] = " ";
                 }
             }
             else
             {
-                bq[i][j] = "\u25A0";
-                wq[i][j] = "\u25A1";
+                bq[i][j] = "\u2588";
+                wq[i][j] = " ";
             }
         }
     }
@@ -99,11 +99,11 @@ void print(int b[])
         cout << b[r] << " | ";
     }
     cout << "\n";
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < 66; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            cout << "\uff5c";
+            cout << "\u258F";
             for (int k = 0; k < 8; k++)
             {
                 for (int l = 0; l < 7; l++)
@@ -111,7 +111,7 @@ void print(int b[])
                     cout << (*board[i][k])[j][l];
                 }
             }
-            cout << "\uff5c" << "\n";
+            cout << "\u258F" << "\n";
         }
     }
 }
