@@ -39,7 +39,7 @@ bool ok(int cross[], int cap)
     }
     for (int i = 0; adj[cap][i] != -1; i++)
     {
-        if (abs(cross[cap]-cross[adj[cap][i]]) == 1)
+        if (abs(cross[cap]-cross[adj[cap][i]]) < 3)
         {
             return false;
         }
@@ -49,12 +49,12 @@ bool ok(int cross[], int cap)
 
 void numbers(int cross[], int cap)
 {
-    if (cap == 9)
+    if (cap == 10)
     {
         print(cross);
         return;
     }
-    for (int i = 0; i < 9; i++)
+    for (int i = 0; i < 10; i++)
     {
         cross[cap] = i;
         if (ok(cross, cap))
@@ -66,7 +66,7 @@ void numbers(int cross[], int cap)
 
 int main()
 {
-    int sol[9];
+    int sol[10];
     int c = 0;
     numbers(sol, c);
     return 0;
