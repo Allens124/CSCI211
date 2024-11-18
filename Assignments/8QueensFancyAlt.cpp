@@ -98,8 +98,12 @@ void print(int b[])
     {
         cout << b[r] << " | ";
     }
+    cout << "\n ";
+    for (int i = 0; i < 56; i++)
+    {
+        cout << "\u2594";
+    }
     cout << "\n";
-    cout << "\u2581";
     for (int i = 0; i < 8; i++)
     {
         for (int j = 0; j < 5; j++)
@@ -115,7 +119,12 @@ void print(int b[])
             cout << "\u258F" << "\n";
         }
     }
-    cout << "\u2594";
+    cout << " ";
+    for (int i = 0; i < 56; i++)
+    {
+        cout << "\u2594";
+    }
+    cout << "\n";
 }
 
 int main()
