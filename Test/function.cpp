@@ -7,9 +7,10 @@ typedef bool (*func)(bool);
 
 void fillRandom(int arr, int size)
 {
+    srand(time(0));
     for (int i = 0; i < size; i++)
     {
-        for (int )
+        arr[i] = 1+rand()%100;
     }
 }
 
