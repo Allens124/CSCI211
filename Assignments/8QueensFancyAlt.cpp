@@ -103,7 +103,7 @@ void print(int b[])
     {
         for (int j = 0; j < 5; j++)
         {
-            cout << "\u258F";
+            cout << "\u2595";
             for (int k = 0; k < 8; k++)
             {
                 for (int l = 0; l < 7; l++)
@@ -111,7 +111,7 @@ void print(int b[])
                     cout << (*board[i][k])[j][l];
                 }
             }
-            cout << "\u2595" << "\n";
+            cout << "\u258F" << "\n";
         }
     }
 }
