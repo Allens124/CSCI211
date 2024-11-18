@@ -1,12 +1,14 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 typedef bool (*func)(bool);
 
 void bubbleSort(int arr, int size)
 {
-    bool swap = false;
-    for (int i = 0; i < size; i++)
+    bool swap = true;
+    while (swap)
     {
         swap = false;
         for (int j = 0; j < size; j++)
