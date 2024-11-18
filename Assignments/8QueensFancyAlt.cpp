@@ -101,7 +101,7 @@ void print(int b[])
     cout << "\n ";
     for (int i = 0; i < 56; i++)
     {
-        cout << "\u2594";
+        cout << "\u2581";
     }
     cout << "\n";
     for (int i = 0; i < 8; i++)
