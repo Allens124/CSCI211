@@ -5,7 +5,7 @@ using namespace std;
 
 typedef bool (*func)(bool);
 
-void fillRandom(int arr, int size)
+void fillRandom(int arr[], int size)
 {
     srand(time(0));
     for (int i = 0; i < size; i++)
@@ -14,7 +14,7 @@ void fillRandom(int arr, int size)
     }
 }
 
-void bubbleSort(int arr, int size)
+void bubbleSort(int arr[], int size)
 {
     bool swap = true;
     while (swap)
@@ -22,7 +22,7 @@ void bubbleSort(int arr, int size)
         swap = false;
         for (int i = 0; i < size-1; i++)
         {
-            if (arr[i] < arr[i+1])
+            if (arr[i] > arr[i+1])
             {
                 int temp = arr[i];
                 arr[i] = arr[i+1];
@@ -33,8 +33,21 @@ void bubbleSort(int arr, int size)
     }
 }
 
+void printArray(int arr[], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
 int main()
 {
-    //code;
+    int a[10];
+    fillRandom(a, 10);
+    printArray(a, 10);
+    bubbleSort(a, 10);
+    printArray(a, 10);
     return 0;
 }
