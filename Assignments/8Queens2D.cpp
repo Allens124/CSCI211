@@ -79,7 +79,18 @@ int main()
 
    print:
     // Print the solution number pre-increment
-    cout << "Solution: " << ++sol << "\n";
+    cout << "Solution: " << ++sol << "\n| ";
+    for (int col = 0; col < 8; col++)
+    {
+        for (int row  = 0; row < 8; row++)
+        {
+            if (q[row][col] == 1)
+            {
+                cout << row << " | ";
+            }
+        }
+    }
+    cout << "\n";
     // Use a nested for loop to print the chessboard
     for (int row = 0; row < 8; row++)
     {
