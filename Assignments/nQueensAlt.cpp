@@ -47,7 +47,7 @@ int main()
     {
         int q[i];
         eightQueens(q, 0, i);
-        cout << "There are " << solCount << " solutions to the " << i << "queens problem\n";
+        cout << "There are " << solCount << " solutions to the " << i << " queens problem\n";
         solCount = 0;
     }
     return 0;
