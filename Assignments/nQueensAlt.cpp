@@ -35,13 +35,19 @@ void eightQueens(int b[], int c, int cap)
 
 int main()
 {
-    int c = 0;
-    for (int i = 1; i < 11; i++)
+    int n;
+    cout << "How many queens? ";
+    cin >> n;
+    while (n < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> n;
+    }
+    for (int i = 1; i < n+1; i++)
     {
         int q[i];
-        cout << "Number of Queens: " << i << "\n";
-        eightQueens(q, c, i);
-        cout << "Number of Solutions: " << solCount << "\n";
+        eightQueens(q, 0, i);
+        cout << "There are " << solCount << " solutions to the " << i << "queens problem\n";
         solCount = 0;
     }
     return 0;
