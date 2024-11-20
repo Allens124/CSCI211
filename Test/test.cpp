@@ -13,7 +13,7 @@ void frame1()
 {
     for (int i = 0; i < 9; i++)
     {
-        cout << "*";
+        cout << "*" << char(8);
     }
 }
 
