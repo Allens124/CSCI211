@@ -16,36 +16,10 @@ bool ok(int b[], int c)
     return true;
 }
 
-/*void print(int b[], int cap)
-{
-    cout << "Solution " << ++solCount << ":\n| ";
-    for (int i = 0; i < cap; i++)
-    {
-        cout << b[i] << " | ";
-    }
-    cout << "\n";
-    for (int i = 0; i < cap; i++)
-    {
-        for (int j = 0; j < cap; j++)
-        {
-            if (b[j] == i)
-            {
-                cout << "1";
-            }
-            else
-            {
-                cout << "0";
-            }
-        }
-        cout << "\n";
-    }
-}*/
-
 void eightQueens(int b[], int c, int cap)
 {
     if (c == cap)
     {
-        //print(b, cap);
         solCount++;
         return;
     }
