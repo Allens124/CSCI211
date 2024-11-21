@@ -4,7 +4,7 @@ using namespace std;
 
 int solCount = 0;
 
-bool ok(int q[], int c, int cap)
+bool ok(int q[], int c)
 {
     for (int i = 0; i < c; i++)
     {
