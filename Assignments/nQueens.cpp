@@ -1,7 +1,10 @@
 #include <iostream>
 using namespace std;
 
-
+bool ok(int q[], int c, int cap)
+{
+    return true;
+}
 
 int main()
 {
@@ -15,7 +18,7 @@ int main()
     }
     for (int i = 0; i < n+1; i++)
     {
-        int* q[] = new int[i];
+        int* q = new int[i];
     }
     delete[] q;
     return 0;
