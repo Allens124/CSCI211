@@ -17,5 +17,6 @@ int main()
     {
         int* q[] = new int[i];
     }
+    delete[] q;
     return 0;
 }
