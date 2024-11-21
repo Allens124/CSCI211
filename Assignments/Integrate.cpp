@@ -16,6 +16,7 @@ double quadratic(double x)
     return x*x;
 }
 
+// Create a cubic function that represents f(x) = x^3
 double cubic(double x)
 {
     return x*x*x;
