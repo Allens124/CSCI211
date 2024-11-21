@@ -3,6 +3,13 @@ using namespace std;
 
 bool ok(int q[], int c, int cap)
 {
+    for (int i = 0; i < c; i++)
+    {
+        if (q[i] == q[c])
+        {
+            return false;
+        }
+    }
     return true;
 }
 
@@ -13,7 +20,7 @@ void print(int q[], int cap)
 
 void nQueens(int q[], int c, int cap)
 {
-    
+
 }
 
 int main()
