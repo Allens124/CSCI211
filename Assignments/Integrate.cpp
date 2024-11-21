@@ -4,16 +4,6 @@ using namespace std;
 // Define func as any function that takes in a double and returns a double
 typedef double (*func)(double);
 
-double integrate(func f, double a, double b)
-{
-    double area = 0;
-    for (double i = a; i < b; i += 0.0001)
-    {
-        area += 0.0001*f(i);
-    }
-    return area;
-}
-
 double linear(double x)
 {
     return x;
@@ -27,6 +17,16 @@ double quadratic(double x)
 double cubic(double x)
 {
     return x*x*x;
+}
+
+double integrate(func f, double a, double b)
+{
+    double area = 0;
+    for (double i = a; i < b; i += 0.0001)
+    {
+        area += 0.0001*f(i);
+    }
+    return area;
 }
 
 int main()
