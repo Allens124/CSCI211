@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// Define func as any function that takes in a double and returns a double
 typedef double (*func)(double);
 
 double integrate(func f, double a, double b)
