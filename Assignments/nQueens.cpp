@@ -8,6 +8,11 @@ bool ok(int q[], int c, int cap)
 
 void print(int q[], int cap)
 {
+
+}
+
+void nQueens(int q[], int c, int cap)
+{
     
 }
 
