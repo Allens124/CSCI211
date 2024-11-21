@@ -4,6 +4,7 @@ using namespace std;
 // Define func as any function that takes in a double and returns a double
 typedef double (*func)(double);
 
+// Create a linear function that represents f(x) = x
 double linear(double x)
 {
     return x;
