@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
-    //code;
+    int n;
+    cout << "How many queens? ";
+    cin >> n;
     return 0;
 }
