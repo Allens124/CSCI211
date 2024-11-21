@@ -13,5 +13,9 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
+    for (int i = 0; i < n+1; i++)
+    {
+        int* q[] = new int[i];
+    }
     return 0;
 }
