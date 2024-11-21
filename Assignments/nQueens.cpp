@@ -2,6 +2,8 @@
 #include <cmath>
 using namespace std;
 
+int solCount = 0;
+
 bool ok(int q[], int c, int cap)
 {
     for (int i = 0; i < c; i++)
