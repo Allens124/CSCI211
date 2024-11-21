@@ -46,6 +46,8 @@ int main()
     for (int i = 0; i < n+1; i++)
     {
         int* q = new int[i];
+        cout << "There are " << solCount << " solutions to the " << i << " queens problem" << endl;
+        solCount = 0;
     }
     delete[] q;
     return 0;
