@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 // Define func as any function that takes in a double and returns a double
@@ -37,8 +38,8 @@ double integrate(func f, double a, double b)
 
 int main()
 {
-    cout << "The integral of f(x) = x between 1 and 5 is: " << integrate(linear, 1, 5) << endl;
-    cout << "The integral of f(x) = x^2 between 1 and 5 is: " << integrate(quadratic, 1, 5) << endl;
-    cout << "The integral of f(x) = x^3 between 1 and 5 is: " << integrate(cubic, 1, 5) << endl;
+    cout << "The integral of f(x) = x between 1 and 5 is: " << setprecision(5) << integrate(linear, 1, 5) << endl;
+    cout << "The integral of f(x) = x^2 between 1 and 5 is: " << setprecision(4) << integrate(quadratic, 1, 5) << endl;
+    cout << "The integral of f(x) = x^3 between 1 and 5 is: " << setprecision(3) << integrate(cubic, 1, 5) << endl;
     return 0;
 }
