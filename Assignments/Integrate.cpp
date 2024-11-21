@@ -22,9 +22,12 @@ double cubic(double x)
     return x*x*x;
 }
 
+// Create an integrate function that takes in a function and two doubles
 double integrate(func f, double a, double b)
 {
+    // Initialize an area variable to 0, which represents the cumulative area from a to b
     double area = 0;
+    // Using a for loop, increment area by the 0.0001 times the function value to emulate Reimann sums
     for (double i = a; i < b; i += 0.0001)
     {
         area += 0.0001*f(i);
