@@ -4,11 +4,11 @@ using namespace std;
 
 int solCount = 0;
 
-bool ok(int q[], int c)
+bool ok(int* q, int c)
 {
     for (int i = 0; i < c; i++)
     {
-        if (q[i] == q[c] || c-i == abs(q[c]-q[i]))
+        if (*(q+i) == *(q+c) || c-i == abs(*(q+c)-*(q+i)))
         {
             return false;
         }
@@ -16,7 +16,7 @@ bool ok(int q[], int c)
     return true;
 }
 
-void nQueens(int q[], int c, int cap)
+void nQueens(int* q, int c, int cap)
 {
     if (c == cap)
     {
@@ -25,7 +25,7 @@ void nQueens(int q[], int c, int cap)
     }
     for (int i = 0; i < cap; i++)
     {
-        q[c] = i;
+        *(q+c) = i;
         if (ok(q, c))
         {
             nQueens(q, c+1, cap);
