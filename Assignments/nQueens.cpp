@@ -26,7 +26,7 @@ void nQueens(int q[], int c, int cap)
     for (int i = 0; i < cap; i++)
     {
         q[c] = i;
-        if (ok(q, c, cap))
+        if (ok(q, c))
         {
             nQueens(q, c+1, cap);
         }
