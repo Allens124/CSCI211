@@ -18,7 +18,11 @@ bool ok(int q[], int c, int cap)
 
 void nQueens(int q[], int c, int cap)
 {
-
+    if (c == cap)
+    {
+        solCount++;
+        return;
+    }
 }
 
 int main()
