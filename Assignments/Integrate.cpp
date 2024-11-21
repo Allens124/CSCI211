@@ -10,6 +10,7 @@ double linear(double x)
     return x;
 }
 
+// Create a quadratic function that represents f(x) = x^2
 double quadratic(double x)
 {
     return x*x;
