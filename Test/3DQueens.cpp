@@ -26,6 +26,10 @@ void eightQueens(int q[8][8], int l, int c)
     for (int i = 0; i < 8; i++)
     {
         q[l][c] = i;
+        if (ok(q, l, c))
+        {
+            eightQueens(q, l, c+1);
+        }
     }
 }
 
