@@ -3,6 +3,11 @@ using namespace std;
 
 int solCount = 0;
 
+bool ok(int q[8][8], int l, int c)
+{
+    return true;
+}
+
 void print(int q[8][8])
 {
 
