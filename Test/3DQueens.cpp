@@ -11,7 +11,13 @@ bool ok(int q[8][8], int l, int c)
 
 void print(int q[8][8])
 {
+    for (int i = 0; i < 8; i++)
+    {
+        for (int j = 0; j < 8; j++)
+        {
 
+        }
+    }
 }
 
 void eightQueens(int q[8][8], int l, int c)
