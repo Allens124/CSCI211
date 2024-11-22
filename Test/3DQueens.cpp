@@ -36,6 +36,8 @@ void eightQueens(int q[8][8], int l, int c)
 
 int main()
 {
-    //code;
+    int q[8][8] = {0};
+    int l = 0, c = 0;
+    eightQueens(q, l, c);
     return 0;
 }
