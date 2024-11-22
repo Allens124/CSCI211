@@ -8,7 +8,7 @@ bool ok(int q[8][8], int l, int c)
 {
     for (int i = 0; i < l; i++)
     {
-        if (q[l][c] == q[i][c])
+        if (q[l][c] == q[i][c] || abs(q[l][c]-q[i][c] == l-i))
         {
             return false;
         }
