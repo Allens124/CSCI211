@@ -53,10 +53,12 @@ void eightQueens(int q[8][8], int l, int c)
     if (l == 8)
     {
         print(q);
+        return;
     }
     if (c == 8)
     {
         eightQueens(q, l+1, 0);
+        return;
     }
     for (int i = 0; i < 8; i++)
     {
@@ -65,6 +67,7 @@ void eightQueens(int q[8][8], int l, int c)
         {
             eightQueens(q, l, c+1);
         }
+        return;
     }
 }
 
