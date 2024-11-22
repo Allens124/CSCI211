@@ -50,6 +50,7 @@ void print(int q[8][8])
 
 void eightQueens(int q[8][8], int l, int c)
 {
+    cout << "Layer " << l << " Column " << c << endl;
     if (l == 8)
     {
         print(q);
@@ -57,7 +58,6 @@ void eightQueens(int q[8][8], int l, int c)
     }
     if (c == 8)
     {
-        cout << "Next layer" << endl;
         eightQueens(q, l+1, 0);
         return;
     }
@@ -68,7 +68,6 @@ void eightQueens(int q[8][8], int l, int c)
         {
             eightQueens(q, l, c+1);
         }
-        return;
     }
 }
 
