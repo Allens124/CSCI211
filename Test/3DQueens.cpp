@@ -18,6 +18,10 @@ void eightQueens(int q[8][8], int l, int c)
     {
         eightQueens(q, l+1, 0);
     }
+    for (int i = 0; i < 8; i++)
+    {
+        q[l][c] = i;
+    }
 }
 
 int main()
