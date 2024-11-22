@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
+int solCount = 0;
 
 int main()
 {
