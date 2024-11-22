@@ -6,6 +6,13 @@ int solCount = 0;
 
 bool ok(int q[8][8], int l, int c)
 {
+    for (int i = 0; i < c; i++)
+    {
+        if (q[l][c] == q[l][i])
+        {
+            return false;
+        }
+    }
     return true;
 }
 
