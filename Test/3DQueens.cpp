@@ -57,6 +57,7 @@ void eightQueens(int q[8][8], int l, int c)
     }
     if (c == 8)
     {
+        cout << "Next layer" << endl;
         eightQueens(q, l+1, 0);
         return;
     }
