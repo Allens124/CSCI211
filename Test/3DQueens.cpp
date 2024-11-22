@@ -30,6 +30,7 @@ void print(int q[8][8])
             }
             cout << "\n";
         }
+        cout << "\n";
     }
 }
 
