@@ -14,6 +14,10 @@ void eightQueens(int q[8][8], int l, int c)
     {
         print(q);
     }
+    if (c == 8)
+    {
+        eightQueens(q, l+1, 0);
+    }
 }
 
 int main()
