@@ -15,7 +15,7 @@ bool ok(int q[8][8], int l, int c)
     }
     for (int i = 0; i < c; i++)
     {
-        if (q[l][c] == q[l][i])
+        if (q[l][c] == q[l][i] || abs(q[l][c]-q[l][i]) == c-i)
         {
             return false;
         }
