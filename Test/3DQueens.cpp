@@ -4,15 +4,15 @@ using namespace std;
 
 int solCount = 0;
 
-bool ok(int q[8][8], int l, int c)
+bool ok(int q[5][5], int l, int c)
 {
-    /*for (int i = 0; i < l; i++)
+    for (int i = 0; i < l; i++)
     {
-        if (q[l][c] == q[i][c] || abs(q[l][c]-q[i][c]) == l-i)
+        if (q[l][c] == q[i][c])
         {
             return false;
         }
-    }*/
+    }
     for (int i = 0; i < c; i++)
     {
         if (q[l][c] == q[l][i] || abs(q[l][c]-q[l][i]) == c-i)
@@ -23,15 +23,15 @@ bool ok(int q[8][8], int l, int c)
     return true;
 }
 
-void print(int q[8][8])
+void print(int q[5][5])
 {
     cout << "Solution " << ++solCount << ":\n";
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < 5; i++)
     {
         cout << "Layer " << i << ":\n";
-        for (int j = 0; j < 8; j++)
+        for (int j = 0; j < 5; j++)
         {
-            for (int k = 0; k < 8; k++)
+            for (int k = 0; k < 5; k++)
             {
                 if (q[i][k] == j)
                 {
@@ -48,19 +48,19 @@ void print(int q[8][8])
     }
 }
 
-void eightQueens(int q[8][8], int l, int c)
+void eightQueens(int q[5][5], int l, int c)
 {
-    if (c == 8)
+    if (l == 5)
     {
         print(q);
         return;
     }
-    /*if (c == 8)
+    if (c == 5)
     {
         eightQueens(q, l+1, 0);
         return;
-    }*/
-    for (int i = 0; i < 8; i++)
+    }
+    for (int i = 0; i < 5; i++)
     {
         q[l][c] = i;
         if (ok(q, l, c))
@@ -72,7 +72,7 @@ void eightQueens(int q[8][8], int l, int c)
 
 int main()
 {
-    int q[8][8] = {0};
+    int q[5][5] = {0};
     int l = 0, c = 0;
     eightQueens(q, l, c);
     return 0;
