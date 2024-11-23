@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool ok(char b[], int c, int cap)
+bool ok(char** b, int c, int cap)
 {
     for (int i = 0; i < c; i++)
     {
@@ -13,7 +13,7 @@ bool ok(char b[], int c, int cap)
     return true;
 }
 
-void print(char b[], int cap)
+void print(char** b, int cap)
 {
     for (int i = 0; i < cap; i++)
     {
@@ -21,7 +21,7 @@ void print(char b[], int cap)
     }
 }
 
-void latinSquare(char b[], int c, int cap)
+void latinSquare(char** b, int c, int cap)
 {
     if (c == cap)
     {
