@@ -38,6 +38,6 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> cap;
     }
-    char c[cap];
+    char b[cap];
     return 0;
 }
