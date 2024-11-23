@@ -8,6 +8,11 @@ bool ok(char b[], int c, int cap)
 
 void print(char b[], int cap)
 {
+
+}
+
+void latinSquare(char b[], int c, int cap)
+{
     
 }
 
