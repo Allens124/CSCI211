@@ -4,7 +4,7 @@ using namespace std;
 
 int solCount = 0;
 
-bool ok(int q[cap][cap], int l, int c)
+bool ok(int q[5][5], int l, int c)
 {
     for (int i = 0; i < l; i++)
     {
@@ -23,7 +23,7 @@ bool ok(int q[cap][cap], int l, int c)
     return true;
 }
 
-/*void print(int q[5][5])
+void print(int q[5][5])
 {
     cout << "Solution " << ++solCount << ":\n";
     for (int i = 0; i < 5; i++)
@@ -46,21 +46,21 @@ bool ok(int q[cap][cap], int l, int c)
         }
         cout << "\n";
     }
-}*/
+}
 
-void nQueens(int q[cap][cap], int l, int c, int cap)
+void nQueens(int q[5][5], int l, int c)
 {
-    if (l == cap)
+    if (l == 5)
     {
-        solCount++;
+        print(q);
         return;
     }
-    if (c == cap)
+    if (c == 5)
     {
         nQueens(q, l+1, 0);
         return;
     }
-    for (int i = 0; i < cap; i++)
+    for (int i = 0; i < 5; i++)
     {
         q[l][c] = i;
         if (ok(q, l, c))
@@ -72,20 +72,7 @@ void nQueens(int q[cap][cap], int l, int c, int cap)
 
 int main()
 {
-    int cap;
-    cout << "How many queens? ";
-    cin >> cap;
-    while (cap < 1)
-    {
-        cout << "Invalid input! Try again: ";
-        cin >> cap;
-    }
-    for (int i = 0; i < cap+1; i++)
-    {
-        int q[cap][cap] = {0};
-        nQueens(q, 0, 0, cap);
-        cout << "There are " << solCount << " solutions to the " << i << "x" << i << " queens problem\n";
-        solCount = 0;
-    }
+    int q[5][5] = {0};
+    nQueens(q, 0, 0);
     return 0;
 }
