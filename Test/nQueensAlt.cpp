@@ -16,7 +16,7 @@ bool ok(int b[], int c)
     return true;
 }
 
-void eightQueens(int b[], int c, int cap)
+void nQueens(int b[], int c, int cap)
 {
     if (c == cap)
     {
@@ -28,7 +28,7 @@ void eightQueens(int b[], int c, int cap)
         b[c] = i;
         if (ok(b, c))
         {
-            eightQueens(b, c+1, cap);
+            nQueens(b, c+1, cap);
         }
     }
 }
@@ -46,7 +46,7 @@ int main()
     for (int i = 1; i < n+1; i++)
     {
         int q[i];
-        eightQueens(q, 0, i);
+        nQueens(q, 0, i);
         cout << "There are " << solCount << " solutions to the " << i << " queens problem\n";
         solCount = 0;
     }
