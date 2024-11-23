@@ -15,7 +15,10 @@ bool ok(char b[], int c, int cap)
 
 void print(char b[], int cap)
 {
-
+    for (int i = 0; i < cap; i++)
+    {
+        //code;
+    }
 }
 
 void latinSquare(char b[], int c, int cap)
