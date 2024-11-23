@@ -11,6 +11,5 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> cap;
     }
-    for (int i = 1; i < cap+1; i++)
     return 0;
 }
