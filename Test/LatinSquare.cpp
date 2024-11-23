@@ -24,6 +24,7 @@ bool ok(char** b, int c, int r, int cap)
 
 void print(char** b, int cap)
 {
+    cout << "Solution " << ++solCount << ":\n";
     for (int i = 0; i < cap; i++)
     {
         for (int j = 0; j < cap; j++)
