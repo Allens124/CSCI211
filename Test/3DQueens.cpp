@@ -6,13 +6,13 @@ int solCount = 0;
 
 bool ok(int q[8][8], int l, int c)
 {
-    for (int i = 0; i < l; i++)
+    /*for (int i = 0; i < l; i++)
     {
-        if (q[l][c] == q[i][c] /*|| abs(q[l][c]-q[i][c]) == l-i*/)
+        if (q[l][c] == q[i][c] || abs(q[l][c]-q[i][c]) == l-i)
         {
             return false;
         }
-    }
+    }*/
     for (int i = 0; i < c; i++)
     {
         if (q[l][c] == q[l][i] || abs(q[l][c]-q[l][i]) == c-i)
@@ -50,17 +50,16 @@ void print(int q[8][8])
 
 void eightQueens(int q[8][8], int l, int c)
 {
-    cout << "Layer " << l << " Column " << c << endl;
-    if (l == 8)
+    if (c == 8)
     {
         print(q);
         return;
     }
-    if (c == 8)
+    /*if (c == 8)
     {
         eightQueens(q, l+1, 0);
         return;
-    }
+    }*/
     for (int i = 0; i < 8; i++)
     {
         q[l][c] = i;
