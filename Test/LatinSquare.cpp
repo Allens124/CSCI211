@@ -5,7 +5,7 @@ bool ok(char** b, int c, int r, int cap)
 {
     for (int i = 0; i < c; i++)
     {
-        if (b[r][c] == b[r][i] || b[r][c] == b[i][c])
+        if (b[r][c] == b[r][i])
         {
             return false;
         }
