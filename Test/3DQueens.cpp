@@ -23,7 +23,7 @@ bool ok(int q[5][5], int l, int c)
     return true;
 }
 
-void print(int q[5][5])
+/*void print(int q[5][5])
 {
     cout << "Solution " << ++solCount << ":\n";
     for (int i = 0; i < 5; i++)
@@ -46,9 +46,9 @@ void print(int q[5][5])
         }
         cout << "\n";
     }
-}
+}*/
 
-void eightQueens(int q[5][5], int l, int c)
+void nQueens(int q[5][5], int l, int c)
 {
     if (l == 5)
     {
@@ -57,7 +57,7 @@ void eightQueens(int q[5][5], int l, int c)
     }
     if (c == 5)
     {
-        eightQueens(q, l+1, 0);
+        nQueens(q, l+1, 0);
         return;
     }
     for (int i = 0; i < 5; i++)
@@ -65,20 +65,25 @@ void eightQueens(int q[5][5], int l, int c)
         q[l][c] = i;
         if (ok(q, l, c))
         {
-            eightQueens(q, l, c+1);
+            nQueens(q, l, c+1);
         }
     }
 }
 
 int main()
 {
-    int cap = 0;
+    int cap;
     cout << "How many queens? ";
     cin >> cap;
     while (cap < 1)
     {
         cout << "Invalid input! Try again: ";
         cin >> cap;
+    }
+    for (int i = 0; i < cap+1; i++)
+    {
+        int q[cap][cap] = {0};
+        nQueens(q, 0, 0, cap);
     }
     return 0;
 }
