@@ -52,7 +52,7 @@ void nQueens(int q[cap][cap], int l, int c, int cap)
 {
     if (l == cap)
     {
-        print(q);
+        solCount++;
         return;
     }
     if (c == cap)
@@ -84,6 +84,8 @@ int main()
     {
         int q[cap][cap] = {0};
         nQueens(q, 0, 0, cap);
+        cout << "There are " << solCount << " solutions to the " << i << "x" << i << " queens problem\n";
+        solCount = 0;
     }
     return 0;
 }
