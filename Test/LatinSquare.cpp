@@ -33,6 +33,7 @@ void print(char** b, int cap)
         }
         cout << "\n";
     }
+    cout << "\n";
 }
 
 void latinSquare(char** b, int c, int r, int cap)
