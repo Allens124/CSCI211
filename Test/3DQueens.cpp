@@ -25,7 +25,7 @@ bool ok(int q[5][5], int l, int c)
 
 void print(int q[5][5])
 {
-    cout << "Solution " << ++solCount << ":\n";
+    cout << "Solution " << ++solCount << ":\n\n";
     for (int i = 0; i < 5; i++)
     {
         cout << "Layer " << i+1 << ":\n";
