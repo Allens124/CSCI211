@@ -24,7 +24,11 @@ void print(char** b, int cap)
 {
     for (int i = 0; i < cap; i++)
     {
-        //code;
+        for (int j = 0; j < cap; j++)
+        {
+            cout << b[i][j];
+        }
+        cout << "\n";
     }
 }
 
