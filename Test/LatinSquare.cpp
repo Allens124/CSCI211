@@ -54,5 +54,10 @@ int main()
         b[i] = new char[cap];
     }
     latinSquare(b, 0, cap);
+    for (int i = 0; i < cap; i++)
+    {
+        delete[] b[i];
+    }
+    delete[] b;
     return 0;
 }
