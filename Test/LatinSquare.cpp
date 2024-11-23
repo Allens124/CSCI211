@@ -3,6 +3,13 @@ using namespace std;
 
 bool ok(char b[], int c, int cap)
 {
+    for (int i = 0; i < c; i++)
+    {
+        if (b[c] == b[i])
+        {
+            return false;
+        }
+    }
     return true;
 }
 
@@ -39,5 +46,6 @@ int main()
         cin >> cap;
     }
     char b[cap];
+    latinSquare(b, 0, cap);
     return 0;
 }
