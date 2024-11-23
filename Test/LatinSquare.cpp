@@ -13,7 +13,11 @@ void print(char b[], int cap)
 
 void latinSquare(char b[], int c, int cap)
 {
-    
+    if (c == cap)
+    {
+        print(b, cap);
+        return;
+    }
 }
 
 int main()
