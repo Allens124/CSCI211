@@ -21,6 +21,10 @@ void latinSquare(char b[], int c, int cap)
     for (int i = 0; i < cap; i++)
     {
         b[i] = 'A'+i;
+        if (ok(b, c, cap))
+        {
+            latinSquare(b, c+1, cap);
+        }
     }
 }
 
