@@ -28,7 +28,7 @@ void print(int q[5][5])
     cout << "Solution " << ++solCount << ":\n";
     for (int i = 0; i < 5; i++)
     {
-        cout << "Layer " << i << ":\n";
+        cout << "Layer " << i+1 << ":\n";
         for (int j = 0; j < 5; j++)
         {
             for (int k = 0; k < 5; k++)
@@ -72,8 +72,13 @@ void eightQueens(int q[5][5], int l, int c)
 
 int main()
 {
-    int q[5][5] = {0};
-    int l = 0, c = 0;
-    eightQueens(q, l, c);
+    int cap = 0;
+    cout << "How many queens? ";
+    cin >> cap;
+    while (cap < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> cap;
+    }
     return 0;
 }
