@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+int solCount = 0;
+
 bool ok(char** b, int c, int r, int cap)
 {
     for (int i = 0; i < c; i++)
