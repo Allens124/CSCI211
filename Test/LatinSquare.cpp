@@ -5,7 +5,7 @@ bool ok(char** b, int c, int r, int cap)
 {
     for (int i = 0; i < c; i++)
     {
-        if (b[c] == b[i])
+        if (b[r][c] == b[r][i] || b[r][c] == b[i][c])
         {
             return false;
         }
@@ -23,9 +23,14 @@ void print(char** b, int cap)
 
 void latinSquare(char** b, int c, int r, int cap)
 {
-    if (c == cap)
+    if (r == cap)
     {
         print(b, cap);
+        return;
+    }
+    if (c == cap)
+    {
+        latinSquare(b, 0, r+1, cap);
         return;
     }
     for (int i = 0; i < cap; i++)
