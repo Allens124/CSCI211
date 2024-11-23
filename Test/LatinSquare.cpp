@@ -10,6 +10,10 @@ bool ok(char** b, int c, int r, int cap)
             return false;
         }
     }
+    for (int i = 0; i < r; i++)
+    {
+        
+    }
     return true;
 }
 
