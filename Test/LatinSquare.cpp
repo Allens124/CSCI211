@@ -11,5 +11,6 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> cap;
     }
+    char c[cap];
     return 0;
 }
