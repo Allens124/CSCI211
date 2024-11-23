@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+bool ok(char b, int c, int cap)
+{
+    return true;
+}
+
 int main()
 {
     int cap;
