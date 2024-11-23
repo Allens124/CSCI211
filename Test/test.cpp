@@ -1,12 +1,26 @@
 #include <iostream>
 using namespace std;
 
+void clear()
+{
+    for (int i = 0; i < 10; i++)
+    {
+        cout << char(8);
+    }
+}
+
+void frame()
+{
+    for (int i = 0; i < 10; i++)
+    {
+        cout << '*';
+    }
+}
+
 int main()
 {
-    for (char c = 'a'; c <= 'z'; c++)
-    {
-        cout << c << char(8);
-    }
-    cout << "Hello World!" << endl;
+    frame();
+    clear();
+    cout << endl;
     return 0;
 }
