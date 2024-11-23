@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool ok(char** b, int c, int cap)
+bool ok(char** b, int c, int r, int cap)
 {
     for (int i = 0; i < c; i++)
     {
@@ -21,7 +21,7 @@ void print(char** b, int cap)
     }
 }
 
-void latinSquare(char** b, int c, int cap)
+void latinSquare(char** b, int c, int r, int cap)
 {
     if (c == cap)
     {
@@ -31,9 +31,9 @@ void latinSquare(char** b, int c, int cap)
     for (int i = 0; i < cap; i++)
     {
         b[i] = 'A'+i;
-        if (ok(b, c, cap))
+        if (ok(b, c, r, cap))
         {
-            latinSquare(b, c+1, cap);
+            latinSquare(b, c+1, r, cap);
         }
     }
 }
@@ -53,7 +53,7 @@ int main()
     {
         b[i] = new char[cap];
     }
-    latinSquare(b, 0, cap);
+    latinSquare(b, 0, 0, cap);
     for (int i = 0; i < cap; i++)
     {
         delete[] b[i];
