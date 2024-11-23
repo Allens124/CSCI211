@@ -3,13 +3,14 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int cap;
     cout << "How many rows and columns? ";
-    cin >> n;
-    if (n < 1)
+    cin >> cap;
+    if (cap < 1)
     {
         cout << "Invalid input! Try again: ";
-        cin >> n;
+        cin >> cap;
     }
+    for (int i = 1; i < cap+1; i++)
     return 0;
 }
