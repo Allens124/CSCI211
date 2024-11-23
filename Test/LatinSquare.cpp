@@ -48,7 +48,11 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> cap;
     }
-    char b[cap];
+    char** b = new char*[cap];
+    for (int i = 0; i < cap; i++)
+    {
+        char[i] = new char[cap];
+    }
     latinSquare(b, 0, cap);
     return 0;
 }
