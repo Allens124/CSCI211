@@ -4,7 +4,7 @@ using namespace std;
 
 int solCount = 0;
 
-bool ok(int q[5][5], int l, int c)
+bool ok(int q[cap][cap], int l, int c)
 {
     for (int i = 0; i < l; i++)
     {
@@ -48,19 +48,19 @@ bool ok(int q[5][5], int l, int c)
     }
 }*/
 
-void nQueens(int q[5][5], int l, int c)
+void nQueens(int q[cap][cap], int l, int c, int cap)
 {
-    if (l == 5)
+    if (l == cap)
     {
         print(q);
         return;
     }
-    if (c == 5)
+    if (c == cap)
     {
         nQueens(q, l+1, 0);
         return;
     }
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < cap; i++)
     {
         q[l][c] = i;
         if (ok(q, l, c))
