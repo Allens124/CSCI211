@@ -18,9 +18,9 @@ void latinSquare(char b[], int c, int cap)
         print(b, cap);
         return;
     }
-    for (char i = 'A'; i < 'A'+cap; i++)
+    for (int i = 0; i < cap; i++)
     {
-        
+        b[]
     }
 }
 
