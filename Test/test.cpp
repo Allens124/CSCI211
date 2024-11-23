@@ -3,6 +3,10 @@ using namespace std;
 
 int main()
 {
-    cout << "a" << char(8) << "\n";
+    for (char c = 'a'; c <= 'z'; c++)
+    {
+        cout << c << char(8);
+    }
+    cout << "Hello World!" << endl;
     return 0;
 }

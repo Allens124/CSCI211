@@ -24,7 +24,7 @@ void printMessage(string str)
     {
         for (int j = 0; j < 10000; j++)
         {
-            for (char c = '!'; c < '~'; c++)
+            for (char c = '!'; c <= '~'; c++)
             {
                 cout << c << char(8);
             }
