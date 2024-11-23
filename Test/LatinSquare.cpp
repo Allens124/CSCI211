@@ -12,7 +12,10 @@ bool ok(char** b, int c, int r, int cap)
     }
     for (int i = 0; i < r; i++)
     {
-        
+        if (b[r][c] == b[i][c])
+        {
+            return false;
+        }
     }
     return true;
 }
