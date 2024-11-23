@@ -20,7 +20,7 @@ void latinSquare(char b[], int c, int cap)
     }
     for (int i = 0; i < cap; i++)
     {
-        b[]
+        b[i] = 'A'+i;
     }
 }
 
