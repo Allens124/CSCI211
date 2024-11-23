@@ -49,7 +49,7 @@ void latinSquare(char** b, int c, int r, int cap)
     }
     for (int i = 0; i < cap; i++)
     {
-        b[r][i] = 'A'+i;
+        b[r][c] = 'A'+i;
         if (ok(b, c, r, cap))
         {
             latinSquare(b, c+1, r, cap);
