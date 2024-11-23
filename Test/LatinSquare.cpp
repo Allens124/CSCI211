@@ -6,6 +6,11 @@ bool ok(char b[], int c, int cap)
     return true;
 }
 
+void print(char b[], int cap)
+{
+    
+}
+
 int main()
 {
     int cap;
