@@ -18,6 +18,11 @@ bool ok(int** s, int cap)
 
 void print(int** s)
 {
+
+}
+
+void magicSquare(int** s, int cap)
+{
     
 }
 
