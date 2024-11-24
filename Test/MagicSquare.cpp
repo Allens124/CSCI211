@@ -36,5 +36,10 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> cap;
     }
+    int** s = new int*[cap];
+    for (int i = 0; i < cap; i++)
+    {
+        s[i] = new int[cap];
+    }
     return 0;
 }
