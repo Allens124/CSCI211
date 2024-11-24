@@ -42,5 +42,10 @@ int main()
         s[i] = new int[cap];
     }
     magicSquare(s, cap);
+    for (int i = 0; i < cap; i++)
+    {
+        delete[] s[i];
+    }
+    delete[] s;
     return 0;
 }
