@@ -30,7 +30,10 @@ void magicSquare(int** s, int r, int cap)
     }
     for (int i = 0; i < cap; i++)
     {
-        for (int j = 0; j < )
+        for (int j = 1; j < cap*cap+1; j++)
+        {
+            
+        }
     }
 }
 
