@@ -16,6 +16,11 @@ bool ok(int** s, int cap)
     return true;
 }
 
+void print(int** s)
+{
+    
+}
+
 int main()
 {
     //code;
