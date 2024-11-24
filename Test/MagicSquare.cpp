@@ -41,5 +41,6 @@ int main()
     {
         s[i] = new int[cap];
     }
+    magicSquare(s, cap);
     return 0;
 }
