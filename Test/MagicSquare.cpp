@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+int solSum = 0;
+
 int magicSum(int cap)
 {
     int sum = 0;
