@@ -23,11 +23,13 @@ void print(int** s)
 
 void magicSquare(int** s, int cap)
 {
-    
+
 }
 
 int main()
 {
-    //code;
+    int cap;
+    cout << "How many rows and columns? ";
+    cin >> cap;
     return 0;
 }
