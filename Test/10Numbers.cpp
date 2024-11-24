@@ -47,7 +47,7 @@ bool ok(int cross[], int cap)
     return true;
 }
 
-void numbers(int cross[], int cap)
+void tenNumbers(int cross[], int cap)
 {
     if (cap == 10)
     {
@@ -59,7 +59,7 @@ void numbers(int cross[], int cap)
         cross[cap] = i;
         if (ok(cross, cap))
         {
-            numbers(cross, cap+1);
+            tenNumbers(cross, cap+1);
         }
     }
 }
@@ -68,6 +68,6 @@ int main()
 {
     int sol[10];
     int c = 0;
-    numbers(sol, c);
+    tenNumbers(sol, c);
     return 0;
 }
