@@ -28,11 +28,16 @@ void magicSquare(int** s, int r, int c, int cap)
         print(s);
         return;
     }
-    for (int i = 0; i < cap; i++)
+    if (c == cap)
     {
-        for (int j = 1; j < cap*cap+1; j++)
+
+    }
+    for (int i = 1; i < cap*cap+1; i++)
+    {
+        s[r][c] = i;
+        if (ok(s, r, c, cap))
         {
-            //code;
+            magicSquare(s, r, c+1, cap);
         }
     }
 }
