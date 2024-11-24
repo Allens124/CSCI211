@@ -16,14 +16,17 @@ bool ok(int** s, int r, int cap)
     return true;
 }
 
-void print(int** s)
+void print(int** s, int cap)
 {
 
 }
 
 void magicSquare(int** s, int r, int cap)
 {
-
+    if (r == cap)
+    {
+        print(s);
+    }
 }
 
 int main()
