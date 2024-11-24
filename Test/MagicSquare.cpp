@@ -11,6 +11,11 @@ int magicSum(int cap)
     return sum/cap;
 }
 
+bool ok(int** s, int cap)
+{
+    return true;
+}
+
 int main()
 {
     //code;
