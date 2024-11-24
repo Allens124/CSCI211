@@ -11,7 +11,7 @@ int magicSum(int cap)
     return sum/cap;
 }
 
-bool ok(int** s, int r, int cap)
+bool ok(int** s, int r, int c, int cap)
 {
     return true;
 }
@@ -21,7 +21,7 @@ void print(int** s, int cap)
 
 }
 
-void magicSquare(int** s, int r, int cap)
+void magicSquare(int** s, int r, int c, int cap)
 {
     if (r == cap)
     {
@@ -32,7 +32,7 @@ void magicSquare(int** s, int r, int cap)
     {
         for (int j = 1; j < cap*cap+1; j++)
         {
-            
+            //code;
         }
     }
 }
@@ -52,7 +52,7 @@ int main()
     {
         s[i] = new int[cap];
     }
-    magicSquare(s, 0, cap);
+    magicSquare(s, 0, 0, cap);
     for (int i = 0; i < cap; i++)
     {
         delete[] s[i];
