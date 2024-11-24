@@ -31,5 +31,10 @@ int main()
     int cap;
     cout << "How many rows and columns? ";
     cin >> cap;
+    while (cap < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> cap;
+    }
     return 0;
 }
