@@ -44,7 +44,8 @@ void magicSquare(int** s, int r, int c, int cap)
     }
     if (c == cap)
     {
-        
+        magicSquare(s, r+1, 0, cap);
+        return;
     }
     for (int i = 1; i < cap*cap+1; i++)
     {
