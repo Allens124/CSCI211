@@ -74,6 +74,7 @@ int main()
     {
         s[i] = new int[cap];
     }
+    solSum = magicSum(cap);
     magicSquare(s, 0, 0, cap);
     for (int i = 0; i < cap; i++)
     {
