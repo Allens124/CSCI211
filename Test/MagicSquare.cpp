@@ -13,6 +13,20 @@ int magicSum(int cap)
 
 bool ok(int** s, int r, int c, int cap)
 {
+    for (int i = 0; i < c; i++)
+    {
+        if (s[r][c] == s[r][i])
+        {
+            return false;
+        }
+    }
+    for (int i = 0; i < r; i++)
+    {
+        if (s[r][c] == s[i][c])
+        {
+            return false;
+        }
+    }
     return true;
 }
 
@@ -30,7 +44,7 @@ void magicSquare(int** s, int r, int c, int cap)
     }
     if (c == cap)
     {
-
+        
     }
     for (int i = 1; i < cap*cap+1; i++)
     {
