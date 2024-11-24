@@ -4,7 +4,7 @@ using namespace std;
 int magicSum(int cap)
 {
     int sum = 0;
-    for (int i = 1; i < cap+1; i++)
+    for (int i = 1; i < cap*cap+1; i++)
     {
         sum += i;
     }
@@ -26,6 +26,11 @@ void magicSquare(int** s, int r, int cap)
     if (r == cap)
     {
         print(s);
+        return;
+    }
+    for (int i = 0; i < cap; i++)
+    {
+        for (int j = 0; j < )
     }
 }
 
