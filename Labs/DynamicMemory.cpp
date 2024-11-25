@@ -37,6 +37,7 @@ int main()
     {
         delete[] arr[i];
     }
+    // Release the memory from the 2D array
     delete[] arr;
     return 0;
 }
