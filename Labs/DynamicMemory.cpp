@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 {
+    // Declare an integer that stores the size of an n*n array
     int n;
     cout << "Enter the size of a 2D array: ";
     cin >> n;
