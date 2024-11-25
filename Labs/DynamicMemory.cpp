@@ -21,16 +21,14 @@ int main()
         arr[i] = new int[n];
     }
     // Declare an integer that stores the first value to be stored in the 2D array
-    int fill = n*n;
+    int fill = 0;
     // Using a nested for loop, fill each element of the 2D array with fill and output the value of the element
-    for (int i = 0; i < n; i++)
+    for (int i = n-1; i > -1; i--)
     {
-        for (int j = 0; j < n; j++)
+        for (int j = n-1; j > -1; j--)
         {
-            arr[i][j] = fill--;
-            cout << arr[i][j] << "\t";
+            arr[i][j] = ++fill;
         }
-        cout << endl;
     }
     // Using a for loop, release memory from each row of the 2D array
     for (int i = 0; i < n; i++)
