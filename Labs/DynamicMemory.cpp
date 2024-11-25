@@ -15,11 +15,12 @@ int main()
     }
     // Declare and dynamically allocate memory to a 2D array
     int** arr = new int*[n];
+    // Using a for loop, dynamically allocate memory to each row of the 2D array
     for (int i = 0; i < n; i++)
     {
         arr[i] = new int[n];
     }
-    // Declare an integer that stores the first value to be stored in the n*n array
+    // Declare an integer that stores the first value to be stored in the 2D array
     int fill = n*n;
     for (int i = 0; i < n; i++)
     {
