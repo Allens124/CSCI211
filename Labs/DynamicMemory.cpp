@@ -22,6 +22,7 @@ int main()
     }
     // Declare an integer that stores the first value to be stored in the 2D array
     int fill = n*n;
+    // Using a nested for loop, fill each element of the 2D array with fill and output the value of the element
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
