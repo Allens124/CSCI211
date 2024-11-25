@@ -7,7 +7,7 @@ int main()
     // Prompt the user to enter the size of the n*n array
     cout << "Enter the size of a 2D array: ";
     cin >> n;
-    // While the value of n is invalid, continue to prompt the user
+    // While n is invalid, continue to prompt the user 
     while (n < 1)
     {
         cout << "Invalid input! Try again: ";
