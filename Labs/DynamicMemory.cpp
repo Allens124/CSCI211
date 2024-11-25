@@ -4,6 +4,7 @@ int main()
 {
     // Declare an integer that stores the size of an n*n array
     int n;
+    // Prompt the user to enter the size of the n*n array
     cout << "Enter the size of a 2D array: ";
     cin >> n;
     while (n < 1)
