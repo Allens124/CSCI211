@@ -32,6 +32,7 @@ int main()
         }
         cout << endl;
     }
+    // Using a for loop, release memory from each row of the 2D array
     for (int i = 0; i < n; i++)
     {
         delete[] arr[i];
