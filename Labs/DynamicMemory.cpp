@@ -30,6 +30,14 @@ int main()
             arr[i][j] = fill++;
         }
     }
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cout << arr[i][j] << "\t";
+        }
+        cout << "\n";
+    }
     // Using a for loop, release memory from each row of the 2D array
     for (int i = 0; i < n; i++)
     {
