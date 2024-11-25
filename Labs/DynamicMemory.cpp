@@ -21,13 +21,13 @@ int main()
         arr[i] = new int[n];
     }
     // Declare an integer that stores the first value to be stored in the 2D array
-    int fill = 0;
+    int fill = 1;
     // Using a nested for loop, fill each element of the 2D array with fill and output the value of the element
     for (int i = n-1; i > -1; i--)
     {
         for (int j = n-1; j > -1; j--)
         {
-            arr[i][j] = ++fill;
+            arr[i][j] = fill++;
         }
     }
     // Using a for loop, release memory from each row of the 2D array
