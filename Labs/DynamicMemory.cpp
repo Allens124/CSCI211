@@ -30,6 +30,7 @@ int main()
             arr[i][j] = fill++;
         }
     }
+    // Using a nested for loop, output each element of the 2D array
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
