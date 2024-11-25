@@ -21,7 +21,7 @@ int main()
         for (int j = 0; j < n; j++)
         {
             arr[i][j] = fill--;
-            cout << arr[i][j];
+            cout << arr[i][j] << "\t";
         }
         cout << endl;
     }
