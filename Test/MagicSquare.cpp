@@ -2,6 +2,7 @@
 using namespace std;
 
 int solSum = 0;
+int solCount = 0;
 
 int magicSum(int cap)
 {
@@ -59,12 +60,13 @@ bool ok(int** s, int r, int c, int cap)
     }
     if (c == cap-1 && r == cap-1)
     {
-        int sum = 0;
+        int sum1 = 0, sum2 = 0;
         for (int i = 0; i < cap; i++)
         {
-            sum += s[i][i];
+            sum1 += s[i][i];
+            sum2 += s[i][cap-i-1];
         }
-        if (sum != solSum)
+        if (sum1 != solSum || sum2 != solSum)
         {
             return false;
         }
