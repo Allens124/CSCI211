@@ -31,7 +31,15 @@ bool ok(int** s, int r, int c, int cap)
     }
     if (c == cap-1)
     {
-        
+        int sum = 0;
+        for (int i = 0; i < cap; i++)
+        {
+            sum += s[r][i];
+        }
+        if (sum != solSum)
+        {
+            return false;
+        }
     }
     return true;
 }
