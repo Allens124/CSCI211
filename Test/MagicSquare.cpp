@@ -53,6 +53,18 @@ bool ok(int** s, int r, int c, int cap)
             return false;
         }
     }
+    if (c == cap-1 && r == cap-1)
+    {
+        int sum = 0;
+        for (int i = 0; i < cap; i++)
+        {
+            sum += s[i][i];
+        }
+        if (sum != solSum)
+        {
+            return false;
+        }
+    }
     return true;
 }
 
