@@ -29,6 +29,10 @@ bool ok(int** s, int r, int c, int cap)
             return false;
         }
     }
+    if (c == cap-1)
+    {
+        
+    }
     return true;
 }
 
