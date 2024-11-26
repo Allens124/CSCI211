@@ -21,9 +21,13 @@ bool ok(int** s, int r, int c, int cap)
         {
             return false;
         }
-        for (int j = 0; j < c; j++)
+        for (int j = 0; j < r; j++)
         {
-            if (s[r][c] == s[i][j])
+            if (s[r][c] == s[j][c])
+            {
+                return false;
+            }
+            if (s[r][c] == s[j][i])
             {
                 return false;
             }
