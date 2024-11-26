@@ -46,6 +46,7 @@ bool ok(int** s, int r, int c, int cap)
 
 void print(int** s, int cap)
 {
+    cout << "Solution:\n";
     for (int i = 0; i < cap; i++)
     {
         for (int j = 0; j < cap; j++)
