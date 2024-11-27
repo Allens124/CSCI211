@@ -2,6 +2,6 @@
 using namespace std;
 int main()
 {
-    // code;
+    int arr[3][3] = {0};
     return 0;
 }
