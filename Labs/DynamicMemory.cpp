@@ -13,7 +13,7 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
-    // Declare and dynamically allocate memory to a 2D array
+    // Declare and dynamically allocate memory to the 2D array
     int** arr = new int*[n];
     // Using a for loop, dynamically allocate memory to each row of the 2D array
     for (int i = 0; i < n; i++)
