@@ -12,6 +12,8 @@ int combination(int x, int y)
 
 int main()
 {
-    //code;
+    int r, c;
+    cout << "Enter the number of rows: ";
+    cin >> r;
     return 0;
 }
