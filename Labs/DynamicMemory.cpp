@@ -20,8 +20,6 @@ int main()
     {
         arr[i] = new int[n];
     }
-    // Declare an integer that stores the first value to be stored in the 2D array
-    int fill = 1;
     // Using a nested for loop, fill each element of the 2D array with fill
     for (int i = 0; i < n*n; i++)
     {
