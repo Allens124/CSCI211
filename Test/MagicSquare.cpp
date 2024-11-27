@@ -34,6 +34,13 @@ bool ok(int** s, int r, int c, int cap)
             }
         }
     }*/
+    for (int i = 0; i < cap*cap; i++)
+    {
+        if (*(*(s+r)+c) == *(*(s)+i))
+        {
+            return false;
+        }
+    }
     if (c == cap-1)
     {
         int sum = 0;
