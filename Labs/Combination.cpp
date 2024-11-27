@@ -20,5 +20,7 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> r;
     }
+    cout << "Enter the number of columns: ";
+    cin >> c;
     return 0;
 }
