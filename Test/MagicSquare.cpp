@@ -16,7 +16,7 @@ int magicSum(int cap)
 
 bool ok(int** s, int r, int c, int cap)
 {
-    for (int i = 0; i < c; i++)
+    /*for (int i = 0; i < c; i++)
     {
         if (s[r][c] == s[r][i])
         {
@@ -33,7 +33,7 @@ bool ok(int** s, int r, int c, int cap)
                 return false;
             }
         }
-    }
+    }*/
     if (c == cap-1)
     {
         int sum = 0;
