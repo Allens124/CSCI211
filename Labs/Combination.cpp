@@ -7,6 +7,7 @@ int combination(int x, int y)
     {
         return 1;
     }
+    return combination(x-1, y)+combination(x, y-1);
 }
 
 int main()
