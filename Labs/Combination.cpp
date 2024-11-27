@@ -15,5 +15,10 @@ int main()
     int r, c;
     cout << "Enter the number of rows: ";
     cin >> r;
+    while (r < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> r;
+    }
     return 0;
 }
