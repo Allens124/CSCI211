@@ -22,5 +22,10 @@ int main()
     }
     cout << "Enter the number of columns: ";
     cin >> c;
+    while (c < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> c;
+    }
     return 0;
 }
