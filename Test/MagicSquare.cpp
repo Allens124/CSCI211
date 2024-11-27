@@ -16,25 +16,7 @@ int magicSum(int cap)
 
 bool ok(int** s, int r, int c, int cap)
 {
-    /*for (int i = 0; i < c; i++)
-    {
-        if (s[r][c] == s[r][i])
-        {
-            return false;
-        }
-        for (int j = 0; j < r; j++)
-        {
-            if (s[r][c] == s[j][c])
-            {
-                return false;
-            }
-            if (s[r][c] == s[j][i])
-            {
-                return false;
-            }
-        }
-    }*/
-    for (int i = 0; i < cap*cap; i++)
+    for (int i = 0; i < cap*r+c; i++)
     {
         if (*(*(s+r)+c) == *(*(s)+i))
         {
