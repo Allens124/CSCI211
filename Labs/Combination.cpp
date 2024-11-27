@@ -27,5 +27,6 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> c;
     }
+    cout << "Number of possible moves: " << combination(r, c) << endl;
     return 0;
 }
