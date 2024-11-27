@@ -25,14 +25,14 @@ int main()
     // Using a nested for loop, fill each element of the 2D array with fill
     for (int i = 0; i < n*n; i++)
     {
-        *(*(arr)+i) = n*n-(i+1);
+        *(*(arr)+i) = n*n-i;
     }
     // Using a nested for loop, output each element of the 2D array
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            cout << arr[i][j] << "\t";
+            cout << *(*(arr+i)+j) << "\t";
         }
         cout << "\n";
     }
