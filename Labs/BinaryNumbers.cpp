@@ -12,7 +12,7 @@ int decimalToBinary(int n)
 
 int binaryToDecimal(int n)
 {
-    if (n < 2)
+    if (n < 10)
     {
         return n;
     }
