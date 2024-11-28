@@ -16,6 +16,7 @@ int binaryToDecimal(int n)
     {
         return n;
     }
+    return 2*binaryToDecimal(n/10)+n%10;
 }
 
 int main()
