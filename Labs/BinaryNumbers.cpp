@@ -7,6 +7,7 @@ int toBinary(int n)
     {
         return n%2;
     }
+    return 10*toBinary(n/2)+n%2;
 }
 
 int main()
