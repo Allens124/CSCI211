@@ -11,6 +11,12 @@ int decimalToBinary(int n)
 }
 
 int binaryToDecimal(int n)
+{
+    if (n < 2)
+    {
+        return n;
+    }
+}
 
 int main()
 {
