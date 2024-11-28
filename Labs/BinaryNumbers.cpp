@@ -10,6 +10,8 @@ int decimalToBinary(int n)
     return 10*decimalToBinary(n/2)+n%2;
 }
 
+int binaryToDecimal(int n)
+
 int main()
 {
     for (int i = 0; i <= 16; i++)
