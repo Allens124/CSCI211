@@ -20,7 +20,7 @@ int main()
     {
         arr[i] = new int[n];
     }
-    // Using a for loop, fill each element of the 2D array with numbers, in decreasing order
+    // Using nested a for loop, fill each element of the 2D array with numbers, in decreasing order
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
