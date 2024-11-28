@@ -23,7 +23,7 @@ int main()
 {
     for (int i = 0; i <= 16; i++)
     {
-        cout << decimalToBinary(i) << endl;
+        cout << binaryToDecimal(decimalToBinary(i)) << endl;
     }
     return 0;
 }
