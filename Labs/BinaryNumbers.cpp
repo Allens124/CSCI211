@@ -12,7 +12,7 @@ int toBinary(int n)
 
 int main()
 {
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i <= 16; i++)
     {
         cout << toBinary(i) << endl;
     }
