@@ -21,9 +21,12 @@ int main()
         arr[i] = new int[n];
     }
     // Using a for loop, fill each element of the 2D array with numbers, in decreasing order
-    for (int i = 0; i < n*n; i++)
+    for (int i = 0; i < n; i++)
     {
-        *(*(arr)+i) = n*n-i;
+        for (int j = 0; j < n; j++)
+        {
+            *(*(arr+i)+j) = n*n-(n*i+j);
+        }
     }
     // Using a nested for loop, output each element of the 2D array
     for (int i = 0; i < n; i++)
