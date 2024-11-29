@@ -46,5 +46,6 @@ int main()
             min = paths[i];
         }
     }
+    cout << "Length of the shortest path: " << min << endl;
     return 0;
 }
