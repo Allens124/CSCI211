@@ -30,6 +30,9 @@ int cost(int r, int c)
     {
         return weight[r][0];
     }
+    int up;
+    int left;
+    int down;
 }
 
 int main()
