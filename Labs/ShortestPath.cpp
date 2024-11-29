@@ -10,6 +10,11 @@ int weight[5][6] =
     {3, 7, 2, 8, 6, 4}
 };
 
+int cost(int r, int c)
+{
+    
+}
+
 int main()
 {
     //code;
