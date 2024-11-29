@@ -38,6 +38,13 @@ int main()
     {
         paths[i] = cost(i, 5);
     }
-
+    int min = paths[0];
+    for (int i = 1; i < 5; i++)
+    {
+        if (paths[i] < min)
+        {
+            min = paths[i];
+        }
+    }
     return 0;
 }
