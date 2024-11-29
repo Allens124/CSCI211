@@ -37,6 +37,7 @@ int main()
     for (int i = 0; i < 5; i++)
     {
         paths[i] = cost(i, 5);
+        cout << paths[i] << endl;
     }
     int min = paths[0];
     for (int i = 1; i < 5; i++)
