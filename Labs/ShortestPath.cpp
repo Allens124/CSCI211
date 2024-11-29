@@ -12,7 +12,16 @@ int weight[5][6] =
 
 int min(int x, int y, int z)
 {
-    
+    int min = x;
+    if (y < min)
+    {
+        y = min;
+    }
+    if (z < min)
+    {
+        z = min;
+    }
+    return min;
 }
 
 int cost(int r, int c)
