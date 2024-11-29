@@ -33,11 +33,25 @@ int cost(int r, int c)
     int up = cost((r-1)%5, c-1)+weight[r][c];
     int left = cost(r, c-1)+weight[r][c];
     int down = cost((r+1)%5, c-1)+weight[r][c];
-    return minimum(up, left, down);
+    int min = up;
+    if (left < min)
+    {
+        left = min;
+    }
+    if (down < min)
+    {
+        down = min;
+    }
+    return min;
 }
 
 int main()
 {
-    //code;
+    int paths[5];
+    for (int i = 0; i < 5; i++)
+    {
+        paths[i] = cost(i, 5);
+    }
+
     return 0;
 }
