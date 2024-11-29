@@ -10,7 +10,7 @@ int weight[5][6] =
     {3, 7, 2, 8, 6, 4}
 };
 
-int min(int x, int y, int z)
+int minimum(int x, int y, int z)
 {
     int min = x;
     if (y < min)
@@ -33,6 +33,7 @@ int cost(int r, int c)
     int up = cost((r-1)%5, c-1)+weight[r][c];
     int left = cost(r, c-1)+weight[r][c];
     int down = cost((r+1)%5, c-1)+weight[r][c];
+    return minimum(up, left, down);
 }
 
 int main()
