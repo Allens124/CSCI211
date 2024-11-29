@@ -31,7 +31,7 @@ int cost(int r, int c)
         return weight[r][0];
     }
     int up = cost((r-1)%5, c-1)+weight[r][c];
-    int left;
+    int left = cost(r, c-1)+weight[r][c];
     int down;
 }
 
