@@ -10,6 +10,11 @@ int weight[5][6] =
     {3, 7, 2, 8, 6, 4}
 };
 
+int min(int x, int y, int z)
+{
+    
+}
+
 int cost(int r, int c)
 {
     if (c == 0)
