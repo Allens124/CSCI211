@@ -10,20 +10,6 @@ int weight[5][6] =
     {3, 7, 2, 8, 6, 4}
 };
 
-int minimum(int x, int y, int z)
-{
-    int min = x;
-    if (y < min)
-    {
-        y = min;
-    }
-    if (z < min)
-    {
-        z = min;
-    }
-    return min;
-}
-
 int cost(int r, int c)
 {
     if (c == 0)
