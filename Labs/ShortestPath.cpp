@@ -12,7 +12,10 @@ int weight[5][6] =
 
 int cost(int r, int c)
 {
-    
+    if (c == 0)
+    {
+        return weight[r][0];
+    }
 }
 
 int main()
