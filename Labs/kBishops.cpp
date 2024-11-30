@@ -18,5 +18,10 @@ int main()
     int n;
     cout << "Enter the dimensions of the board: ";
     cin >> n;
+    while (n < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> n;
+    }
     return 0;
 }
