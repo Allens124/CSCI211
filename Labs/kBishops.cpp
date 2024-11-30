@@ -15,6 +15,6 @@ int kBishops(int q[], int c)
 
 int main()
 {
-    //code;
+    int n;
     return 0;
 }
