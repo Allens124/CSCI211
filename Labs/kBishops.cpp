@@ -16,5 +16,7 @@ int kBishops(int q[], int c)
 int main()
 {
     int n;
+    cout << "Enter the dimensions of the board: ";
+    cin >> n;
     return 0;
 }
