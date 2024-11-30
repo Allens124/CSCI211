@@ -20,9 +20,9 @@ int cost(int r, int c)
     {
         return weight[r][0];
     }
-    int up = cost((r-1)%5, c-1)+weight[r][c];
-    int left = cost(r, c-1)+weight[r][c];
-    int down = cost((r+1)%5, c-1)+weight[r][c];
+    int up = cost((r-1)%5, c-1);
+    int left = cost(r, c-1);
+    int down = cost((r+1)%5, c-1);
     int min = up;
     if (left < min)
     {
@@ -32,7 +32,7 @@ int cost(int r, int c)
     {
         min = down;
     }
-    return min;
+    return min+weight[r][c];
 }
 
 int main()
