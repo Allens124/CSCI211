@@ -23,5 +23,6 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
+    int b[n];
     return 0;
 }
