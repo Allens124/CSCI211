@@ -16,11 +16,12 @@ bool ok(int b[], int c)
     return true;
 }
 
-int nQueens(int b[], int c, int cap)
+void nQueens(int b[], int c, int cap)
 {
     if (c == cap)
     {
-        return ++solCount;
+        solCount++;
+        return;
     }
     for (int i = 0; i < cap; i++)
     {
@@ -30,7 +31,6 @@ int nQueens(int b[], int c, int cap)
             nQueens(b, c+1, cap);
         }
     }
-    return solCount;
 }
 
 int main()
@@ -46,7 +46,8 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         int q[i];
-        cout << "There are " << nQueens(q, 0, i) << " solutions to the " << i << " queens problem\n";
+        nQueens(q, 0, i);
+        cout << "There are " << solCount << " solutions to the " << i << " queens problem\n";
         solCount = 0;
     }
     return 0;
