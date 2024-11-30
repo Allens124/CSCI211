@@ -13,11 +13,11 @@ int weight[5][6] =
 int minimum(int x, int y, int z)
 {
     int min = x;
-    if (min < y)
+    if (y < min)
     {
         min = y;
     }
-    if (min < z)
+    if (z < min)
     {
         min = z;
     }
