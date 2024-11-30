@@ -3,6 +3,11 @@ using namespace std;
 
 bool ok(int q[], int c)
 {
+
+}
+
+int kBishops(int q[], int c)
+{
     
 }
 
