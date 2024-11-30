@@ -43,7 +43,7 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
-    for (int i = 1; i < n+1; i++)
+    for (int i = 1; i <= n; i++)
     {
         int q[i];
         cout << "There are " << nQueens(q, 0, i) << " solutions to the " << i << " queens problem\n";
