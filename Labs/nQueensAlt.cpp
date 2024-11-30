@@ -2,6 +2,8 @@
 #include <cmath>
 using namespace std;
 
+int solCount = 0;
+
 bool ok(int b[], int c)
 {
     for (int i = 0; i < c; i++)
@@ -16,7 +18,6 @@ bool ok(int b[], int c)
 
 int nQueens(int b[], int c, int cap)
 {
-    static int solCount = 0;
     if (c == cap)
     {
         return ++solCount;
@@ -46,6 +47,7 @@ int main()
     {
         int q[i];
         cout << "There are " << nQueens(q, 0, i) << " solutions to the " << i << " queens problem\n";
+        solCount = 0;
     }
     return 0;
 }
