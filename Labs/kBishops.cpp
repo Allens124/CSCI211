@@ -24,5 +24,9 @@ int main()
         cin >> n;
     }
     int b[n];
+    for (int k = 1; k <= n; k++)
+    {
+
+    }
     return 0;
 }
