@@ -29,6 +29,7 @@ int nQueens(int b[], int c, int cap)
             nQueens(b, c+1, cap);
         }
     }
+    return solCount;
 }
 
 int main()
