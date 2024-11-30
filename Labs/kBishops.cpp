@@ -8,11 +8,12 @@ bool ok(int q[], int c)
 
 }
 
-int kBishops(int q[], int c, int n, int k)
+void kBishops(int q[], int c, int n, int k)
 {
     if (c == n)
     {
-        return ++solCount;
+        solCount++;
+        return;
     }
 }
 
@@ -29,8 +30,9 @@ int main()
     int b[n];
     for (int k = 0; k < n; k++)
     {
-        b[k] = kBishops(b, 0, n, k+1);
-        cout << b[k] << endl;
+        kBishops(b, 0, n, k+1);
+        b[k] = solCount;
+        solCount = 0;
     }
     return 0;
 }
