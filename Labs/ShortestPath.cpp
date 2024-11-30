@@ -12,6 +12,10 @@ int weight[5][6] =
 
 int cost(int r, int c)
 {
+    if (r == -1)
+    {
+        r = 4;
+    }
     if (c == 0)
     {
         return weight[r][0];
@@ -22,11 +26,11 @@ int cost(int r, int c)
     int min = up;
     if (left < min)
     {
-        left = min;
+        min = left;
     }
     if (down < min)
     {
-        down = min;
+        min = down;
     }
     return min;
 }
