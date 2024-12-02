@@ -41,5 +41,6 @@ int main()
     myAccount.deposit(500);
     cout << "Current balance: " << myAccount.getBalance();
     myAccount.withdraw(2000);
+    cout << "Current balance: " << myAccount.getBalance();
     return 0;
 }
