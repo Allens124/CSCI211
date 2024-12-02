@@ -7,6 +7,11 @@ class BankAccount
     private:
         double balance;
         string accountNumber;
+    public:
+        BankAccount(double b, string n)
+        {
+            
+        }
 };
 
 int main()
