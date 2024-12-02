@@ -28,7 +28,7 @@ class BankAccount
                 balance -= amount;
             }
         }
-        int getBalance()
+        double getBalance()
         {
             return balance;
         }
