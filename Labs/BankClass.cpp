@@ -4,7 +4,9 @@ using namespace std;
 
 class BankAccount
 {
-    
+    private:
+        double balance;
+        string accountNumber;
 };
 
 int main()
