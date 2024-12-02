@@ -10,7 +10,8 @@ class BankAccount
     public:
         BankAccount(double b, string n)
         {
-            
+            balance = b;
+            accountNumber = n;
         }
 };
 
