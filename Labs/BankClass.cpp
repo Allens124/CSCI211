@@ -39,5 +39,6 @@ int main()
     BankAccount myAccount = BankAccount(1000, "ACCT12345");
     cout << "Current balance: " << myAccount.getBalance();
     myAccount.deposit(500);
+    cout << "Current balance: " << myAccount.getBalance();
     return 0;
 }
