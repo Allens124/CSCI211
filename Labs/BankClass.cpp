@@ -21,7 +21,7 @@ class BankAccount
         void withdraw(double amount)
         {
             cout << "Attempting to withdraw $" << amount << "." << endl;
-            if (balance-amount < 0)
+            if (amount > balance)
             {
                 cout << "Insufficient funds." << endl;
             }
