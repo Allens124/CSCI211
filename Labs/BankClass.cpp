@@ -17,9 +17,16 @@ class BankAccount
         {
             balance += amount;
         }
-        void  withdraw(double amount)
+        void withdraw(double amount)
         {
-            balance -= amount;
+            if (balance-amount < 0)
+            {
+                cout << "Insufficient funds." << endl;
+            }
+            else
+            {
+                balance -= amount;
+            }
         }
 };
 
