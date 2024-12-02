@@ -5,8 +5,8 @@ using namespace std;
 class BankAccount
 {
     private:
-        double balance = 0;
-        string accountNumber = "";
+        double balance;
+        string accountNumber;
     public:
         BankAccount(double amount, string name)
         {
