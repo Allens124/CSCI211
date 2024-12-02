@@ -28,6 +28,10 @@ class BankAccount
                 balance -= amount;
             }
         }
+        int getBalance()
+        {
+            return balance;
+        }
 };
 
 int main()
