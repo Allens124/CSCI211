@@ -15,19 +15,19 @@ class BankAccount
         }
         void deposit(double amount)
         {
-            cout << "Depositing $" << amount << endl;
+            cout << "Depositing $" << amount << "." << endl;
             balance += amount;
         }
         void withdraw(double amount)
         {
-            cout << "Attempting to withdraw $" << amount << endl;
+            cout << "Attempting to withdraw $" << amount << "." << endl;
             if (balance-amount < 0)
             {
                 cout << "Insufficient funds." << endl;
             }
             else
             {
-                cout << "Withdrawing $" << amount << endl;
+                cout << "Withdrawing $" << amount << "." << endl;
                 balance -= amount;
             }
         }
