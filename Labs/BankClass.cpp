@@ -15,6 +15,7 @@ class BankAccount
         }
         void deposit(double amount)
         {
+            cout << "Depositing $" << amount << endl;
             balance += amount;
         }
         void withdraw(double amount)
