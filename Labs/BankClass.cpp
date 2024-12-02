@@ -8,10 +8,10 @@ class BankAccount
         double balance;
         string accountNumber;
     public:
-        BankAccount(double b, string n)
+        BankAccount(double amount, string name)
         {
-            balance = b;
-            accountNumber = n;
+            balance = amount;
+            accountNumber = name;
         }
 };
 
