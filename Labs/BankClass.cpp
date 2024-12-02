@@ -17,6 +17,10 @@ class BankAccount
         {
             balance += amount;
         }
+        void  withdraw(double amount)
+        {
+            balance -= amount;
+        }
 };
 
 int main()
