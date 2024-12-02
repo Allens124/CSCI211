@@ -13,6 +13,10 @@ class BankAccount
             balance = amount;
             accountNumber = name;
         }
+        void deposit(double amount)
+        {
+            balance += amount;
+        }
 };
 
 int main()
