@@ -40,10 +40,10 @@ class BankAccount
 int main()
 {
     BankAccount myAccount = BankAccount(1000.00, "ACCT12345");
-    cout << "Current balance: " << myAccount.getBalance() << endl;
+    cout << "Current balance: $" << myAccount.getBalance() << endl;
     myAccount.deposit(500.00);
-    cout << "Current balance: " << myAccount.getBalance() << endl;
+    cout << "Current balance: $" << myAccount.getBalance() << endl;
     myAccount.withdraw(2000.00);
-    cout << "Current balance: " << myAccount.getBalance() << endl;
+    cout << "Current balance: $" << myAccount.getBalance() << endl;
     return 0;
 }
