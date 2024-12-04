@@ -5,7 +5,7 @@ class Node
 {
     protected:
         string data;
-        Node next;
+        Node* next;
 };
 
 int main()
