@@ -11,6 +11,11 @@ class Node
         {
             next = NULL;
         }
+        Node(string s)
+        {
+            data = s;
+            next = NULL;
+        }
 };
 
 int main()
