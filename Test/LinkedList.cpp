@@ -32,6 +32,14 @@ class LinkedList
             last = ln;
             length = 0;
         }
+        void append(string s)
+        {
+            Node* ln = new Node(s);
+            (*ln).next = (*last).next;
+            (*last).next = ln;
+            last = ln;
+            length++;
+        }
 };
 
 int main()
