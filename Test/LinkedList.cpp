@@ -20,8 +20,11 @@ class Node
 
 class LinkedList
 {
-    
-}
+    private:
+        Node* first;
+        Node* last;
+        int length;
+};
 
 int main()
 {
