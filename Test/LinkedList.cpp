@@ -71,6 +71,7 @@ int main()
     myList.prepend("Martha");
     myList.append("Allen");
     myList.append("Zach");
+    myList.prepend("Steven");
     myList.print();
     return 0;
 }
