@@ -3,10 +3,9 @@ using namespace std;
 
 class Node
 {
-    protected:
+    public:
         string data;
         Node* next;
-    public:
         Node()
         {
             next = NULL;
