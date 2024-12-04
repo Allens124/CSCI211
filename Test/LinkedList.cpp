@@ -40,6 +40,15 @@ class LinkedList
             last = ln;
             length++;
         }
+        void print()
+        {
+            Node* current = (*first).next;
+            while (current != NULL)
+            {
+                cout << (*current).data << endl;
+                current = (*current).next;
+            }
+        }
 };
 
 int main()
