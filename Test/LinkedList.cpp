@@ -54,5 +54,8 @@ class LinkedList
 int main()
 {
     LinkedList myList;
+    myList.append("Allen");
+    myList.append("Zach");
+    myList.print();
     return 0;
 }
