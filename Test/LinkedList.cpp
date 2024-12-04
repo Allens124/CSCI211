@@ -24,6 +24,14 @@ class LinkedList
         Node* first;
         Node* last;
         int length;
+    public:
+        LinkedList()
+        {
+            Node* ln = new Node();
+            first = ln;
+            last = ln;
+            length = 0;
+        }
 };
 
 int main()
