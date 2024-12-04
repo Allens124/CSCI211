@@ -59,6 +59,10 @@ class LinkedList
                 current = (*current).next;
             }
         }
+        int getLength()
+        {
+            return length;
+        }
 };
 
 int main()
