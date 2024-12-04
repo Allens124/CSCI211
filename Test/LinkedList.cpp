@@ -53,6 +53,6 @@ class LinkedList
 
 int main()
 {
-    //code;
+    LinkedList myList;
     return 0;
 }
