@@ -3,6 +3,6 @@
 using namespace std;
 int main()
 {
-    vector <int> r{0};
+    vector <int> r(1);
     return 0;
 }
