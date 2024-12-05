@@ -8,7 +8,7 @@ bool isJumbled(int n)
     {
         return false;
     }
-    return isJumbled(n/10) || abs((n/10)%10-n%10) == 1;
+    return isJumbled(n/10) || abs((n/10)%10-n%10) < 2;
 }
 
 int main()
