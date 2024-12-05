@@ -6,9 +6,9 @@ bool isJumbled(int n)
 {
     if (n < 10)
     {
-        return false;
+        return true;
     }
-    return isJumbled(n/10) || abs((n/10)%10-n%10) > 1;
+    return isJumbled(n/10) || abs((n/10)%10-n%10) < 2;
 }
 
 int main()
