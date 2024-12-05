@@ -17,5 +17,16 @@ bool contains(vector <int> v, int n)
 int main()
 {
     vector <int> r(1);
+    for (int i = 1; i < 30; i++)
+    {
+        if (contains(r, r[i-1]-i))
+        {
+            r.push_back(r[i-1]+i);
+        }
+        else
+        {
+            r.push_back(r[i-1]-i);
+        }
+    }
     return 0;
 }
