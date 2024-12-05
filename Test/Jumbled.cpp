@@ -13,6 +13,8 @@ bool isJumbled(int n)
 
 int main()
 {
-    //code;
+    cout << isJumbled(6765) << endl;
+    cout << isJumbled(1223) << endl;
+    cout << isJumbled(1235) << endl;
     return 0;
 }
