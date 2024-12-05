@@ -7,6 +7,7 @@ int legendre(int n, int p)
     {
         return 0;
     }
+    return legendre(n/p, p)+n/p;
 }
 
 int main()
