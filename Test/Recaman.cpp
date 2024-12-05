@@ -28,5 +28,9 @@ int main()
             r.push_back(r[i-1]-i);
         }
     }
+    for (int i = 0; i < 30; i++)
+    {
+        cout << r[i] << endl;
+    }
     return 0;
 }
