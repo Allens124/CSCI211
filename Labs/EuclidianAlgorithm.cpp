@@ -12,6 +12,8 @@ int gcd(int a, int b)
 
 int main()
 {
-    //code;
+    cout << gcd(20, 70) << endl;
+    cout << gcd(36, 60) << endl;
+    cout << gcd(2345, 5000) << endl;
     return 0;
 }
