@@ -12,6 +12,7 @@ string digitalRoot(string n)
     {
         resultInt += int(n[i]-'0');
     }
+    cout << resultInt << endl;
     string resultString = "";
     while (resultInt > 0)
     {
