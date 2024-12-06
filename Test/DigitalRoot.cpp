@@ -23,6 +23,7 @@ string digitalRoot(string n)
 
 int main()
 {
-    //code;
+    cout << digitalRoot("1234") << endl;
+    cout << digitalRoot("5678") << endl;
     return 0;
 }
