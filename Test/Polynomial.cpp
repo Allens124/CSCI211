@@ -1,7 +1,8 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-string addPolynomials(int p, int deg1, int q, int deg2)
+string addPolynomials(vector <int> p, vector <int> q)
 {
     
 }
