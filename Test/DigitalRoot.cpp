@@ -10,7 +10,13 @@ string digitalRoot(string n)
     int resultInt = 0;
     for (int i = 0; i < n.size(); i++)
     {
-        resultInt += s[i]-'0';
+        resultInt += int(s[i]-'0');
+    }
+    string resultString = "";
+    while (resultInt > 0)
+    {
+        resultString.insert(0, char(resultInt/10+'0'));
+        resultInt /= 10;
     }
 }
 
