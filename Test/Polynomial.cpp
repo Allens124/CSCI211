@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int addPolynomials(int* p, int* q)
+string addPolynomials(int* p, int* q)
 {
     
 }
