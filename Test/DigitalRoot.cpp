@@ -12,11 +12,10 @@ string digitalRoot(string n)
     {
         resultInt += int(n[i]-'0');
     }
-    cout << resultInt << endl;
     string resultString = "";
     while (resultInt > 0)
     {
-        resultString += char(resultInt/10+'0');
+        resultString += char(resultInt%10+'0');
         resultInt /= 10;
     }
     return digitalRoot(resultString);
