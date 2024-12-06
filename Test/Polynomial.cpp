@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 string addPolynomials(int p, int deg1, int q, int deg2)
