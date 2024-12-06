@@ -18,6 +18,7 @@ string digitalRoot(string n)
         resultString.insert(0, char(resultInt/10+'0'));
         resultInt /= 10;
     }
+    return digitalRoot(resultString);
 }
 
 int main()
