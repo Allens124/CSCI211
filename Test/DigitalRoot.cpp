@@ -25,5 +25,6 @@ int main()
 {
     cout << digitalRoot("1234") << endl;
     cout << digitalRoot("5678") << endl;
+    cout << digitalRoot("314159") << endl;
     return 0;
 }
