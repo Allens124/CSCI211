@@ -7,7 +7,7 @@ string lexographical(string str)
     {
         return "a";
     }
-    for (int i = str.size()-1; i > -1; i++)
+    for (int i = str.size()-1; i > -1; i--)
     {
         if (str[i] != 'z')
         {
@@ -22,6 +22,6 @@ int main()
 {
     cout << lexographical("geeks") << endl;
     cout << lexographical("raavz") << endl;
-    cout << lexographical("zzzzz") << endl;
+    cout << lexographical("zzz") << endl;
     return 0;
 }
