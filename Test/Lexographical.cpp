@@ -7,9 +7,13 @@ string lexographical(string str)
     {
         return "a";
     }
-    if (str[str.size()-1] == 'z')
+    for (int i = str.size()-1; i > -1; i++)
     {
-        return str+"a";
+        if (str[i] != 'z')
+        {
+            str[i] = str[i]++;
+            return str;
+        }
     }
 }
 
