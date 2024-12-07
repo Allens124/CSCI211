@@ -15,6 +15,7 @@ string lexographical(string str)
             return str;
         }
     }
+    return str+"a";
 }
 
 int main()
