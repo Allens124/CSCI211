@@ -7,6 +7,10 @@ string lexographical(string str)
     {
         return "a";
     }
+    if (str[str.size()-1] == 'z')
+    {
+        return str+"a";
+    }
 }
 
 int main()
