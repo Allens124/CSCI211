@@ -11,7 +11,7 @@ string lexographical(string str)
     {
         if (str[i] != 'z')
         {
-            str[i] = str[i]++;
+            str[i] = char(str[i]+1);
             return str;
         }
     }
@@ -20,6 +20,8 @@ string lexographical(string str)
 
 int main()
 {
-    //code;
+    cout << lexographical("geeks") << endl;
+    cout << lexographical("raavz") << endl;
+    cout << lexographical("zzzzz") << endl;
     return 0;
 }
