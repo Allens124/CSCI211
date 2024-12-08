@@ -25,7 +25,7 @@ int main()
 {
     for (int i = 0; i < 20; i++)
     {
-        cout << "fibonacci(" << i << ") = " << fibonacci(i) << endl;
+        cout << "f(" << i << ") = " << fibonacci(i) << endl;
     }
     return 0;
 }
