@@ -23,6 +23,9 @@ int fibonacci(int n)
 
 int main()
 {
-    vector <int> f;
+    for (int i = 0; i < 20; i++)
+    {
+        cout << "fibonacci(" << i << ") = " << fibonacci(i) << endl;
+    }
     return 0;
 }
