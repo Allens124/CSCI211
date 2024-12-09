@@ -2,6 +2,13 @@
 using namespace std;
 
 void collatz(int n)
+{
+    if (n == 1)
+    {
+        cout << "1" << endl;
+        return;
+    }
+}
 
 int main()
 {
