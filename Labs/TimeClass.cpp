@@ -14,14 +14,38 @@ class Time
             minutes = m%60;
             seconds = s%60;
         }
+        int getHours()
+        {
+            return hours;
+        }
+        int getMinutes()
+        {
+            return minutes;
+        }
+        int getSeconds()
+        {
+            return seconds;
+        }
 };
 
-Time overload+(Time t1, Time t2)
+Time operator+(Time t1, Time t2)
 {
-    //code;
+    int s = t1.getSeconds()+t2.getSeconds();
+    int m = t1.getMinutes()+t2.getMinutes();
+    if (s > 59)
+    {
+        m++;
+    }
+    int h = t1.getHours()+t2.getHours();
+    if (m > 59)
+    {
+        h++;
+    }
+    Time t = Time(h, m, s);
+    return t;
 }
 
-Time overload-(Time t1, Time t2)
+Time operator-(Time t1, Time t2)
 {
     //code;
 }
