@@ -10,9 +10,9 @@ class Time
     public:
         Time(int h, int m, int s)
         {
-            hours = h;
-            minutes = m;
-            seconds = s;
+            hours = h%24;
+            minutes = m%60;
+            seconds = s%60;
         }
 };
 
