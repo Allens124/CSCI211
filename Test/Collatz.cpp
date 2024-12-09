@@ -9,6 +9,10 @@ void collatz(int n)
         return;
     }
     cout << n << ", ";
+    if (n%2 == 0)
+    {
+        collatz(n/2);
+    }
 }
 
 int main()
