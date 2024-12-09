@@ -21,6 +21,7 @@ void collatz(int n)
 
 int main()
 {
-    //code;
+    collatz(3);
+    collatz(6);
     return 0;
 }
