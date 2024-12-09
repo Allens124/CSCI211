@@ -15,7 +15,7 @@ void collatz(int n)
     }
     else
     {
-        collatz(3*n-1);
+        collatz(3*n+1);
     }
 }
 
