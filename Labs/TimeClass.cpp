@@ -21,6 +21,11 @@ Time overload+(Time t1, Time t2)
     //code;
 }
 
+Time overload-(Time t1, Time t2)
+{
+    //code;
+}
+
 int main()
 {
     //code;
