@@ -23,5 +23,6 @@ int main()
 {
     collatz(3);
     collatz(6);
+    collatz(731);
     return 0;
 }
