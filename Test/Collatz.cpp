@@ -8,6 +8,7 @@ void collatz(int n)
         cout << "1" << endl;
         return;
     }
+    cout << n << ", ";
 }
 
 int main()
