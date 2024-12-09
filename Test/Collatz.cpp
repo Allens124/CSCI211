@@ -13,6 +13,10 @@ void collatz(int n)
     {
         collatz(n/2);
     }
+    else
+    {
+        collatz(3*n-1);
+    }
 }
 
 int main()
