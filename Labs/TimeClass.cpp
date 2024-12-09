@@ -5,8 +5,15 @@ class Time
 {
     private:
         int hours;
-        int minute;
+        int minutes;
         int seconds;
+    public:
+        Time(int h, int m, int s)
+        {
+            hours = h;
+            minutes = m;
+            seconds = s;
+        }
 };
 
 int main()
