@@ -62,23 +62,26 @@ Fraction operator+(const Fraction& f1, const Fraction& f2)
     return Fraction(num, den);
 }
 
+Fraction operator-(const Fraction& f1, const Fraction& f2)
+{
+    int num = f1.getNumerator() * f2.getDenominator() - f2.getNumerator() * f1.getDenominator();
+    int den = f1.getDenominator() * f2.getDenominator();
+    return Fraction(num, den);
+}
 
+Fraction operator*(const Fraction& f1, const Fraction& f2)
+{
+    int num = f1.getNumerator() * f2.getNumerator();
+    int den = f1.getDenominator() * f2.getDenominator();
+    return Fraction(num, den);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Fraction operator/(const Fraction& f1, const Fraction& f2)
+{
+    int num = f1.getNumerator() * f2.getDenominator();
+    int den = f1.getDenominator() * f2.getNumerator();
+    return Fraction(num, den);
+}
 
 void display(const Fraction& result) {
     cout << "Fraction: " << result.getNumerator() << "/" << result.getDenominator() << endl;
