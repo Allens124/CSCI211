@@ -20,6 +20,18 @@ class Point
             y = yVal;
             z = zVal;
         }
+        double getX()
+        {
+            return x;
+        }
+        double getY()
+        {
+            return y;
+        }
+        double getZ()
+        {
+            return z;
+        }
         void displayPoint()
         {
             cout << "(" << x << ", " << y << ", " << z << ")" << endl;
