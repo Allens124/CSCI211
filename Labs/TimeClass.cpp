@@ -49,7 +49,7 @@ class Time
             {
                 cout << "0";
             }
-            cout << seconds;
+            cout << seconds << endl;
         }
 };
 
@@ -89,6 +89,11 @@ Time operator-(Time t1, Time t2)
 
 int main()
 {
-    //code;
+    Time now = Time(15, 13, 45);
+    now.displayTime();
+    Time later = Time(16, 0, 0);
+    later.displayTime();
+    Time elapsed = later-now;
+    elapsed.displayTime();
     return 0;
 }
