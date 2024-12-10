@@ -11,9 +11,9 @@ class Time
     public:
         Time(int h, int m, int s)
         {
-            hours = h%24;
-            minutes = m%60;
-            seconds = s%60;
+            hours = abs(h)%24;
+            minutes = abs(m)%60;
+            seconds = abs(s)%60;
         }
         int getHours()
         {
