@@ -43,6 +43,8 @@ Point operator*(double a, Point p)
     double xVal = a*p.getX();
     double yVal = a*p.getY();
     double zVal = a*p.getZ();
+    Point q = Point(xVal, yVal, zVal);
+    return q;
 }
 
 int main()
