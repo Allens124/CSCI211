@@ -38,6 +38,11 @@ class Point
         }
 };
 
+Point operator*(double a, Point p)
+{
+    
+}
+
 int main()
 {
     //code;
