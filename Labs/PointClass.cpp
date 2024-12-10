@@ -49,6 +49,11 @@ Point operator*(double a, Point p)
 
 int main()
 {
-    //code;
+    Point a;
+    a.displayPoint();
+    Point b = Point(2.3, 1.8, 7);
+    b.displayPoint();
+    Point c = 3*b;
+    c.displayPoint();
     return 0;
 }
