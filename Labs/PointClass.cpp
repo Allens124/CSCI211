@@ -20,6 +20,10 @@ class Point
             y = yVal;
             z = zVal;
         }
+        void displayPoint()
+        {
+            cout << "(" << x << ", " << y << ", " << z << ")" << endl;
+        }
 };
 
 int main()
