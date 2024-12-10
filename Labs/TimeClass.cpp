@@ -9,6 +9,12 @@ class Time
         int minutes;
         int seconds;
     public:
+        Time()
+        {
+            hours = 0;
+            minutes = 0;
+            seconds = 0;
+        }
         Time(int h, int m, int s)
         {
             hours = abs(h)%24;
@@ -26,6 +32,16 @@ class Time
         int getSeconds()
         {
             return seconds;
+        }
+        void displayTime()
+        {
+            Time 
+            if (h < 10)
+            {
+                cout << "0";
+            }
+            cout << h << ":";
+            if ()
         }
 };
 
