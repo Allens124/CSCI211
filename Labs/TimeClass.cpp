@@ -17,9 +17,21 @@ class Time
         }
         Time(int h, int m, int s)
         {
-            hours = abs(h)%24;
-            minutes = abs(m)%60;
-            seconds = abs(s)%60;
+            while (hours < 0)
+            {
+                hours += 24;
+            }
+            hours = h%24;
+            while (minutes < 0)
+            {
+                minutes += 60;
+            }
+            minutes = m%60;
+            while (seconds < 0)
+            {
+                seconds += 60;
+            }
+            seconds = s%60;
         }
         int getHours()
         {
@@ -78,7 +90,7 @@ Time operator-(Time t1, Time t2)
     {
         m--;
     }
-    int h = t1.getHours()+t2.getHours();
+    int h = t1.getHours()-t2.getHours();
     if (m < 0)
     {
         h--;
