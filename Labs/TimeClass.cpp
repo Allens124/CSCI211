@@ -17,19 +17,19 @@ class Time
         }
         Time(int h, int m, int s)
         {
-            while (hours < 0)
+            while (h < 0)
             {
-                hours += 24;
+                h += 24;
             }
             hours = h%24;
-            while (minutes < 0)
+            while (m < 0)
             {
-                minutes += 60;
+                m += 60;
             }
             minutes = m%60;
-            while (seconds < 0)
+            while (s < 0)
             {
-                seconds += 60;
+                s += 60;
             }
             seconds = s%60;
         }
