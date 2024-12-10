@@ -14,6 +14,12 @@ class Point
             y = 0;
             z = 0;
         }
+        Point(double xVal, double yVal, double zVal)
+        {
+            x = xVal;
+            y = yVal;
+            z = zVal;
+        }
 };
 
 int main()
