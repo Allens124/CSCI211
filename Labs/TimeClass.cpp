@@ -35,13 +35,21 @@ class Time
         }
         void displayTime()
         {
-            Time 
-            if (h < 10)
+            if (hours < 10)
             {
                 cout << "0";
             }
-            cout << h << ":";
-            if ()
+            cout << hours << ":";
+            if (minutes < 10)
+            {
+                cout << "0";
+            }
+            cout << minutes << ":";
+            if (seconds < 10)
+            {
+                cout << "0";
+            }
+            cout << seconds;
         }
 };
 
