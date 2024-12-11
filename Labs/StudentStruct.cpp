@@ -33,5 +33,9 @@ int main()
         students.push_back(newStudent);
     }
     double average = 0, deviation = 0;
+    for (int i = 0; i < students.size(); i++)
+    {
+        
+    }
     return 0;
 }
