@@ -22,6 +22,14 @@ class Rat
             num = n;
             den = d;
         }
+        void setNum(int n)
+        {
+            num = n;
+        }
+        void setDen(int d)
+        {
+            den = d;
+        }
 };
 
 int main()
