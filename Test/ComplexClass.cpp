@@ -32,7 +32,20 @@ class Complex
         double getIm()
         {
             return im;
-        } 
+        }
+        void display()
+        {
+            cout << re;
+            if (im > 0)
+            {
+                cout << " + ";
+            }
+            else
+            {
+                cout << " - ";
+            }
+            cout << im << "i";
+        }
 };
 
 int main()
