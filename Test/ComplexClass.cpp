@@ -3,7 +3,9 @@ using namespace std;
 
 class Complex
 {
-
+    private:
+        double a;
+        double b;
 };
 
 int main()
