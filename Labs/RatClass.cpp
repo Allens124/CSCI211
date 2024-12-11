@@ -12,6 +12,11 @@ class Rat
             num = 0;
             den = 1;
         }
+        Rat(int n)
+        {
+            num = n;
+            den = 1;
+        }
 };
 
 int main()
