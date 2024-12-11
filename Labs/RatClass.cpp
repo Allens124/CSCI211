@@ -35,6 +35,7 @@ class Rat
                 d = 1;
             }
             den = d;
+            simplify();
         }
         void setNum(int n)
         {
