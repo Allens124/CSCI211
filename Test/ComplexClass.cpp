@@ -25,6 +25,14 @@ class Complex
         {
             im = b;
         }
+        double getRe()
+        {
+            return re;
+        }
+        double getIm()
+        {
+            return im;
+        } 
 };
 
 int main()
