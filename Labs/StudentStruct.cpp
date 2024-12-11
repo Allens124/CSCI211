@@ -32,7 +32,7 @@ int main()
         newStudent.fin = finGrade;
         students.push_back(newStudent);
     }
-    double sum = 0, average = 0, deviation = 0;
+    double average = 0, deviation = 0;
     for (int i = 0; i < students.size(); i++)
     {
         
