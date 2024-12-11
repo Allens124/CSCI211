@@ -43,10 +43,10 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
-    for (int i = 1; i < n+1; i++)
+    for (int i = 0; i < n; i++)
     {
-        int* q = new int[i];
-        nQueens(q, 0, i);
+        int* q = new int[i+1];
+        nQueens(q, 0, i+1);
         cout << "There are " << solCount << " solutions to the " << i << " queens problem" << endl;
         solCount = 0;
         delete[] q;
