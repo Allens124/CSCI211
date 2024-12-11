@@ -32,5 +32,6 @@ int main()
         newStudent.fin = finGrade;
         students.push_back(newStudent);
     }
+    double average = 0, deviation = 0;
     return 0;
 }
