@@ -7,7 +7,7 @@ int gcd(int a, int b)
     {
         return b;
     }
-    return gcd(b, b%a);
+    return gcd(b, a%b);
 }
 
 class Rat
