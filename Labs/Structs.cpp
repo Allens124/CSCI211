@@ -22,7 +22,7 @@ int main()
         {
             break;
         }
-        cout << "Enter the midterm grade of the studnet: ";
+        cout << "Enter the midterm grade of the student: ";
         cin >> midGrade;
         cout << "Enter the final grade of the student: ";
         cin >> finGrade;
