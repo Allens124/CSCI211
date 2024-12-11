@@ -50,6 +50,8 @@ class Complex
 
 int main()
 {
-    //code;
+    Complex z = Complex(3, 4);
+    z.display();
+    cout << endl;
     return 0;
 }
