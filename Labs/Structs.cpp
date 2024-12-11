@@ -2,7 +2,10 @@
 #include <vector>
 using namespace std;
 
+struct Student
+{
 
+};
 
 int main()
 {
