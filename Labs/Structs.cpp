@@ -11,6 +11,6 @@ struct Student
 
 int main()
 {
-    //code;
+    vector <Student> students;
     return 0;
 }
