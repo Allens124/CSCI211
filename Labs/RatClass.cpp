@@ -38,6 +38,14 @@ class Rat
             }
             den = d;
         }
+        int getNum()
+        {
+            return num;
+        }
+        int getDen()
+        {
+            return den;
+        }
 };
 
 int main()
