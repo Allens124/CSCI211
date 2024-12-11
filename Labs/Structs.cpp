@@ -30,6 +30,7 @@ int main()
         newStudent.name = sName;
         newStudent.mid = midGrade;
         newStudent.fin = finGrade;
+        students.push_back(newStudent);
     }
     return 0;
 }
