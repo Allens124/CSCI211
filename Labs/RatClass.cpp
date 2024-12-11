@@ -86,6 +86,20 @@ Rat operator/(Rat x, Rat y)
 
 int main()
 {
-    //code;
+    Rat x = Rat(1, 2);
+    Rat y = Rat(7, 8);
+    Rat z = Rat();
+    z = x+y;
+    z.display();
+    cout << endl;
+    z = x-y;
+    z.display();
+    cout << endl;
+    z = x*y;
+    z.display();
+    cout << endl;
+    z = x/y;
+    z.display();
+    cout << endl;
     return 0;
 }
