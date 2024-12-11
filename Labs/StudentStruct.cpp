@@ -35,7 +35,7 @@ int main()
     double average = 0, deviation = 0;
     for (int i = 0; i < students.size(); i++)
     {
-        
+        average = (students[i].mid+students[i].fin)/2;
     }
     return 0;
 }
