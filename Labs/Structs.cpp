@@ -11,8 +11,12 @@ struct Student
 
 int main()
 {
-    string sName;
-    double sGrade;
+    string sName = " ";
+    double sGrade = 0;
     vector <Student> students;
+    while (sName != "")
+    {
+        
+    }
     return 0;
 }
