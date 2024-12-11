@@ -4,13 +4,13 @@ using namespace std;
 class Complex
 {
     private:
-        double a;
-        double b;
+        double re;
+        double im;
     public:
         Complex()
         {
-            a = 0;
-            b = 0;
+            re = 0;
+            im = 0;
         }
 };
 
