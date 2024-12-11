@@ -68,6 +68,14 @@ Rat operator-(Rat x, Rat y)
     return z;
 }
 
+Rat operator*(Rat x, Rat y)
+{
+    int n = x.getNum()*y.getNum();
+    int d = x.getDen()*y.getDen();
+    Rat z = Rat(n, d);
+    return z;
+}
+
 int main()
 {
     //code;
