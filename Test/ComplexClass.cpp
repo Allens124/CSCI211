@@ -17,6 +17,14 @@ class Complex
             re = a;
             im = b;
         }
+        void setRe(double a)
+        {
+            re = a;
+        }
+        void setIm(double b)
+        {
+            im = b;
+        }
 };
 
 int main()
