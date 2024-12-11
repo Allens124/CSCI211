@@ -11,6 +11,9 @@ struct Student
 
 int main()
 {
+    int cSize;
+    string sName;
+    double sGrade;
     vector <Student> students;
     return 0;
 }
