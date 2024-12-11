@@ -20,6 +20,10 @@ class Rat
         Rat(int n, int d)
         {
             num = n;
+            if (d == 0)
+            {
+                d = 1;
+            }
             den = d;
         }
         void setNum(int n)
@@ -28,6 +32,10 @@ class Rat
         }
         void setDen(int d)
         {
+            if (d == 0)
+            {
+                d = 1;
+            }
             den = d;
         }
 };
