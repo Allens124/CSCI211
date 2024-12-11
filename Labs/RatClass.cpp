@@ -46,6 +46,10 @@ class Rat
         {
             return den;
         }
+        void display()
+        {
+            cout << num << "/" << den;
+        }
 };
 
 int main()
