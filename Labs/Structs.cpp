@@ -26,6 +26,10 @@ int main()
         cin >> midGrade;
         cout << "Enter the final grade of the student: ";
         cin >> finGrade;
+        Student newStudent;
+        newStudent.name = sName;
+        newStudent.mid = midGrade;
+        newStudent.fin = finGrade;
     }
     return 0;
 }
