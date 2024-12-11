@@ -6,6 +6,12 @@ class Complex
     private:
         double a;
         double b;
+    public:
+        Complex()
+        {
+            a = 0;
+            b = 0;
+        }
 };
 
 int main()
