@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+int gcd(int a, int b)
+
 class Rat
 {
     private:
