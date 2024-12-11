@@ -12,6 +12,11 @@ class Complex
             re = 0;
             im = 0;
         }
+        Complex(double a, double b)
+        {
+            re = a;
+            im = b;
+        }
 };
 
 int main()
