@@ -62,7 +62,18 @@ class Rat
         }
         void simplify()
         {
-            int div = gcd(num, den);
+            int div = gcd(abs(num), abs(den));
+            num /= div;
+            den /= div;
+            if (num*den < 0)
+            {
+                num = -abs(num);
+            }
+            else
+            {
+                num = abs(num);
+            }
+            den = abs(den);
         }
 };
 
