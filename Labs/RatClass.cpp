@@ -59,6 +59,10 @@ class Rat
         {
             cout << num << "/" << den;
         }
+        void simplify()
+        {
+            int div = gcd(num, den);
+        }
 };
 
 Rat operator+(Rat x, Rat y)
