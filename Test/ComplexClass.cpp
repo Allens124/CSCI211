@@ -64,6 +64,14 @@ Complex operator-(Complex x, Complex y)
     return z;
 }
 
+Complex operator*(Complex x, Complex y)
+{
+    double reComp = x.getRe()*y.getRe()-x.getIm()*y.getIm();
+    double imComp = x.getRe()*y.getIm()+x.getIm()*y.getRe();
+    Complex z = Complex(reComp, imComp);
+    return z;
+}
+
 int main()
 {
     Complex z = Complex(3, 4);
