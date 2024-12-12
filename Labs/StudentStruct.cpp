@@ -33,12 +33,18 @@ int main()
         students.push_back(newStudent);
     }
     double averages[students.size()];
-    double average = 0, deviation = 0;
+    double overallAvg;
     for (int i = 0; i < students.size(); i++)
     {
         averages[i] = (students[i].mid+students[i].fin)/2;
-        average += averages[i];
+       overallAvg += averages[i];
     }
-    average /= students.size();
+    overallAvg /= students.size();
+    for (int i = 0; i < students.size(); i++)
+    {
+        cout << "Student " << i+1 << endl;
+        cout << "Average: " << averages[i];
+        cout << 
+    }
     return 0;
 }
