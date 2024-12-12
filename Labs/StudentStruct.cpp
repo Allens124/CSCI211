@@ -39,5 +39,6 @@ int main()
         averages[i] = (students[i].mid+students[i].fin)/2;
         average += averages[i];
     }
+    average /= students.size();
     return 0;
 }
