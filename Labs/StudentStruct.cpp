@@ -18,7 +18,7 @@ int main()
     {
         cout << "Enter the first name of a student: ";
         cin >> sName;
-        if (sName == "")
+        if (sName == " ")
         {
             break;
         }
