@@ -37,14 +37,14 @@ int main()
     for (int i = 0; i < students.size(); i++)
     {
         averages[i] = (students[i].mid+students[i].fin)/2;
-       overallAvg += averages[i];
+        overallAvg += averages[i];
     }
     overallAvg /= students.size();
     for (int i = 0; i < students.size(); i++)
     {
         cout << "Student " << i+1 << endl;
-        cout << "Average: " << averages[i];
-        cout << 
+        cout << "Average: " << averages[i] << endl;
+        cout << "Deviation: " << averages[i]-overallAvg << endl;
     }
     return 0;
 }
