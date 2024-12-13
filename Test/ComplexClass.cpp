@@ -84,7 +84,9 @@ istream& operator>>(istream& is, Complex z)
 int main()
 {
     Complex z1 = Complex(1, 2);
-    Complex z2 = Complex(5, 2);
-    cout << z1;
+    Complex z2 = Complex(5, 3);
+    cout << z1 << endl;
+    cout << z2 << endl;
+    cout << z1-z2 << endl;
     return 0;
 }
