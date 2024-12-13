@@ -61,6 +61,20 @@ Complex operator*(Complex x, Complex y)
     return z;
 }
 
+ostream& operator<<(ostream& os, Complex z)
+{
+    if (z.im > 0)
+    {
+        os << z.re << " + " << z.im << "i" << endl;
+        return os;
+    }
+    else
+    {
+        os << z.re << " - " << -z.im << "i" << endl;
+        return os;
+    }
+}
+
 int main()
 {
     Complex z = Complex(3, 4);
