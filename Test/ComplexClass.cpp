@@ -34,7 +34,7 @@ class Complex
             return im;
         }
         friend ostream& operator<<(ostream& os, Complex z);
-        friend istream& operator>>(istream& is, Complex& z);
+        friend istream& operator>>(istream& is, Complex z);
 };
 
 Complex operator+(Complex x, Complex y)
@@ -65,17 +65,17 @@ ostream& operator<<(ostream& os, Complex z)
 {
     if (z.im > 0)
     {
-        os << z.re << " + " << z.im << "i" << endl;
+        os << z.re << " + " << z.im << "i";
         return os;
     }
     else
     {
-        os << z.re << " - " << -z.im << "i" << endl;
+        os << z.re << " - " << -z.im << "i";
         return os;
     }
 }
 
-istream& operator>>(istream&, Complex z)
+istream& operator>>(istream& is, Complex z)
 {
     is >> z.re >> z.im;
     return is;
