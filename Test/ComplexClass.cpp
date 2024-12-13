@@ -75,6 +75,12 @@ ostream& operator<<(ostream& os, Complex z)
     }
 }
 
+istream& operator>>(istream&, Complex z)
+{
+    is >> z.re >> z.im;
+    return is;
+}
+
 int main()
 {
     Complex z = Complex(3, 4);
