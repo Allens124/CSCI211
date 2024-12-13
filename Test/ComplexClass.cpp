@@ -33,19 +33,8 @@ class Complex
         {
             return im;
         }
-        void display()
-        {
-            cout << re;
-            if (im > 0)
-            {
-                cout << " + ";
-            }
-            else
-            {
-                cout << " - ";
-            }
-            cout << im << "i";
-        }
+        friend ostream& operator<<(ostream& os, Complex z);
+        friend istream& operator>>(istream& is, Complex& z);
 };
 
 Complex operator+(Complex x, Complex y)
