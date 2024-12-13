@@ -83,8 +83,8 @@ istream& operator>>(istream&, Complex z)
 
 int main()
 {
-    Complex z = Complex(3, 4);
-    z.display();
-    cout << endl;
+    Complex z1 = Complex(1, 2);
+    Complex z2 = Complex(5, 2);
+    cout << z1;
     return 0;
 }
