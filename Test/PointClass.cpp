@@ -14,11 +14,11 @@ class Point
             y = 0;
             z = 0;
         }
-        Point(double xVal, double yVal, double zVal)
+        Point(double a, double b, double c)
         {
-            x = xVal;
-            y = yVal;
-            z = zVal;
+            x = a;
+            y = b;
+            z = c;
         }
         double getX()
         {
