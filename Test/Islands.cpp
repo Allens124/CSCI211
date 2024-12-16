@@ -16,7 +16,25 @@ int islands()
     {
         for (int j = 0; j < 4; j++)
         {
-            
+            if (i == 3 || j == 3)
+            {
+                if (i == 3 && j == 3 && island[i][j] == 1)
+                {
+                    islandCount++;
+                }
+                else if (i == 3 && island[i][j] == 1 && island[i][j+1] != 1)
+                {
+                    islandCount++;
+                }
+                else if (j == 3 && island[i][j] == 1 && island[i+1][j] != 1)
+                {
+                    islandCount++;
+                }
+            }
+            else if (island[i][j] == 1 && island[i+1][j] != 1 && island[i][j+1] != 1)
+            {
+                islandCount++;
+            }
         }
     }
 }
