@@ -9,6 +9,11 @@ int island[4][4] =
     {0, 0, 1, 0}
 };
 
+int islands()
+{
+    
+}
+
 int main()
 {
     //code;
