@@ -5,7 +5,7 @@ int island[4][4] =
 {
     {1, 0, 0, 1},
     {1, 1, 0, 1},
-    {0, 0, 1, 0},
+    {0, 0, 1, 1},
     {0, 0, 1, 0}
 };
 
@@ -37,10 +37,11 @@ int islands()
             }
         }
     }
+    return islandCount;
 }
 
 int main()
 {
-    //code;
+    cout << islands() << endl;
     return 0;
 }
