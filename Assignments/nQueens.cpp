@@ -2,7 +2,7 @@
 #include <cmath>
 using namespace std;
 
-bool ok(int* q, int c, int cap)
+bool ok(int* q, int c)
 {
     for (int i = 0; i < c; i++)
     {
