@@ -46,7 +46,7 @@ int main()
     {
         int* q = new int[n];
         cout << "There are " << nQueens(q, 0, cap) << " solutions to the " << i << " queens problem."
-        delete[] n;
+        delete[] q;
     }
     return 0;
 }
