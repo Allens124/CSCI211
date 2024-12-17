@@ -19,6 +19,10 @@ vector <int> merge(vector <int> a, vector <int> b)
             j++;
         }
     }
+    while (i == a.size() && j < b.size())
+    {
+        
+    }
 }
 
 int main()
