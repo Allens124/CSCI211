@@ -77,6 +77,8 @@ int main()
         cin >> n;
         b.push_back(n);
     }
+    sort(a);
+    sort(b);
     c = merge(a, b);
     for (int i = 0; i < c.size(); i++)
     {
