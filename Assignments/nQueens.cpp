@@ -21,6 +21,10 @@ int nQueens(int* q, int c, int cap)
     {
         return solCount+1;
     }
+    for (int i = 0; i < cap; i++)
+    {
+        
+    }
     return 0;
 }
 
