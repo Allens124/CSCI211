@@ -30,13 +30,13 @@ vector <int> merge(vector <int> a, vector <int> b)
 
 int main()
 {
-    int aSize, bSize, n;
+    int size, n;
     cout << "Enter the size of vector a: ";
-    cin >> aSize;
-    while (aSize < 1)
+    cin >> size;
+    while (size < 1)
     {
         cout << "Invalid input! Try again: ";
-        cin >> aSize;
+        cin >> size;
     }
     return 0;
 }
