@@ -2,6 +2,9 @@
 using namespace std;
 
 bool ok(int* q, int c, int cap)
+{
+    return true;
+}
 
 int nQueens(int* q, int c, int cap)
 {
