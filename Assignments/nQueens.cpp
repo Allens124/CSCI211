@@ -19,7 +19,7 @@ int main()
     }
     for (int i = 1; i <= n; i++)
     {
-
+        int* q = new int[n];
     }
     return 0;
 }
