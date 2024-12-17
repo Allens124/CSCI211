@@ -2,6 +2,11 @@
 #include <vector>
 using namespace std;
 
+void sort(vector <int> a)
+{
+    
+}
+
 vector <int> merge(vector <int> a, vector <int> b)
 {
     vector <int> c;
