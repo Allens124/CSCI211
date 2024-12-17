@@ -16,7 +16,6 @@ bool ok(int* q, int c)
 
 int nQueens(int* q, int c, int cap)
 {
-    static int solCount = 0;
     if (c == cap)
     {
         return solCount+1;
@@ -45,7 +44,7 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         int* q = new int[n];
-        cout << "There are " << nQueens(q, 0, i) << " solutions to the " << i << " queens problem.";
+        cout << "There are " << nQueens(q, 0, i) << " solutions to the " << i << " queens problem." << endl;
         delete[] q;
     }
     return 0;
