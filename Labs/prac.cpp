@@ -38,5 +38,6 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> size;
     }
+    cout << "Enter the elements of vector a: ";
     return 0;
 }
