@@ -45,7 +45,7 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         int* q = new int[n];
-
+        cout << "There are " << nQueens(q, 0, cap) << " solutions to the " << i << " queens problem."
         delete[] n;
     }
     return 0;
