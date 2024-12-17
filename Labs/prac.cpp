@@ -58,5 +58,11 @@ int main()
         cin >> n;
         b.push_back(n);
     }
+    c = merge(a, b);
+    for (int i = 0; i < c.size(); i++)
+    {
+        cout << c[i] << " ";
+    }
+    cout << endl;
     return 0;
 }
