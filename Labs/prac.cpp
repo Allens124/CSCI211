@@ -33,5 +33,10 @@ int main()
     int aSize, bSize, n;
     cout << "Enter the size of vector a: ";
     cin >> aSize;
+    while (aSize < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> aSize;
+    }
     return 0;
 }
