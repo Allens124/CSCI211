@@ -11,5 +11,6 @@ int main()
 {
     int n;
     cout << "Enter the number of queens: ";
+    cin >> n;
     return 0;
 }
