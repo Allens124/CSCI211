@@ -31,5 +31,6 @@ vector <int> merge(vector <int> a, vector <int> b)
 int main()
 {
     int aSize, bSize, n;
+    cout << "Enter the size of vector a: ";
     return 0;
 }
