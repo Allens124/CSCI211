@@ -21,6 +21,10 @@ vector <int> merge(vector <int> a, vector <int> b)
     {
         c.push_back(b[j++]);
     }
+    while (i < a.size() && j == b.size())
+    {
+        
+    }
 }
 
 int main()
