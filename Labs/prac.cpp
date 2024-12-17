@@ -25,6 +25,7 @@ vector <int> merge(vector <int> a, vector <int> b)
     {
         c.push_back(a[i++]);
     }
+    return c;
 }
 
 int main()
