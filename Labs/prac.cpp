@@ -31,6 +31,7 @@ vector <int> merge(vector <int> a, vector <int> b)
 int main()
 {
     int size, n;
+    vector <int> a, b;
     cout << "Enter the size of vector a: ";
     cin >> size;
     while (size < 1)
@@ -39,5 +40,10 @@ int main()
         cin >> size;
     }
     cout << "Enter the elements of vector a: ";
+    for (int i = 0; i < size; i++)
+    {
+        cin >> n;
+        a.push_back(n);
+    }
     return 0;
 }
