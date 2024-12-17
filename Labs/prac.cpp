@@ -11,10 +11,12 @@ vector <int> merge(vector <int> a, vector <int> b)
         if (a[i] < b[j])
         {
             c.push_back(a[i]);
+            i++;
         }
         else
         {
             c.push_back(b[j]);
+            j++;
         }
     }
 }
