@@ -9,6 +9,6 @@ int nQueens(int* q, int c, int cap)
 
 int main()
 {
-    //code;
+    int n;
     return 0;
 }
