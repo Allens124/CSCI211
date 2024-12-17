@@ -10,5 +10,6 @@ int nQueens(int* q, int c, int cap)
 int main()
 {
     int n;
+    cout << "Enter the number of queens: ";
     return 0;
 }
