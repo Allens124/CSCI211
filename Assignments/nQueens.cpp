@@ -16,7 +16,7 @@ bool ok(int* q, int c)
 
 int nQueens(int* q, int c, int cap)
 {
-    //code
+    static int solCount = 0;
     return 0;
 }
 
