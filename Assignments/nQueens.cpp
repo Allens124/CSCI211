@@ -17,5 +17,9 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
+    for (int i = 0; i < n; i++)
+    {
+        
+    }
     return 0;
 }
