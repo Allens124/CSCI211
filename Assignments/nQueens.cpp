@@ -20,6 +20,8 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         int* q = new int[n];
+
+        delete[] n;
     }
     return 0;
 }
