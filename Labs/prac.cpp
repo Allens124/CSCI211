@@ -8,7 +8,10 @@ vector <int> merge(vector <int> a, vector <int> b)
     int i = 0, j = 0;
     while (i < a.size() && j < b.size())
     {
-        
+        if (a[i] < b[j])
+        {
+            c.push_back(a[i]);
+        }
     }
 }
 
