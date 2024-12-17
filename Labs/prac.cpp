@@ -31,7 +31,7 @@ vector <int> merge(vector <int> a, vector <int> b)
 int main()
 {
     int size, n;
-    vector <int> a, b;
+    vector <int> a, b, c;
     cout << "Enter the size of vector a: ";
     cin >> size;
     while (size < 1)
