@@ -4,7 +4,21 @@ using namespace std;
 
 void sort(vector <int> a)
 {
-    
+    bool swap = true;
+    while (swap)
+    {
+        swap = false;
+        for (int i = 0; i < a.size()-1; i++)
+        {
+            if (a[i] > a[i+1])
+            {
+                int temp = a[i];
+                a[i] = a[i+1];
+                a[i+1] = temp;
+                swap  = true;
+            }
+        }
+    }
 }
 
 vector <int> merge(vector <int> a, vector <int> b)
