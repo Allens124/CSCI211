@@ -45,5 +45,18 @@ int main()
         cin >> n;
         a.push_back(n);
     }
+    cout << "Enter the size of vector b: ";
+    cin >> size;
+    while (size < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> size;
+    }
+    cout << "Enter the elements of vector b: ";
+    for (int i = 0; i < size; i++)
+    {
+        cin >> n;
+        b.push_back(n);
+    }
     return 0;
 }
