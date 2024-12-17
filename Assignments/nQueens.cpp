@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+bool ok(int* q, int c, int cap)
+
 int nQueens(int* q, int c, int cap)
 {
     //code
