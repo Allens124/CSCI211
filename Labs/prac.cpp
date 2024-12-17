@@ -10,16 +10,16 @@ vector <int> merge(vector <int> a, vector <int> b)
     {
         if (a[i] < b[j])
         {
-            c.push_back(a[i]);
+            c.push_back(a[i++]);
         }
         else
         {
-            c.push_back(b[j]);
+            c.push_back(b[j++]);
         }
     }
     while (i == a.size() && j < b.size())
     {
-        c.push_back(b[j]);
+        c.push_back(b[j++]);
     }
 }
 
