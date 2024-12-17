@@ -30,6 +30,6 @@ vector <int> merge(vector <int> a, vector <int> b)
 
 int main()
 {
-    //code;
+    int aSize, bSize, n;
     return 0;
 }
