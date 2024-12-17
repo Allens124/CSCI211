@@ -2,7 +2,7 @@
 #include <cmath>
 using namespace std;
 
-int solCount = 0;
+//int solCount = 0;
 
 bool ok(int* q, int c)
 {
@@ -16,21 +16,21 @@ bool ok(int* q, int c)
     return true;
 }
 
-int nQueens(int* q, int c, int cap)
+int nQueens(int* q, int c, int cap, int sol)
 {
     if (c == cap)
     {
-        return solCount+1;
+        return sol+1;
     }
     for (int i = 0; i < cap; i++)
     {
         q[c] = i;
         if (ok(q, c))
         {
-            solCount = nQueens(q, c+1, cap);
+            sol = nQueens(q, c+1, cap, sol);
         }
     }
-    return solCount;
+    return sol;
 }
 
 int main()
@@ -46,8 +46,7 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         int* q = new int[n];
-        cout << "There are " << nQueens(q, 0, i) << " solutions to the " << i << " queens problem." << endl;
-        solCount = 0;
+        cout << "There are " << nQueens(q, 0, i, 0) << " solutions to the " << i << " queens problem." << endl;
         delete[] q;
     }
     return 0;
