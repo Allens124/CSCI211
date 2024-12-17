@@ -23,7 +23,7 @@ vector <int> merge(vector <int> a, vector <int> b)
     }
     while (i < a.size() && j == b.size())
     {
-        
+        c.push_back(a[i++]);
     }
 }
 
