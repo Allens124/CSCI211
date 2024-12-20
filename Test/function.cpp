@@ -16,5 +16,6 @@ int multiply(int a, int b)
 int main()
 {
     FUNC f;
+    f = add;
     return 0;
 }
