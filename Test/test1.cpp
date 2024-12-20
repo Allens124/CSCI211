@@ -6,13 +6,18 @@ int* newArray(int n)
     int arr[n];
     for (int i = 0; i < n; i++)
     {
-        arr[i] = i;
+        *(arr+i) = n;
     }
     return arr;
 }
 
 int main()
 {
-    int arr[5] = newArray(5);
+    int* arr = newArray(5);
+    for (int i = 0; i < 5; i++)
+    {
+        cout << *(arr+i) << " ";
+    }
+    cout << endl;
     return 0;
 }
