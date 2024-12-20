@@ -15,6 +15,6 @@ int multiply(int a, int b)
 
 int main()
 {
-    //code;
+    FUNC f;
     return 0;
 }
