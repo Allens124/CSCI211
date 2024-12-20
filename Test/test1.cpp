@@ -13,6 +13,6 @@ int* newArray(int n)
 
 int main()
 {
-    int arr[] = newArray(5);
+    int arr[5] = newArray(5);
     return 0;
 }
