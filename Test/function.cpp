@@ -19,5 +19,6 @@ int main()
     f = add;
     cout << f(3, 8) << endl;
     f = multiply;
+    cout << f(3, 8) << endl;
     return 0;
 }
