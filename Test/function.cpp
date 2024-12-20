@@ -17,5 +17,6 @@ int main()
 {
     FUNC f;
     f = add;
+    cout << f(3, 8) << endl;
     return 0;
 }
