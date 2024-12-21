@@ -45,7 +45,7 @@ int main()
     int r, c;
     cout << "Enter the number of rows: ";
     cin >> r;
-    if (r < 0)
+    while (r < 0)
     {
         cout << "Invalid input! Try again: ";
     }
