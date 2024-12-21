@@ -12,5 +12,12 @@ int island[4][4] =
 int main()
 {
     int land[6][6];
+    for (int i = 0; i < 6; i++)
+    {
+        for (int j = 0; j < 6; j++)
+        {
+            
+        }
+    }
     return 0;
 }
