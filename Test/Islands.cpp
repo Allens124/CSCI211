@@ -45,6 +45,10 @@ int main()
     int r, c;
     cout << "Enter the number of rows: ";
     cin >> r;
+    if (r < 0)
+    {
+        cout << "Invalid input! Try again: ";
+    }
     cout << islands() << endl;
     return 0;
 }
