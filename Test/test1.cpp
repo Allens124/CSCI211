@@ -16,8 +16,16 @@ int main()
     {
         for (int j = 0; j < 6; j++)
         {
-            
+            if (i == 0 || i == 5 || j == 0 || j == 5)
+            {
+                cout << 0 << " ";
+            }
+            else
+            {
+                cout << island[i-1][j-1] << " ";
+            }
         }
+        cout << endl;
     }
     return 0;
 }
