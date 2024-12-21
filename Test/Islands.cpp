@@ -48,9 +48,15 @@ int main()
     while (r < 0)
     {
         cout << "Invalid input! Try again: ";
+        cin >> r;
     }
     cout << "Enter the number of columns: ";
     cin >> c;
+    while (c < 0)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> c;
+    }
     cout << islands() << endl;
     return 0;
 }
