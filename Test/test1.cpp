@@ -11,6 +11,6 @@ int island[4][4] =
 
 int main()
 {
-    //code;
+    int land[6][6];
     return 0;
 }
