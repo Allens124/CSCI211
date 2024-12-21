@@ -42,6 +42,7 @@ int islands()
 
 int main()
 {
+    int r, c;
     cout << islands() << endl;
     return 0;
 }
