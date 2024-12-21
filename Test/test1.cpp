@@ -1,23 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int* newArray(int n)
+int island[4][4] =
 {
-    static int arr[5];
-    for (int i = 0; i < n; i++)
-    {
-        arr[i] = n;
-    }
-    return arr;
-}
+    {0, 1, 1, 0},
+    {1, 0, 0, 1},
+    {0, 0, 0, 0},
+    {1, 1, 0, 0}
+};
 
 int main()
 {
-    int* arr = newArray(5);
-    for (int i = 0; i < 5; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
+    //code;
     return 0;
 }
