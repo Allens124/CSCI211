@@ -49,6 +49,8 @@ int main()
     {
         cout << "Invalid input! Try again: ";
     }
+    cout << "Enter the number of columns: ";
+    cin >> c;
     cout << islands() << endl;
     return 0;
 }
