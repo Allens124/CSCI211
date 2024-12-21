@@ -43,6 +43,8 @@ int islands()
 int main()
 {
     int r, c;
+    cout << "Enter the number of rows: ";
+    cin >> r;
     cout << islands() << endl;
     return 0;
 }
