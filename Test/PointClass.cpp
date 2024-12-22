@@ -32,11 +32,14 @@ class Point
         {
             return z;
         }
-        void displayPoint()
-        {
-            cout << "(" << x << ", " << y << ", " << z << ")" << endl;
-        }
+        friend ostream& operator<<(ostream& os, Point p);
 };
+
+ostream& operator<<(ostream& os, Point p)
+{
+    os << "(" << p.x << ", " << p.y << ", " << p.z << ")";
+    return os;
+}
 
 Point operator*(double a, Point p)
 {
