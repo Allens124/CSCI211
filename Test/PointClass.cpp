@@ -57,6 +57,6 @@ int main()
     Point b = Point(2.3, 1.8, 7);
     cout << b << endl;
     Point c = 3*b;
-    c.displayPoint();
+    cout << c << endl;
     return 0;
 }
