@@ -53,7 +53,7 @@ Point operator*(double a, Point p)
 int main()
 {
     Point a;
-    a.displayPoint();
+    cout << a << endl;
     Point b = Point(2.3, 1.8, 7);
     b.displayPoint();
     Point c = 3*b;
