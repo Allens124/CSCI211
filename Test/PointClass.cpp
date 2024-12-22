@@ -32,6 +32,14 @@ class Point
         {
             return z;
         }
+        Point operator*(double a)
+        {
+            Point p;
+            p.x = a*x;
+            p.y = a*y;
+            p.z = a*z;
+            return p;
+        }
         friend ostream& operator<<(ostream& os, Point p);
 };
 
@@ -41,14 +49,14 @@ ostream& operator<<(ostream& os, Point p)
     return os;
 }
 
-Point operator*(double a, Point p)
+/*Point operator*(double a, Point p)
 {
     double xVal = a*p.getX();
     double yVal = a*p.getY();
     double zVal = a*p.getZ();
     Point q = Point(xVal, yVal, zVal);
     return q;
-}
+}*/
 
 int main()
 {
@@ -56,7 +64,7 @@ int main()
     cout << a << endl;
     Point b = Point(2.3, 1.8, 7);
     cout << b << endl;
-    Point c = 3*b;
+    Point c = b*3;
     cout << c << endl;
     return 0;
 }
