@@ -8,6 +8,11 @@ class Queue
     private:
         int top;
         T arr[100];
+    public:
+        Queue()
+        {
+            top = -1;
+        }
 };
 
 int main()
