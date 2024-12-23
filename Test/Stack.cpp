@@ -61,6 +61,11 @@ class Stack
         }
         T top()
         {
+            if (top == -1)
+            {
+                cout << "Stack is empty." << endl;
+                return NULL;
+            }
             return arr[top];
         }
         bool isEmpty()
