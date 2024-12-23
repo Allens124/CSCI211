@@ -5,7 +5,7 @@ template <typename T>
 
 class Node
 {
-    private:
+    protected:
         T data;
         Node* next;
     public:
