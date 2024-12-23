@@ -35,6 +35,7 @@ class Queue
             {
                 arr[i] = arr[i+1];
             }
+            top--;
         }
         T front()
         {
@@ -68,6 +69,7 @@ int main()
 {
     Queue <int> intQueue;
     intQueue.enqueue(5);
+    intQueue.dequeue();
     intQueue.dequeue();
     return 0;
 }
