@@ -25,7 +25,11 @@ class Queue
         }
         void dequeue(T data)
         {
-            
+            if (top == -1)
+            {
+                cout << "Queue underflow." << endl;
+                return;
+            }
         }
 };
 
