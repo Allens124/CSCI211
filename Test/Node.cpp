@@ -27,7 +27,10 @@ class Node
 
 class LinkedList : public Node
 {
-
+    private:
+        Node first;
+        Node last;
+        int length;
 };
 
 int main()
