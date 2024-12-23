@@ -69,6 +69,7 @@ int main()
 {
     Queue <int> intQueue;
     intQueue.enqueue(5);
+    intQueue.enqueue(7);
     intQueue.dequeue();
     intQueue.dequeue();
     return 0;
