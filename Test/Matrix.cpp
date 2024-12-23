@@ -5,7 +5,9 @@ template <typename T>
 
 class Matrix
 {
-    
+    private:
+        int rows;
+        int cols;
 };
 
 int main()
