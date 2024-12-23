@@ -6,8 +6,13 @@ template <typename T>
 class Stack
 {
     private:
-        T top;
+        int top;
         T arr[100];
+    public:
+        Stack()
+        {
+            top = -1;
+        }
 };
 
 int main()
