@@ -6,15 +6,15 @@ template <typename T>
 class Node
 {
     public:
-        T data;
+        string data;
         Node* next;
         Node()
         {
             next = NULL;
         }
-        Node(T d)
+        Node(string s)
         {
-            data = d;
+            data = s;
             next = NULL;
         }
 };
@@ -69,7 +69,7 @@ class LinkedList
 
 int main()
 {
-    LinkedList <string> myList;
+    LinkedList myList;
     myList.prepend("Martha");
     myList.append("Allen");
     myList.append("Zach");
