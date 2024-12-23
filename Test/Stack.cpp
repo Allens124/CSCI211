@@ -63,12 +63,6 @@ class Stack
 
 int main()
 {
-    Stack <int> p;
-    p.push(3);
-    p.push(2);
-    p.push(1);
-    p.pop();
-    p.pop();
-    p.pop();
+    Stack <string> stringStack;
     return 0;
 }
