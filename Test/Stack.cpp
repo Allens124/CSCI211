@@ -23,6 +23,10 @@ class Stack
             }
             arr[top] = data;
         }
+        void pushMore(T data[], int size)
+        {
+            
+        }
         void pop()
         {
             if (top == -1)
