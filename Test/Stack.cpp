@@ -15,24 +15,24 @@ class Stack
         }
         void push(T data)
         {
-            top++;
-            if (top == 100)
+            if (top == 99)
             {
                 cout << "Stack overflow." << endl;
                 return;
             }
+            top++;
             arr[top] = data;
         }
         void pushMore(T data[], int size)
         {
             for (int i = 0; i < size; i++)
             {
-                top++;
-                if (top == 100)
+                if (top == 99)
                 {
                     cout << "Stack overflow." << endl;
                     return;
                 }
+                top++;
                 arr[top] = data[i];
             }
         }
