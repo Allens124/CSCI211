@@ -13,6 +13,10 @@ class Stack
         {
             top = -1;
         }
+        Stack(T data[], int size)
+        {
+            
+        }
         void push(T data)
         {
             top++;
