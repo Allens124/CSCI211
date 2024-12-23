@@ -25,14 +25,6 @@ class Matrix
                 arr[i] = new T[cols];
             }
         }
-        ~ Matrix()
-        {
-            for (int i = 0; i < rows; i++)
-            {
-                delete[] arr[i];
-            }
-            delete[] arr;
-        }
 };
 
 int main()
