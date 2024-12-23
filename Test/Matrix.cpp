@@ -8,7 +8,7 @@ class Matrix
     private:
         int rows;
         int cols;
-        T arr[rows][cols];
+        T** arr;
 };
 
 int main()
