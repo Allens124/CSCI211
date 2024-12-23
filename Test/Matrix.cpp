@@ -9,11 +9,10 @@ class Matrix
         int rows;
         int cols;
         T arr[rows][cols];
-    public:
 };
 
 int main()
 {
-    //code;
+    Matrix <int> m;
     return 0;
 }
