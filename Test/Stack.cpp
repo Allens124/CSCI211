@@ -16,12 +16,22 @@ class Stack
         void push(T data)
         {
             top++;
-            if (top > 99)
+            if (top == 100)
             {
                 cout << "Stack overflow." << endl;
                 return;
             }
             arr[top] = data;
+        }
+        void pop()
+        {
+            if (top == -1)
+            {
+                cout << "Stack underflow." << endl;
+                return;
+            }
+            cout << arr[top] << endl;
+            top--;
         }
 };
 
