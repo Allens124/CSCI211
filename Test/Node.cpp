@@ -31,6 +31,12 @@ class LinkedList : public Node
         Node first;
         Node last;
         int length;
+    public:
+        LinkedList()
+        {
+            first = last;
+            length = 0;
+        }
 };
 
 int main()
