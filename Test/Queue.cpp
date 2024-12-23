@@ -13,6 +13,10 @@ class Queue
         {
             top = -1;
         }
+        void enqueue(T data)
+        {
+            
+        }
 };
 
 int main()
