@@ -58,6 +58,10 @@ class Queue
         {
             return top == -1;
         }
+        bool isFull()
+        {
+            return top == 99;
+        }
 };
 
 int main()
