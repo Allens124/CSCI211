@@ -41,7 +41,7 @@ class Queue
         {
             if (top == -1)
             {
-                cout << "Queue is empty. Default return. " << endl;
+                cout << "Queue is empty. Default return. ";
                 return arr[0];
             }
             return arr[0];
@@ -50,7 +50,7 @@ class Queue
         {
             if (top == -1)
             {
-                cout << "Queue is empty. Default return. " << endl;
+                cout << "Queue is empty. Default return. ";
                 return arr[0];
             }
             return arr[top];
