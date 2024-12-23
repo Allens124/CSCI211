@@ -13,10 +13,6 @@ class Stack
         {
             top = -1;
         }
-        Stack(T data)
-        {
-            arr[++top] = data;
-        }
 };
 
 int main()
