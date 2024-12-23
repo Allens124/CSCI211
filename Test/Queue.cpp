@@ -40,6 +40,10 @@ class Queue
         {
             return arr[0];
         }
+        T rear()
+        {
+            return arr[top];
+        }
 };
 
 int main()
