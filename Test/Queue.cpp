@@ -23,6 +23,10 @@ class Queue
             top++;
             arr[top] = data;
         }
+        void dequeue(T data)
+        {
+            
+        }
 };
 
 int main()
