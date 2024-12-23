@@ -9,6 +9,12 @@ class Matrix
         int rows;
         int cols;
         T** arr;
+    public:
+        Matrix()
+        {
+            rows = 0;
+            cols = 0;
+        }
 };
 
 int main()
