@@ -18,6 +18,11 @@ class Node
             data = d;
             next = NULL;
         }
+        Node(T d, Node n)
+        {
+            data = d;
+            next = n;
+        }
 };
 
 int main()
