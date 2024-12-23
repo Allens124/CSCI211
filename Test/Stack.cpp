@@ -59,6 +59,10 @@ class Stack
                 top--;
             }
         }
+        T top()
+        {
+            return arr[top];
+        }
 };
 
 int main()
