@@ -37,6 +37,12 @@ class Stack
 
 int main()
 {
-    //code;
+    Stack <int> p;
+    p.push(3);
+    p.push(2);
+    p.push(1);
+    p.pop();
+    p.pop();
+    p.pop();
     return 0;
 }
