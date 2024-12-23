@@ -48,7 +48,16 @@ class Stack
         }
         void popMore(int count)
         {
-            
+            for (int i = 0; i < count; i++)
+            {
+                if (top == -1)
+                {
+                    cout << "Stack underflow." << endl;
+                    return;
+                }
+                cout << arr[top] << endl;
+                top--;
+            }
         }
 };
 
