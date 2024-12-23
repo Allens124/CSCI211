@@ -63,6 +63,9 @@ class Stack
 
 int main()
 {
-    Stack <string> stringStack;
+    Stack <char> charStack;
+    char arr[5] = {'a', 'b', 'c', 'd', 'e'};
+    charStack.pushMore(arr, 5);
+    charStack.popMore(5);
     return 0;
 }
