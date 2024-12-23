@@ -25,6 +25,11 @@ class Node
         }
 };
 
+class LinkedList
+{
+
+};
+
 int main()
 {
     Node <int> link;
