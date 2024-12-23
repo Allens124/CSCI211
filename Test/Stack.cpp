@@ -46,6 +46,10 @@ class Stack
             cout << arr[top] << endl;
             top--;
         }
+        void popMore(int count)
+        {
+            
+        }
 };
 
 int main()
