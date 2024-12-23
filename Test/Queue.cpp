@@ -5,7 +5,9 @@ template <typename T>
 
 class Queue
 {
-    
+    private:
+        int top;
+        T arr[100];
 };
 
 int main()
