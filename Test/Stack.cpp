@@ -63,6 +63,10 @@ class Stack
         {
             return arr[top];
         }
+        bool isEmpty
+        {
+            return top == -1;
+        }
 };
 
 int main()
