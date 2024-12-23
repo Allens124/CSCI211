@@ -15,6 +15,11 @@ class Queue
         }
         void enqueue(T data)
         {
+            if (top == 99)
+            {
+                cout << "Queue overflow." << endl;
+                return;
+            }
             top++;
             arr[top] = data;
         }
