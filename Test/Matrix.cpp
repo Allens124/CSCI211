@@ -25,7 +25,7 @@ class Matrix
                 arr[i] = new T[cols];
             }
         }
-        ~Matrix()
+        ~ Matrix()
         {
             for (int i = 0; i < rows; i++)
             {
