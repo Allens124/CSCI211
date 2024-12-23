@@ -36,6 +36,10 @@ class Queue
                 arr[i] = arr[i+1];
             }
         }
+        T front()
+        {
+            return arr[0];
+        }
 };
 
 int main()
