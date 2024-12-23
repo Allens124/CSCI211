@@ -67,10 +67,8 @@ class Queue
 
 int main()
 {
-    Queue <int> intQueue;
-    intQueue.enqueue(5);
-    intQueue.enqueue(7);
-    intQueue.dequeue();
-    intQueue.dequeue();
+    Queue <string> intQueue;
+    cout << intQueue.front() << endl;
+    cout << intQueue.rear() << endl;
     return 0;
 }
