@@ -23,7 +23,7 @@ class Queue
             top++;
             arr[top] = data;
         }
-        void dequeue(T data)
+        void dequeue()
         {
             if (top == -1)
             {
@@ -66,6 +66,8 @@ class Queue
 
 int main()
 {
-    //code;
+    Queue <int> intQueue;
+    intQueue.enqueue(5);
+    intQueue.dequeue();
     return 0;
 }
