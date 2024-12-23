@@ -38,10 +38,20 @@ class Queue
         }
         T front()
         {
+            if (top == -1)
+            {
+                cout << "Queue is empty." << endl;
+                return NULL;
+            }
             return arr[0];
         }
         T rear()
         {
+            if (top == -1)
+            {
+                cout << "Queue is empty." << endl;
+                return NULL;
+            }
             return arr[top];
         }
 };
