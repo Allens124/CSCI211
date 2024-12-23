@@ -15,6 +15,16 @@ class Matrix
             rows = 0;
             cols = 0;
         }
+        Matrix(int n)
+        {
+            rows = n;
+            cols = n;
+            arr = new T*[rows];
+            for (int i = 0; i < cols; i++)
+            {
+                arr[i] = new T[cols];
+            }
+        }
         Matrix(int r, int c)
         {
             rows = r;
