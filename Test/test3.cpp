@@ -12,6 +12,6 @@ int main()
 {
     cout << add(2, 3) << endl;
     cout << add(3.14, 3.14) << endl;
-    cout << add('H', 'i') << endl;
+    cout << add(' ', 'A') << endl;
     return 0;
 }
