@@ -63,9 +63,13 @@ class Stack
         {
             return arr[top];
         }
-        bool isEmpty
+        bool isEmpty()
         {
             return top == -1;
+        }
+        bool isFull()
+        {
+            return top == 99;
         }
 };
 
