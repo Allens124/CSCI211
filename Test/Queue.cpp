@@ -15,7 +15,8 @@ class Queue
         }
         void enqueue(T data)
         {
-            
+            top++;
+            arr[top] = data;
         }
 };
 
