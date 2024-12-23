@@ -13,6 +13,11 @@ class Node
         {
             next = NULL;
         }
+        Node(T d)
+        {
+            data = d;
+            next = NULL;
+        }
 };
 
 int main()
