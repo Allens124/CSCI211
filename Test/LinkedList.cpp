@@ -1,18 +1,20 @@
 #include <iostream>
 using namespace std;
 
+template <typename T>
+
 class Node
 {
     public:
-        string data;
+        T data;
         Node* next;
         Node()
         {
             next = NULL;
         }
-        Node(string s)
+        Node(T d)
         {
-            data = s;
+            data = d;
             next = NULL;
         }
 };
@@ -67,7 +69,7 @@ class LinkedList
 
 int main()
 {
-    LinkedList myList;
+    LinkedList <string> myList;
     myList.prepend("Martha");
     myList.append("Allen");
     myList.append("Zach");
