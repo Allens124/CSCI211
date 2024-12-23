@@ -25,7 +25,16 @@ class Stack
         }
         void pushMore(T data[], int size)
         {
-            
+            for (int i = 0; i < size; i++)
+            {
+                top++;
+                if (top == 100)
+                {
+                    cout << "Stack overflow." << endl;
+                    return;
+                }
+                arr[top] = data[i];
+            }
         }
         void pop()
         {
