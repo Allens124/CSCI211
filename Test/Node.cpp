@@ -7,11 +7,16 @@ class Node
 {
     private:
         T data;
-        Node next;
+        Node* next;
+    public:
+        Node()
+        {
+            next = NULL;
+        }
 };
 
 int main()
 {
-    //code;
+    Node <int> link;
     return 0;
 }
