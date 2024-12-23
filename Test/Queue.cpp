@@ -30,6 +30,11 @@ class Queue
                 cout << "Queue underflow." << endl;
                 return;
             }
+            cout << arr[0] << endl;
+            for (int i = 0; i < top; i++)
+            {
+                arr[i] = arr[i+1];
+            }
         }
 };
 
