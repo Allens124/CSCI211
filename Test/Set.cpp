@@ -31,6 +31,21 @@ class Set
         {
             cap = -1;
         }
+        Set(T a[], int size)
+        {
+            cap = -1;
+            for (int i = 0; i < size; i++)
+            {
+                cap++;
+                if (cap == 100)
+                {
+                    cout << "Set has reached maximum capacity." << endl;
+                    break;
+                }
+                arr[cap] = a[i];
+            }
+            sort();
+        }
 };
 
 int main()
