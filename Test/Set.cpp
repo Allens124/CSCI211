@@ -1,7 +1,10 @@
 #include <iostream>
 using namespace std;
 
-
+class Set
+{
+    
+};
 
 int main()
 {
