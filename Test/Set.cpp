@@ -26,6 +26,11 @@ class Set
                 }
             }
         }
+    public:
+        Set()
+        {
+            cap = -1;
+        }
 };
 
 int main()
