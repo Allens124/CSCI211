@@ -21,26 +21,14 @@ class Node
         Node(T d, Node n)
         {
             data = d;
-            next = n;
-        }
-};
-
-class LinkedList : public Node
-{
-    private:
-        Node first;
-        Node last;
-        int length;
-    public:
-        LinkedList()
-        {
-            first = last;
-            length = 0;
+            next = &n;
         }
 };
 
 int main()
 {
-    Node <int> link;
+    Node <int> link1 = Node <int>(5);
+    Node <int> link2 = Node <int>(3, link1);
+    Node <int> link3 = Node <int>(1, link2);
     return 0;
 }
