@@ -8,6 +8,17 @@ class Set
     private:
         int cap;
         T arr[100];
+        bool elementOf(T data)
+        {
+            for (int i = 0; i < cap; i++)
+            {
+                if (arr[i] == data)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
         void bubbleSort()
         {
             bool swap;
