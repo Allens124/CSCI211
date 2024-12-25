@@ -21,7 +21,7 @@ class Set
         }
         void bubbleSort()
         {
-            bool swap;
+            bool swap = true;
             while (swap)
             {
                 swap = false;
