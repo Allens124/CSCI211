@@ -98,6 +98,6 @@ class Set
 
 int main()
 {
-    //code;
+    Set <int> s;
     return 0;
 }
