@@ -94,10 +94,21 @@ class Set
             }
             bubbleSort();
         }
-        friend ostream& operator<<(ostream& os, Set s);
+        friend ostream& operator<<(ostream& os, Set <T> s);
 };
 
-ostream& operator<<(ostream& os, Set <T> s)
+ostream& operator<<(ostream& os, Set <int> s)
+{
+    os << "{";
+    for (int i = 0; i < s.cap; i++)
+    {
+        os << s.arr[i] << ", ";
+    }
+    os << s.arr[s.cap] << "}";
+    return os;
+}
+
+ostream& operator<<(ostream& os, Set <char> s)
 {
     os << "{";
     for (int i = 0; i < s.cap; i++)
