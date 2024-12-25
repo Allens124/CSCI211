@@ -108,7 +108,7 @@ class Set
 int main()
 {
     int nums[10] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3};
-    Set <int> s = Set(nums, 10);
+    Set <int> s = Set<int>(nums, 10);
     s.print();
     return 0;
 }
