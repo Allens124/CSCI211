@@ -36,24 +36,24 @@ class Set
             cap = -1;
             for (int i = 0; i < size; i++)
             {
-                cap++;
-                if (cap == 100)
+                if (cap == 99)
                 {
                     cout << "Set has reached maximum capacity." << endl;
                     break;
                 }
+                cap++;
                 arr[cap] = a[i];
             }
             sort();
         }
         void add(T data)
         {
-            cap++;
-            if (cap == 100)
+            if (cap == 99)
             {
                 cout << "Set has reached maximum capacity." << endl;
                 return;
             }
+            cap++;
             arr[cap] = data;
             sort();
         }
@@ -61,12 +61,12 @@ class Set
         {
             for (int i = 0; i < size; i++)
             {
-                cap++;
-                if (cap == 100)
+                if (cap == 99)
                 {
                     cout << "Set has reached maximum capacity." << endl;
                     return;
                 }
+                cap++;
                 arr[cap] = data[i];
             }
             sort();
