@@ -52,6 +52,10 @@ class Set
                     cout << "Set has reached maximum capacity." << endl;
                     break;
                 }
+                if (elementOf(a[i]))
+                {
+                    continue;
+                }
                 cap++;
                 arr[cap] = a[i];
             }
@@ -64,11 +68,15 @@ class Set
                 cout << "Set has reached maximum capacity." << endl;
                 return;
             }
+            if (elementOf(data))
+            {
+                return;
+            }
             cap++;
             arr[cap] = data;
             bubbleSort();
         }
-        void addMore(T data[], int size)
+        void addMore(T a[], int size)
         {
             for (int i = 0; i < size; i++)
             {
@@ -77,8 +85,12 @@ class Set
                     cout << "Set has reached maximum capacity." << endl;
                     return;
                 }
+                if (elementOf(a[i]))
+                {
+                    continue;
+                }
                 cap++;
-                arr[cap] = data[i];
+                arr[cap] = a[i];
             }
             bubbleSort();
         }
