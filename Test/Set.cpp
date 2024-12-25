@@ -104,7 +104,7 @@ ostream& operator<<(ostream& os, Set s)
     {
         os << s.arr[i] << ", ";
     }
-    os << s.arr[cap] << "}";
+    os << s.arr[s.cap] << "}";
     return os;
 }
 
