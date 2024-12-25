@@ -46,6 +46,17 @@ class Set
             }
             sort();
         }
+        void add(T data)
+        {
+            cap++;
+            if (cap == 100)
+            {
+                cout << "Set has reached maximum capacity." << endl;
+                return;
+            }
+            arr[cap] = data;
+            sort();
+        }
 };
 
 int main()
