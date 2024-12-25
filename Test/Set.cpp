@@ -94,24 +94,25 @@ class Set
             }
             bubbleSort();
         }
-        void print()
-        {
-            cout << "{";
-            for (int i = 0; i < cap; i++)
-            {
-                cout << arr[i] << ", ";
-            }
-            cout << arr[cap] << "}" << endl;
-        }
+        friend ostream& operator<<(ostream& os, Set s);
 };
+
+ostream& operator<<(ostream& os, Set s)
+{
+    os << "{";
+    for (int i = 0; i < s.cap; i++)
+    {
+        os << s.arr[i] << ", ";
+    }
+    os << s.arr[cap] << "}";
+    return os;
+}
 
 int main()
 {
     int numbers[10] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3};
     Set <int> s = Set<int>(numbers, 10);
-    s.print();
     char letters[10] = {'j', 'i', 'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a'};
     Set <char> c = Set<char>(letters, 10);
-    c.print();
     return 0;
 }
