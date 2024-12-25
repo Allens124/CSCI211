@@ -94,6 +94,15 @@ class Set
             }
             bubbleSort();
         }
+        void print()
+        {
+            cout << "{";
+            for (int i = 0; i < cap; i++)
+            {
+                cout << arr[i] ", ";
+            }
+            cout << arr[cap] << "}" << endl;
+        }
 };
 
 int main()
