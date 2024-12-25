@@ -97,7 +97,7 @@ class Set
         friend ostream& operator<<(ostream& os, Set s);
 };
 
-ostream& operator<<(ostream& os, Set s)
+ostream& operator<<(ostream& os, Set <T> s)
 {
     os << "{";
     for (int i = 0; i < s.cap; i++)
