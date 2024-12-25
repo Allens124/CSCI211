@@ -8,7 +8,7 @@ class Set
     private:
         int cap;
         T arr[100];
-        void sort()
+        void bubbleSort()
         {
             bool swap;
             while (swap)
@@ -44,7 +44,7 @@ class Set
                 cap++;
                 arr[cap] = a[i];
             }
-            sort();
+            bubbleSort();
         }
         void add(T data)
         {
@@ -55,7 +55,7 @@ class Set
             }
             cap++;
             arr[cap] = data;
-            sort();
+            bubbleSort();
         }
         void addMore(T data[], int size)
         {
@@ -69,7 +69,7 @@ class Set
                 cap++;
                 arr[cap] = data[i];
             }
-            sort();
+            bubbleSort();
         }
 };
 
