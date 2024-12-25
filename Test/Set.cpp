@@ -112,7 +112,9 @@ int main()
 {
     int numbers[10] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3};
     Set <int> s = Set<int>(numbers, 10);
+    cout << s << endl;
     char letters[10] = {'j', 'i', 'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a'};
     Set <char> c = Set<char>(letters, 10);
+    cout << c << endl;
     return 0;
 }
