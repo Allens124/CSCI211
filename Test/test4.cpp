@@ -5,6 +5,8 @@ void a();
 
 void b();
 
+void c();
+
 int main()
 {
     //code;
