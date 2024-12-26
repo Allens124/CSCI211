@@ -9,7 +9,7 @@ void c();
 
 int main()
 {
-    //code;
+    a();
     return 0;
 }
 
