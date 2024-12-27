@@ -5,6 +5,6 @@ using namespace std;
 
 int main()
 {
-    //code;
+    int n;
     return 0;
 }
