@@ -13,5 +13,12 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
+    for (int r = 0; r < n/2; r++)
+    {
+        for (int c = 0; c < n; c++)
+        {
+            
+        }
+    }
     return 0;
 }
