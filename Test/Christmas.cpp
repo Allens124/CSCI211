@@ -28,6 +28,17 @@ int main()
                     cout << " ";
                 }
             }
+            else if (r == n/2-1)
+            {
+                if (c == n/2-1 || c == n/2+1)
+                {
+                    cout << "|";
+                }
+                else
+                {
+                    cout << " ";
+                }
+            }
             else
             {
                 if (c+r >= n/2 && c-r <= n/2 && c%2 != 0)
