@@ -17,7 +17,17 @@ int main()
     {
         for (int c = 0; c < n; c++)
         {
-            
+            if (r == 0)
+            {
+                if (c == n/2)
+                {
+                    cout << "*";
+                }
+                else
+                {
+                    cout << " ";
+                }
+            }
         }
     }
     return 0;
