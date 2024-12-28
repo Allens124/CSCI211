@@ -83,6 +83,13 @@ Fraction operator/(const Fraction& f1, const Fraction& f2)
     return Fraction(num, den);
 }
 
+Fraction operator++(const Fraction& f)
+{
+    int num = f.getNumerator() + f.getDenominator();
+    int den = f.getDenominator();
+    return Fraction(num, den);
+}
+
 void display(const Fraction& f)
 {
     cout << "Fraction: " << f.getNumerator() << "/" << f.getDenominator() << endl;
