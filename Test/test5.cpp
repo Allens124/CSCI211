@@ -8,5 +8,9 @@ int main(int argc, char* argv[])
         return 0;
     }
     cout << "Number of command-line arguments: " << argc << endl;
+    for (int i = 1; i < argc; i++)
+    {
+        cout << i << ": " << argv[i] << endl;
+    }
     return 0;
 }
