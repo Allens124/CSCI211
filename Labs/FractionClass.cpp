@@ -9,7 +9,7 @@ class Fraction
         int denominator;
 
 // Function to calculate the greatest common divisor (GCD) using Euclidean algorithm
-	    int gcd(int a, int b)
+        int gcd(int a, int b)
         {
 	        if (a%b == 0)
             {
