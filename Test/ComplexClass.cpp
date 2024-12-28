@@ -58,6 +58,11 @@ Complex operator*(Complex x, Complex y)
     return Complex(reComp, imComp);
 }
 
+Complex operator/(Complex x, Complex y)
+{
+    
+}
+
 ostream& operator<<(ostream& os, Complex z)
 {
     if (z.im > 0)
