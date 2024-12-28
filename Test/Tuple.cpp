@@ -8,6 +8,11 @@ class Tuple
     private:
         S data1;
         T data2;
+    public:
+        Tuple()
+        {
+            
+        }
 };
 
 int main()
