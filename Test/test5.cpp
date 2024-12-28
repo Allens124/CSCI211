@@ -7,5 +7,6 @@ int main(int argc, char* argv[])
         cout << "No command-line arguments passed." << endl;
         return 0;
     }
+    cout << "Number of command-line arguments: " << argc << endl;
     return 0;
 }
