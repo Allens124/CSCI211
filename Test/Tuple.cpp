@@ -18,6 +18,14 @@ class Tuple
             data1 = d1;
             data2 = d2;
         }
+        void setData1(S d)
+        {
+            data1 = d;
+        }
+        void setData2(S d)
+        {
+            data2 = d;
+        }
 };
 
 int main()
