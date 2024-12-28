@@ -38,6 +38,8 @@ class Tuple
 
 int main()
 {
-    Tuple <int, char> myTuple = Tuple<int, char>(10, 'A'); 
+    Tuple <int, char> myTuple = Tuple<int, char>(10, 'A');
+    cout << myTuple.getData1() << endl;
+    cout << myTuple.getData2() << endl;
     return 0;
 }
