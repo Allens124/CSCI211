@@ -59,12 +59,12 @@ class Stack
                 top--;
             }
         }
-        T top()
+        T topElement()
         {
             if (top == -1)
             {
                 cout << "Stack is empty." << endl;
-                return NULL;
+                return T();
             }
             return arr[top];
         }
