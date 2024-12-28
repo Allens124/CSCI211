@@ -60,7 +60,9 @@ Complex operator*(Complex x, Complex y)
 
 Complex operator/(Complex x, Complex y)
 {
-    
+    double reComp = (x.getRe()*y.getRe()+x.getIm()*y.getIm())/(y.getRe()*y.getRe()+y.getIm()*y.getIm());
+    double imComp = (x.getIm()*y.getRe()-x.getRe()*y.getIm())/(y.getRe()*y.getRe()+y.getIm()*y.getIm());
+    return Complex(reComp, imComp);
 }
 
 ostream& operator<<(ostream& os, Complex z)
