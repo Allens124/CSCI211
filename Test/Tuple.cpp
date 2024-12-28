@@ -38,6 +38,6 @@ class Tuple
 
 int main()
 {
-    //code;
+    Tuple <int, char> myTuple = Tuple<int, char>(10, 'A'); 
     return 0;
 }
