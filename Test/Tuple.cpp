@@ -5,7 +5,9 @@ template <typename S, typename T>
 
 class Tuple
 {
-    
+    private:
+        S data1;
+        T data2;
 };
 
 int main()
