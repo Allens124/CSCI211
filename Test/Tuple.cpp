@@ -11,7 +11,12 @@ class Tuple
     public:
         Tuple()
         {
-            
+
+        }
+        Tuple(S d1, T d2)
+        {
+            data1 = d1;
+            data2 = d2;
         }
 };
 
