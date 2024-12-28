@@ -26,6 +26,14 @@ class Tuple
         {
             data2 = d;
         }
+        S getData1()
+        {
+            return data1;
+        }
+        T getData2()
+        {
+            return data2;
+        }
 };
 
 int main()
