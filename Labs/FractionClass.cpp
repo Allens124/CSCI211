@@ -4,55 +4,55 @@ using namespace std;
 
 class Fraction
 {
-private:
-    int numerator, denominator;
-    
+    private:
+        int numerator;
+        int denominator;
+
 // Function to calculate the greatest common divisor (GCD) using Euclidean algorithm
-	int gcd(int a, int b)
-    {
-	    if (a%b == 0)
+	    int gcd(int a, int b)
         {
-            return b;
-        }
-        return gcd(b, a%b);
-	}
- 
-public:
-    Fraction(int num, int den)
-    {
-        numerator = num;
-        denominator = den;
-        simplify();
-    }
+	        if (a%b == 0)
+            {
+                return b;
+            }
+            return gcd(b, a%b);
+	    }
+
+    public:
+        Fraction(int num, int den)
+        {
+            numerator = num;
+            denominator = den;
+            simplify();
+        }   
     
-    int getNumerator() const
-    {
-        return numerator;
-    }
-
-    int getDenominator() const
-    {
-        return denominator;
-    }
-	    
-	void simplify()
-    {
-	    int commonDivisor = gcd(abs(numerator), abs(denominator)); // Calculate GCD using absolute values
-	    numerator /= commonDivisor;
-	    denominator /= commonDivisor;
-	    
-	    // Apply negative sign to the numerator if the fraction is originally negative
-	    if ((numerator < 0 && denominator > 0) || (numerator > 0 && denominator < 0))
+        int getNumerator() const
         {
-	        numerator = -abs(numerator);
-	    }
-        else
-        {
-	        numerator = abs(numerator);
-	    }
-	    denominator = abs(denominator);
-	}
+            return numerator;
+        }
 
+        int getDenominator() const
+        {
+            return denominator;
+        }
+	    
+        void simplify()
+        {
+	        int commonDivisor = gcd(abs(numerator), abs(denominator)); // Calculate GCD using absolute values
+	        numerator /= commonDivisor;
+	        denominator /= commonDivisor;
+    
+	        // Apply negative sign to the numerator if the fraction is originally negative
+	        if ((numerator < 0 && denominator > 0) || (numerator > 0 && denominator < 0))
+            {
+	            numerator = -abs(numerator);
+	        }
+            else
+            {
+	            numerator = abs(numerator);
+	        }
+	        denominator = abs(denominator);
+	    }
 };
 
 Fraction operator+(const Fraction& f1, const Fraction& f2)
