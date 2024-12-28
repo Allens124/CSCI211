@@ -38,21 +38,21 @@ class Fraction
 	    
         void simplify()
         {
-	        int commonDivisor = gcd(abs(numerator), abs(denominator)); // Calculate GCD using absolute values
-	        numerator /= commonDivisor;
-	        denominator /= commonDivisor;
-    
-	        // Apply negative sign to the numerator if the fraction is originally negative
-	        if ((numerator < 0 && denominator > 0) || (numerator > 0 && denominator < 0))
+            int commonDivisor = gcd(abs(numerator), abs(denominator)); // Calculate GCD using absolute values
+            numerator /= commonDivisor;
+            denominator /= commonDivisor;
+            
+            // Apply negative sign to the numerator if the fraction is originally negative
+            if ((numerator < 0 && denominator > 0) || (numerator > 0 && denominator < 0))
             {
-	            numerator = -abs(numerator);
-	        }
+                numerator = -abs(numerator);
+            }
             else
             {
-	            numerator = abs(numerator);
-	        }
-	        denominator = abs(denominator);
-	    }
+                numerator = abs(numerator);
+            }
+            denominator = abs(denominator);
+        }
 };
 
 Fraction operator+(const Fraction& f1, const Fraction& f2)
