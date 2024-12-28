@@ -41,24 +41,21 @@ Complex operator+(Complex x, Complex y)
 {
     double reComp = x.getRe()+y.getRe();
     double imComp = x.getIm()+y.getIm();
-    Complex z = Complex(reComp, imComp);
-    return z;
+    return Complex(reComp, imComp);
 }
 
 Complex operator-(Complex x, Complex y)
 {
     double reComp = x.getRe()-y.getRe();
     double imComp = x.getIm()-y.getIm();
-    Complex z = Complex(reComp, imComp);
-    return z;
+    return Complex(reComp, imComp);
 }
 
 Complex operator*(Complex x, Complex y)
 {
     double reComp = x.getRe()*y.getRe()-x.getIm()*y.getIm();
     double imComp = x.getRe()*y.getIm()+x.getIm()*y.getRe();
-    Complex z = Complex(reComp, imComp);
-    return z;
+    return Complex(reComp, imComp);
 }
 
 ostream& operator<<(ostream& os, Complex z)
