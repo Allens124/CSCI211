@@ -91,6 +91,9 @@ int main()
     Complex z2 = Complex(5, 3);
     cout << z1 << endl;
     cout << z2 << endl;
+    cout << z1+z2 << endl;
     cout << z1-z2 << endl;
+    cout << z1*z2 << endl;
+    cout << z1/z2 << endl;
     return 0;
 }
