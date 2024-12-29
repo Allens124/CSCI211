@@ -13,5 +13,6 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> size;
     }
+    int* unif = new int[size];
     return 0;
 }
