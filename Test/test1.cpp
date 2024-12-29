@@ -13,13 +13,14 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> size;
     }
+    double average = 0;
     double* unif = new double[size];
     for (int i = 0; i < size; i++)
     {
         *(unif+i) = 0.001*(rand()%1001);
+        average += *(unif+i);
         cout << i+1 << ": " << *(unif+i) << endl;
     }
-    double average = 0;
     delete[] unif;
     return 0;
 }
