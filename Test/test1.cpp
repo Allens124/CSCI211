@@ -14,6 +14,10 @@ int main()
         cin >> size;
     }
     int* unif = new int[size];
+    for (int i = 0; i < size; i++)
+    {
+        *(unif+i) = rand()%1000;
+    }
     delete[] unif;
     return 0;
 }
