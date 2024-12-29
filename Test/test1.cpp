@@ -19,6 +19,7 @@ int main()
         *(unif+i) = 0.001*(rand()%1001);
         cout << i+1 << ": " << *(unif+i) << endl;
     }
+    double average = 0;
     delete[] unif;
     return 0;
 }
