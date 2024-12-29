@@ -2,11 +2,8 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
-
-
-
 int main()
 {
-    //code;
+    srand(time(0));
     return 0;
 }
