@@ -13,7 +13,7 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> size;
     }
-    int* unif = new int[size];
+    double* unif = new double[size];
     for (int i = 0; i < size; i++)
     {
         *(unif+i) = rand()%1000;
