@@ -67,7 +67,7 @@ Complex operator/(Complex x, Complex y)
 
 ostream& operator<<(ostream& os, Complex z)
 {
-    if (z.im > 0)
+    if (z.im > -1)
     {
         os << z.re << " + " << z.im << "i";
         return os;
@@ -87,7 +87,7 @@ istream& operator>>(istream& is, Complex z)
 
 int main()
 {
-    Complex z1 = Complex(2, 3);
+    Complex z1 = Complex(2, 0);
     Complex z2 = Complex(1, -1);
     cout << z1 << endl;
     cout << z2 << endl;
