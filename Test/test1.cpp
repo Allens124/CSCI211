@@ -21,6 +21,7 @@ int main()
         average += *(unif+i);
         cout << i+1 << ": " << *(unif+i) << endl;
     }
+    cout << "Average: " << average << endl;
     delete[] unif;
     return 0;
 }
