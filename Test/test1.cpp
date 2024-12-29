@@ -14,5 +14,6 @@ int main()
         cin >> size;
     }
     int* unif = new int[size];
+    delete[] unif;
     return 0;
 }
