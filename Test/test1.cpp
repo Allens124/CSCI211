@@ -16,7 +16,7 @@ int main()
     double* unif = new double[size];
     for (int i = 0; i < size; i++)
     {
-        *(unif+i) = 0.001*rand()%1001;
+        *(unif+i) = 0.001*(rand()%1001);
         cout << i+1 << ": " << *(unif+i) << endl;
     }
     delete[] unif;
