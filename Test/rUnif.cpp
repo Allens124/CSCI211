@@ -16,7 +16,7 @@ double* rUnif(int n, int min = 0, int max = 1)
         min = temp;
     }
     srand(time(0));
-    static double sample[n];
+    double* sample = new double[n];
     for (int i = 0; i < n; i++)
     {
         sample[i] = 0.001*(min+rand()%(1000*max+1));
@@ -31,5 +31,6 @@ int main()
     {
         cout << i+1 << ": " << unifSample[i] << endl;
     }
+    delete[] unifSample;
     return 0;
 }
