@@ -27,5 +27,9 @@ double* rUnif(int n, int min = 0, int max = 1)
 int main()
 {
     double* unifSample = rUnif(1000, 0, 1);
+    for (int i = 0; i < 1000; i++)
+    {
+        cout << i+1 << ": " << unifSample[i] << endl;
+    }
     return 0;
 }
