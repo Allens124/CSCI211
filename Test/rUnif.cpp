@@ -21,6 +21,7 @@ double* rUnif(int n, int min = 0, int max = 1)
     {
         sample[i] = 0.001*(min+rand()%(1000*max+1));
     }
+    return sample;
 }
 
 int main()
