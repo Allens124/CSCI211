@@ -15,10 +15,11 @@ double* rUnif(int n, double min = 0, double max = 1)
         max = min;
         min = temp;
     }
+    srand(time(0));
     static double sample[n];
     for (int i = 0; i < n; i++)
     {
-        
+
     }
 }
 
