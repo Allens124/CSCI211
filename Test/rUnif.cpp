@@ -16,6 +16,10 @@ double* rUnif(int n, double min = 0, double max = 1)
         min = temp;
     }
     static double sample[n];
+    for (int i = 0; i < n; i++)
+    {
+        
+    }
 }
 
 int main()
