@@ -26,6 +26,6 @@ double* rUnif(int n, int min = 0, int max = 1)
 
 int main()
 {
-    //code;
+    double* unifSample = rUnif(1000, 0, 1);
     return 0;
 }
