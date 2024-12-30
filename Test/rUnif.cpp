@@ -19,7 +19,7 @@ double* rUnif(int n, int min = 0, int max = 1)
     double* sample = new double[n];
     for (int i = 0; i < n; i++)
     {
-        sample[i] = 0.001*rand()%(1000*(max-min)+1)+min;
+        sample[i] = 0.001*(rand()%(1000*(max-min)+1))+min;
     }
     return sample;
 }
