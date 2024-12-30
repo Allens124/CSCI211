@@ -3,7 +3,7 @@
 #include <ctime>
 using namespace std;
 
-
+double* rUnif(int n, double min, double max)
 
 int main()
 {
