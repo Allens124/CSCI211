@@ -30,8 +30,24 @@ class Polynomial
             }
             return function[power];
         }
-        friend ostream& operator<<(ostream&, Polynomial p);
+        friend ostream& operator<<(ostream& os, Polynomial p);
 };
+
+ostream& operator<<(ostream& os, Polynomial p)
+{
+    for (int i = 0; i < 100; i++)
+    {
+        if (p.function[i] > 0)
+        {
+            os << "+" << p.function[i] << "x^" << i << " ";
+        }
+        else if (p.function[i] < 0)
+        {
+            os << "-" << -1*p.function[i] << "x^" << i << " ";
+        }
+    }
+    return os;
+}
 
 int main()
 {
