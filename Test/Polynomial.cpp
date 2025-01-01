@@ -24,6 +24,10 @@ class Polynomial
         }
         double getCoefficient(int power)
         {
+            if (power < 0 || power > 99)
+            {
+                return 0;
+            }
             return function[power];
         }
 };
