@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-
+vector <int> operator+(vector <int> a, vector <int> b)
 
 int main()
 {
