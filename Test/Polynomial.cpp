@@ -51,6 +51,8 @@ ostream& operator<<(ostream& os, Polynomial p)
 
 int main()
 {
-    //code;
+    Polynomial p;
+    p.setCoefficient(3, -5);
+    cout << p << endl;
     return 0;
 }
