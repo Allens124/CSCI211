@@ -30,6 +30,7 @@ class Polynomial
             }
             return function[power];
         }
+        friend ostream& operator<<(ostream&, Polynomial p);
 };
 
 int main()
