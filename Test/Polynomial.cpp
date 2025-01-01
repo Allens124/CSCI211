@@ -53,6 +53,7 @@ int main()
 {
     Polynomial p;
     p.setCoefficient(3, -5);
+    p.setCoefficient(12, -5);
     cout << p << endl;
     return 0;
 }
