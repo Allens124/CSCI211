@@ -13,6 +13,7 @@ vector <int> operator+(vector <int> a, vector <int> b)
     {
         result.push_back(b[i]);
     }
+    return result;
 }
 
 int main()
