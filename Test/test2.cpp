@@ -3,6 +3,9 @@
 using namespace std;
 
 vector <int> operator+(vector <int> a, vector <int> b)
+{
+    vector <int> result;
+}
 
 int main()
 {
