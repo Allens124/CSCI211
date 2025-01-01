@@ -3,7 +3,8 @@ using namespace std;
 
 class Polynomial
 {
-    
+    private:
+        double function[100];
 };
 
 int main()
