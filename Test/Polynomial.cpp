@@ -71,9 +71,10 @@ Polynomial operator-(Polynomial p, Polynomial q)
 
 int main()
 {
-    Polynomial p;
+    Polynomial p, q;
     p.setCoefficient(3, -5);
-    p.setCoefficient(12, -5);
-    cout << p << endl;
+    q.setCoefficient(12, -5);
+    cout << p << " + " << q << " = " << p+q endl;
+    cout << p << " - " << q << " = " << p-q endl;
     return 0;
 }
