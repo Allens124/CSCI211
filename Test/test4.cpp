@@ -7,6 +7,7 @@ int pow(double base, int exp)
     {
         return 1;
     }
+    return base*pow(base, exp-1);
 }
 
 int main()
