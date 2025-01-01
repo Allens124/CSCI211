@@ -15,6 +15,11 @@ class Polynomial
         }
         void setCoefficient(int power, double coefficient)
         {
+            if (power < 0 || power > 99)
+            {
+                cout << "Invalid power." << endl;
+                return;
+            }
             function[power] = coefficient;
         }
 };
