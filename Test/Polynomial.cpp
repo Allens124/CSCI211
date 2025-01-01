@@ -39,11 +39,11 @@ ostream& operator<<(ostream& os, Polynomial p)
     {
         if (p.function[i] > 0)
         {
-            os << "+" << p.function[i] << "x^" << i << " ";
+            os << "+ " << p.function[i] << "x^" << i << " ";
         }
         else if (p.function[i] < 0)
         {
-            os << "-" << -1*p.function[i] << "x^" << i << " ";
+            os << "- " << -1*p.function[i] << "x^" << i << " ";
         }
     }
     return os;
