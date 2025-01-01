@@ -74,7 +74,7 @@ int main()
     Polynomial p, q;
     p.setCoefficient(3, -5);
     q.setCoefficient(12, -5);
-    cout << p << " + " << q << " = " << p+q endl;
-    cout << p << " - " << q << " = " << p-q endl;
+    cout << p << " + " << q << " = " << p+q << endl;
+    cout << p << " - " << q << " = " << p-q << endl;
     return 0;
 }
