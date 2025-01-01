@@ -22,6 +22,10 @@ class Polynomial
             }
             function[power] = coefficient;
         }
+        double getCoefficient(int power)
+        {
+            return function[power];
+        }
 };
 
 int main()
