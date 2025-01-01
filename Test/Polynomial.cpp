@@ -13,6 +13,10 @@ class Polynomial
                 function[i] = 0;
             }
         }
+        void setCoefficient(int power, double coefficient)
+        {
+            function[power] = coefficient;
+        }
 };
 
 int main()
