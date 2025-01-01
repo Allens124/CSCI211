@@ -59,6 +59,16 @@ Polynomial operator+(Polynomial p, Polynomial q)
     return r;
 }
 
+Polynomial operator-(Polynomial p, Polynomial q)
+{
+    Polynomial r;
+    for (int i = 0; i < 100; i++)
+    {
+        r.setCoefficient(i, p.getCoefficient(i)+q.getCoefficient(i));
+    }
+    return r;
+}
+
 int main()
 {
     Polynomial p;
