@@ -17,6 +17,9 @@ string toString(int x)
 
 int main()
 {
-    //code;
+    for (int i = -5; i < 40; i++)
+    {
+        cout << toString(i) << endl;
+    }
     return 0;
 }
