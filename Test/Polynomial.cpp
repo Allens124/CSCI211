@@ -30,6 +30,18 @@ class Polynomial
             }
             return function[power];
         }
+        int degree()
+        {
+            int degree = 0;
+            for (int i = 1; i < 100; i++)
+            {
+                if (function[i] != 0)
+                {
+                    degree = i;
+                }
+            }
+            return degree;
+        }
         friend ostream& operator<<(ostream& os, Polynomial p);
 };
 
