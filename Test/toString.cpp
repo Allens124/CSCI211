@@ -14,6 +14,7 @@ string toString(int x)
 
 int main()
 {
-    //code;
+    string num = toString(10);
+    cout << num << endl;
     return 0;
 }
