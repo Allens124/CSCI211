@@ -21,6 +21,15 @@ string toBaseN(int x, int n)
     {
         return toString(x);
     }
+    if (n == 1)
+    {
+        string result = "";
+        for (int i = 0; i < n; i++)
+        {
+            result += "1";
+        }
+        return result;
+    }
     return toBaseN(x/n, n)+toString(x%n);
 }
 
