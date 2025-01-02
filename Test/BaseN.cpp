@@ -17,7 +17,10 @@ string toString(int x)
 
 string toBaseN(int x, int n)
 {
-    
+    if (x < n)
+    {
+        return toString(x);
+    }
 }
 
 int main()
