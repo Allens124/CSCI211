@@ -24,7 +24,7 @@ string toBaseN(int x, int n)
     if (n == 1)
     {
         string result = "";
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < x; i++)
         {
             result += "1";
         }
