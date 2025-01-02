@@ -21,6 +21,7 @@ string toBaseN(int x, int n)
     {
         return toString(x);
     }
+    return toBaseN(x/n, n)+toString(x%n);
 }
 
 int main()
