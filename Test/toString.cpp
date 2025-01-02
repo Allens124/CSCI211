@@ -9,6 +9,7 @@ string toString(int x)
     {
         return last;
     }
+    return toString(x/10)+last;
 }
 
 int main()
