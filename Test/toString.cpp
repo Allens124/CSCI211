@@ -4,6 +4,10 @@ using namespace std;
 string toString(int x)
 {
     string last = "0";
+    if (x < 0)
+    {
+        return last;
+    }
     last[0] += x%10;
     if (x < 10)
     {
