@@ -15,6 +15,11 @@ string toString(int x)
     return result;
 }
 
+string toBaseN(int x, int n)
+{
+    
+}
+
 int main()
 {
     //code;
