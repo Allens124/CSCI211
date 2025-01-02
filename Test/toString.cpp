@@ -14,7 +14,7 @@ string toString(int x)
 
 int main()
 {
-    string num = toString(10);
+    string num = toString(56281);
     cout << num << endl;
     return 0;
 }
