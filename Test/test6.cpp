@@ -8,7 +8,7 @@ string toString(int x)
     {
         result[0] = '0'+x;
     }
-    else if (x > 9 && x < 26)
+    else if (x > 9 && x < 36)
     {
         result[0] = 'A'+x-10;
     }
