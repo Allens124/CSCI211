@@ -26,6 +26,9 @@ string toBaseN(int x, int n)
 
 int main()
 {
-    //code;
+    cout << toBaseN(10, 2) << endl;
+    cout << toBaseN(127, 5) << endl;
+    cout << toBaseN(324, 10) << endl;
+    cout << toBaseN(231, 16) << endl;
     return 0;
 }
