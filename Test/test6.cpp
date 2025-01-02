@@ -10,7 +10,7 @@ string toString(int x)
     }
     else if (x > 9 && x < 26)
     {
-        result[0] = 'A'+x;
+        result[0] = 'A'+x-10;
     }
     return result;
 }
