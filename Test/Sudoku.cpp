@@ -30,6 +30,22 @@ bool ok(int** b, int r, int c)
             return false;
         }
     }
+    if (r%3 == 2 && c%3 == 2)
+    {
+        for (int i = r; i > r-1; r--)
+        {
+            for (int j = c; j > c-1; j--)
+            {
+                for (int k = 0; c%3-k > -1; k++)
+                {
+                    if (b[r][c] == b[r][c-k])
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+    }
     return true;
 }
 
