@@ -79,5 +79,6 @@ int main()
     {
         delete[] solution[i];
     }
+    delete[] solution;
     return 0;
 }
