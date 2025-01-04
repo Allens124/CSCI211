@@ -74,6 +74,13 @@ int main()
     {
         solution[i] = new int[9];
     }
+    for (int i = 0; i < 9; i++)
+    {
+        for (int j = 0; j < 9; j++)
+        {
+            solution[i][j] = board[i][j];
+        }
+    }
     sudoku(board, 0, 0);
     for (int i = 0; i < 9; i++)
     {
