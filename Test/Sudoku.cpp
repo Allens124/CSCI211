@@ -23,6 +23,13 @@ bool ok(int** b, int r, int c)
             return false;
         }
     }
+    for (int i = 0; i < r; i++)
+    {
+        if (b[i][c] == b[r][c])
+        {
+            return false;
+        }
+    }
     return true;
 }
 
