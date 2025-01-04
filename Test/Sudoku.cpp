@@ -81,7 +81,7 @@ int main()
             solution[i][j] = board[i][j];
         }
     }
-    sudoku(board, 0, 0);
+    sudoku(solution, 0, 0);
     for (int i = 0; i < 9; i++)
     {
         delete[] solution[i];
