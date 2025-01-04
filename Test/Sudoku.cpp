@@ -26,6 +26,11 @@ void sudoku(int** b, int r, int c)
         print(b);
         return;
     }
+    if (c == 9)
+    {
+        sudoku(b, r+1, c);
+        return;
+    }
 }
 
 int main()
