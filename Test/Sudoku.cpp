@@ -70,6 +70,10 @@ void sudoku(int** b, int r, int c)
 int main()
 {
     int** solution = new int*[9];
+    for (int i = 0; i < 9; i++)
+    {
+        solution[i] = new int[9];
+    }
     sudoku(board, 0, 0);
     return 0;
 }
