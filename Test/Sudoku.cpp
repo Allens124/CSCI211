@@ -36,6 +36,14 @@ void sudoku(int** b, int r, int c)
         sudoku(b, r+1, c);
         return;
     }
+    for (int i = 1; i < 10; i++)
+    {
+        b[r][c] = i;
+        if (ok(b, r, c))
+        {
+            sudoku(b, r, c+1);
+        }
+    }
 }
 
 int main()
