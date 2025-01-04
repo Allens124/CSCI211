@@ -49,12 +49,14 @@ void sudoku(int** b, int r, int c)
 {
     if (r == 9)
     {
+        cout << "Start!" << endl;
         print(b);
+        cout << "Finish!" << endl;
         return;
     }
     if (c == 9)
     {
-        sudoku(b, r+1, c);
+        sudoku(b, r+1, 0);
         return;
     }
     for (int i = 1; i < 10; i++)
