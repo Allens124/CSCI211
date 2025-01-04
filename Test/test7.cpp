@@ -7,7 +7,6 @@ int main()
     {
         arr[i] = new int[9];
     }
-    arr = {0};
     for (int i = 0; i < 9; i++)
     {
         delete[] arr[i];
