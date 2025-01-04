@@ -16,12 +16,16 @@ int board[9][9] =
 
 void print(int** b)
 {
-    
+
 }
 
 void sudoku(int** b, int r, int c)
 {
-    
+    if (r == 9)
+    {
+        print(b);
+        return;
+    }
 }
 
 int main()
