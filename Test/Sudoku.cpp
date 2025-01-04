@@ -14,6 +14,11 @@ int board[9][9] =
     {0, 7, 3, 0, 9, 0, 6, 5, 0}
 }
 
+bool ok(int** b, int r, int c)
+{
+    return true;
+}
+
 void print(int** b)
 {
 
