@@ -16,6 +16,13 @@ int board[9][9] =
 
 bool ok(int** b, int r, int c)
 {
+    for (int i = 0; i < c; i++)
+    {
+        if (b[r][i] == b[r][c])
+        {
+            return false;
+        }
+    }
     return true;
 }
 
