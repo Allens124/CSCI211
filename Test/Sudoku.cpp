@@ -21,7 +21,14 @@ bool ok(int** b, int r, int c)
 
 void print(int** b)
 {
-
+    for (int i = 0; i < 9; i++)
+    {
+        for (int j = 0; j < 9; j++)
+        {
+            cout << b[i][j] << " ";
+        }
+        cout << endl;
+    }
 }
 
 void sudoku(int** b, int r, int c)
