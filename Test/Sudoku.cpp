@@ -75,5 +75,9 @@ int main()
         solution[i] = new int[9];
     }
     sudoku(board, 0, 0);
+    for (int i = 0; i < 9; i++)
+    {
+        delete[] solution[i];
+    }
     return 0;
 }
