@@ -14,6 +14,11 @@ int board[9][9] =
     {0, 7, 3, 0, 9, 0, 6, 5, 0}
 }
 
+void sudoku(int** b, int r, int c)
+{
+    
+}
+
 int main()
 {
     //code;
