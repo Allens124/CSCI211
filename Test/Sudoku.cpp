@@ -14,7 +14,7 @@ int board[9][9] =
     {0, 7, 3, 0, 9, 0, 6, 5, 0}
 };
 
-bool ok(int** b, int r, int c)
+bool ok(int b[9][9], int r, int c)
 {
     for (int i = 0; i < c; i++)
     {
@@ -33,7 +33,7 @@ bool ok(int** b, int r, int c)
     return true;
 }
 
-void print(int** b)
+void print(int b[9][9])
 {
     for (int i = 0; i < 9; i++)
     {
@@ -45,7 +45,7 @@ void print(int** b)
     }
 }
 
-void sudoku(int** b, int r, int c)
+void sudoku(int b[9][9], int r, int c)
 {
     if (r == 9)
     {
