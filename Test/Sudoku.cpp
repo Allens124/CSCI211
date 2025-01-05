@@ -18,11 +18,11 @@ bool ok(int b[9][9], int r, int c)
 {
     for (int i = 0; i < 9; i++)
     {
-        if (i == c || i == r)
+        if (b[r][i] == b[r][c] && i != c)
         {
-            continue;
+            return false;
         }
-        if (b[r][i] == b[r][c] || b[i][c] == b[r][c])
+        if (b[i][c] == b[r][c] && i != r)
         {
             return false;
         }
@@ -44,19 +44,19 @@ void print(int b[9][9])
 
 void sudoku(int b[9][9], int r, int c)
 {
-    if (r == 9)
+    if (r == 3)
     {
         cout << "Start!" << endl;
         print(b);
         cout << "Finish!" << endl;
         return;
     }
-    if (c == 9)
+    if (c == 3)
     {
         sudoku(b, r+1, 0);
         return;
     }
-    /*if (board[r][c] != 0)
+    if (board[r][c] != 0)
     {
         if (ok(b, r, c))
         {
@@ -66,7 +66,7 @@ void sudoku(int b[9][9], int r, int c)
         {
             return;
         }
-    }*/
+    }
     for (int i = 1; i < 10; i++)
     {
         b[r][c] = i;
