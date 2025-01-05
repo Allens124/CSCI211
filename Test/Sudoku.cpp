@@ -30,22 +30,6 @@ bool ok(int** b, int r, int c)
             return false;
         }
     }
-    if (r%3 == 2 && c%3 == 2)
-    {
-        for (int i = r; i > r-1; r--)
-        {
-            for (int j = c; j > c-1; j--)
-            {
-                for (int k = 0; c%3-k > -1; k++)
-                {
-                    if (b[r][c] == b[r][c-k])
-                    {
-                        return false;
-                    }
-                }
-            }
-        }
-    }
     return true;
 }
 
@@ -74,6 +58,17 @@ void sudoku(int** b, int r, int c)
     {
         sudoku(b, r+1, 0);
         return;
+    }
+    if (board[r][c] != 0)
+    {
+        if (ok(b, r, c))
+        {
+            sudoku(b, r, c+1);
+        }
+        else
+        {
+            return;
+        }
     }
     for (int i = 1; i < 10; i++)
     {
