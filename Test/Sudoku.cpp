@@ -82,6 +82,6 @@ void sudoku(int** b, int r, int c)
 
 int main()
 {
-    
+    sudoku(board, 0, 0);
     return 0;
 }
