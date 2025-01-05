@@ -16,16 +16,13 @@ int board[9][9] =
 
 bool ok(int b[9][9], int r, int c)
 {
-    for (int i = 0; i < c; i++)
+    for (int i = 0; i < 9; i++)
     {
-        if (b[r][i] == b[r][c])
+        if (i == c || i == r)
         {
-            return false;
+            continue;
         }
-    }
-    for (int i = 0; i < r; i++)
-    {
-        if (b[i][c] == b[r][c])
+        if (b[r][i] == b[r][c] || b[i][c] == b[r][c])
         {
             return false;
         }
@@ -59,7 +56,7 @@ void sudoku(int b[9][9], int r, int c)
         sudoku(b, r+1, 0);
         return;
     }
-    if (board[r][c] != 0)
+    /*if (board[r][c] != 0)
     {
         if (ok(b, r, c))
         {
@@ -69,7 +66,7 @@ void sudoku(int b[9][9], int r, int c)
         {
             return;
         }
-    }
+    }*/
     for (int i = 1; i < 10; i++)
     {
         b[r][c] = i;
