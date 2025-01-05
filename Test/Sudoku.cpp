@@ -82,23 +82,6 @@ void sudoku(int** b, int r, int c)
 
 int main()
 {
-    int** solution = new int*[9];
-    for (int i = 0; i < 9; i++)
-    {
-        solution[i] = new int[9];
-    }
-    for (int i = 0; i < 9; i++)
-    {
-        for (int j = 0; j < 9; j++)
-        {
-            solution[i][j] = board[i][j];
-        }
-    }
-    sudoku(solution, 0, 0);
-    for (int i = 0; i < 9; i++)
-    {
-        delete[] solution[i];
-    }
-    delete[] solution;
+    
     return 0;
 }
