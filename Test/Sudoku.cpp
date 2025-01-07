@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int board[9][9] = {0};
-/*{
+int board[9][9] =
+{
     {5, 0, 0, 0, 0, 9, 0, 2, 0},
     {0, 0, 0, 0, 0, 0, 0, 1, 9},
     {0, 0, 0, 4, 5, 2, 0, 0, 6},
@@ -12,7 +12,7 @@ int board[9][9] = {0};
     {0, 0, 0, 0, 0, 0, 0, 0, 0},
     {8, 0, 0, 0, 0, 7, 0, 0, 0},
     {0, 7, 3, 0, 9, 0, 6, 5, 0}
-};*/
+};
 
 bool ok(int b[9][9], int r, int c)
 {
@@ -44,14 +44,14 @@ void print(int b[9][9])
 
 void sudoku(int b[9][9], int r, int c)
 {
-    if (r == 1)
+    if (r == 3)
     {
         cout << "Start!" << endl;
         print(b);
         cout << "Finish!" << endl;
         return;
     }
-    if (c == 9)
+    if (c == 3)
     {
         sudoku(b, r+1, 0);
         return;
