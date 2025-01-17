@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-int arr[3] = {1, 2, 3};
+int arr[3] = {1, 3, 3};
 
 int main()
 {
-    for (int i : arr)
+    for (int i = 0; i < 3; i++)
     {
-        cout << i << " ";
+        cout << arr[i] << " ";
     }
     cout << endl;
     return 0;
