@@ -1,10 +1,9 @@
 #include <iostream>
 using namespace std;
-
-int arr[3] = {1, 3, 3};
-
 int main()
 {
+    const int x = 5;
+    int arr[3] = {1, x, 3};
     for (int i = 0; i < 3; i++)
     {
         cout << arr[i] << " ";
