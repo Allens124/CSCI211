@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     const int x = 5;
-    int* p = &x;
+    const int* p = &x;
     int arr[3] = {1, *p, 3};
     arr[0] = 10;
     arr[1] = 4;
