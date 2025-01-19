@@ -80,7 +80,7 @@ class Stack
 
 int main()
 {
-    Stack <int> intStack;
-    intStack.getTop();
+    Stack <string> myStack;
+    myStack.getTop();
     return 0;
 }
