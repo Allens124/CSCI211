@@ -80,9 +80,7 @@ class Stack
 
 int main()
 {
-    Stack <char> charStack;
-    char arr[5] = {'a', 'b', 'c', 'd', 'e'};
-    charStack.pushMore(arr, 5);
-    charStack.popMore(5);
+    Stack <int> intStack;
+    intStack.getTop();
     return 0;
 }
