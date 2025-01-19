@@ -59,7 +59,7 @@ class Stack
                 top--;
             }
         }
-        T topElement()
+        T getTop()
         {
             if (top == -1)
             {
