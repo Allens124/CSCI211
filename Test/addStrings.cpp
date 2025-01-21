@@ -6,6 +6,7 @@ string addStrings(string a, string b)
 {
     int aLength = a.size()-1;
     int bLength = b.size()-1;
+    bool carry = false;
     while (aLength > 0 || bLength > 0)
     {
         int aTemp = aLength < 0 ? a[aLength]-'0' : 0;
