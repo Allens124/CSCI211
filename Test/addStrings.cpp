@@ -4,6 +4,7 @@ using namespace std;
 
 string addStrings(string a, string b)
 {
+    string result = "";
     int aLength = a.size()-1;
     int bLength = b.size()-1;
     bool carry = false;
