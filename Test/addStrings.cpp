@@ -13,6 +13,7 @@ string addStrings(string a, string b)
         int aTemp = aLength < 0 ? a[aLength]-'0' : 0;
         int bTemp = bLength < 0 ? b[bLength]-'0' : 0;
         carry = aTemp+bTemp > 9;
+        int digit = (aTemp+bTemp)%10;
     }
 }
 
