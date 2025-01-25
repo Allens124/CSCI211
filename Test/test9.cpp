@@ -3,12 +3,12 @@
 using namespace std;
 int main()
 {
-    for (int i = -5; i <= 5; i++)
+    for (int x = -5; x <= 5; x++)
     {
-        cout << i << "\t";
-        for (int j = -5; j <= (int) log(i); j++)
+        cout << x << "\t";
+        for (int y = -5; y <= x*x; y++)
         {
-            if (j == (int) log(i))
+            if (y == x*x)
             {
                 cout << "*";
             }
