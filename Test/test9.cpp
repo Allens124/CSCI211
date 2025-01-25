@@ -1,13 +1,14 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main()
 {
-    for (int i = 0; i <= 10; i++)
+    for (int i = -5; i <= 5; i++)
     {
         cout << i << "\t";
-        for (int j = 0; j <= i; j++)
+        for (int j = -5; j <= i*i; j++)
         {
-            if (j == i)
+            if (j == i*i)
             {
                 cout << "*";
             }
