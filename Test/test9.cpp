@@ -6,6 +6,7 @@ int main()
     {
         for (int j = 0; j <= i*i; j++)
         {
+            cout << i << "\t";
             if (j == i*i)
             {
                 cout << "*";
