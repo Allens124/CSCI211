@@ -6,9 +6,9 @@ int main()
     for (int i = -5; i <= 5; i++)
     {
         cout << i << "\t";
-        for (int j = -5; j <= (int)exp(i); j++)
+        for (int j = -5; j <= (int) log(i); j++)
         {
-            if (j == (int)exp(i))
+            if (j == (int) log(i))
             {
                 cout << "*";
             }
