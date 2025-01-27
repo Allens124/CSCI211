@@ -2,9 +2,10 @@
 #include <cmath>
 using namespace std;
 
-double pNorm(double p, double mu, double sigma)
+double pNorm(double p)
 {
     double area = 0;
+    for (int i = -)
     return area;
 }
 
