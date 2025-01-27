@@ -16,6 +16,7 @@ double pNorm(double lower, double upper, double mu, double sigma)
 
 int main()
 {
-    //code;
+    cout << pNorm(-10, 0, 0, 1) << endl;
+    cout << pNorm(-10, 10, 0, 1) << endl;
     return 0;
 }
