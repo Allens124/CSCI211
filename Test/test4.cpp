@@ -12,6 +12,9 @@ int power(double base, int exp)
 
 int main()
 {
-    //code;
+    cout << power(1, 10) << endl;
+    cout << power(2, 10) << endl;
+    cout << power(3, 5) << endl;
+    cout << power(9, 3) << endl;
     return 0;
 }
