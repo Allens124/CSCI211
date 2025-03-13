@@ -7,6 +7,10 @@ int binaryExp(int base, int exp)
     {
         return 1;
     }
+    if (exp/2 == 0)
+    {
+        return binaryExp(base*base, exp/2);
+    }
 }
 
 int main()
