@@ -11,7 +11,7 @@ int binaryExp(int base, int exp)
     {
         return binaryExp(base*base, exp/2);
     }
-    return base+binaryExp(base*base, exp/2);
+    return base*binaryExp(base*base, exp/2);
 }
 
 int main()
