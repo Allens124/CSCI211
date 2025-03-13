@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int binaryExp(int base, int exp)
+unsigned long long binaryExp(int base, int exp)
 {
     if (exp == 0)
     {
@@ -18,7 +18,7 @@ int main()
 {
     for (int i = 0; i < 8; i++)
     {
-        cout << binaryExp(3, i) << endl;
+        cout << binaryExp(2, 18) << endl;
     }
     return 0;
 }
