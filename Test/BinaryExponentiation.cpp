@@ -16,6 +16,6 @@ int binaryExp(int base, int exp)
 
 int main()
 {
-    //code;
+    cout << binaryExp(2, 3) << endl;
     return 0;
 }
