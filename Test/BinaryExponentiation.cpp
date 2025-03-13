@@ -16,6 +16,9 @@ int binaryExp(int base, int exp)
 
 int main()
 {
-    cout << binaryExp(2, 3) << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cout << binaryExp(2, i) << endl;
+    }
     return 0;
 }
