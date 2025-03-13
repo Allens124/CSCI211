@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int binaryExponentiation(int base, int exp)
+int binaryExp(int base, int exp)
 {
     
 }
