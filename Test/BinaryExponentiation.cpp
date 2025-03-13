@@ -16,9 +16,9 @@ unsigned long long binaryExp(int base, int exp)
 
 int main()
 {
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < 18; i++)
     {
-        cout << binaryExp(2, 18) << endl;
+        cout << binaryExp(2, i) << endl;
     }
     return 0;
 }
